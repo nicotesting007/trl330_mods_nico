@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>TRL_cases</defaultLandingTab>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>TRL cases</label>
+    <tabs>TRL_cases</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>TRL_Priorization_Config__c</tabs>
+</CustomApplication>

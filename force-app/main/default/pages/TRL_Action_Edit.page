@@ -1,0 +1,102 @@
+<apex:page extensions="TRL_Action_Edit_CTRL"  standardController="Case" showHeader="true" tabStyle="TRL_cases__tab">
+    <style type="text/css" >
+        textarea {
+            width: 70%;
+            height: 300px
+        }
+
+        .subjectarea {
+            width: 70%;
+        }
+    </style>
+
+    <apex:pageMessages />
+
+    <apex:form >
+        <apex:pageBlock title="CS Tech Request Details">
+
+            <apex:pageBlockSection columns="2">
+                <apex:inputField value="{! Case.Status }" rendered="{! TEXT($User.TRLcases__c) != '' && TEXT($User.TRLcases__c) != 'Requestor'}"/>
+                <apex:outputField value="{! Case.Status }" rendered="{! TEXT($User.TRLcases__c) == '' || TEXT($User.TRLcases__c) == 'Requestor'}"/>
+                
+                <apex:inputField value="{! Case.CaseNumber }"/>
+                
+                <apex:outputField value="{! Case.AccountID }" rendered="{! TEXT($User.TRLcases__c) != 'Super User'}"/>
+                <apex:inputField value="{! Case.AccountID }" rendered="{! TEXT($User.TRLcases__c) == 'Super User'}" required="true"/>
+                
+                <apex:inputField value="{! Case.Account_Region__c }"/>
+                
+                <apex:inputField value="{! Case.CSA_CSE__c }" label="CSSA Member" rendered="{! TEXT($User.TRLcases__c) != '' && TEXT($User.TRLcases__c) != 'Requestor'}"/>
+                <apex:outputField value="{! Case.CSA_CSE__c }" label="CSSA Member" rendered="{! TEXT($User.TRLcases__c) == '' || TEXT($User.TRLcases__c) == 'Requestor'}"/>
+
+                <apex:inputField value="{! Case.Total_spent_time_hours__c }"/>
+    
+                <apex:inputField value="{! Case.Request_for_Assistance_by__c }" rendered="{! TEXT($User.TRLcases__c) == 'Super User'}"/>
+                <apex:outputField value="{! Case.Request_for_Assistance_by__c }" rendered="{! TEXT($User.TRLcases__c) != 'Super User'}"/>
+                
+                <apex:inputField value="{! Case.Timeframe__c }" />
+                <!--
+                <apex:inputField value="{! Case.Timeframe__c }" rendered="{! TEXT($User.TRLcases__c) == 'CS Tech Lead' || TEXT($User.TRLcases__c) == 'Super User'}" required="true"/>
+                <apex:outputField value="{! Case.Timeframe__c }" rendered="{! TEXT($User.TRLcases__c) != 'CS Tech Lead' && TEXT($User.TRLcases__c) != 'Super User'}"/>
+                -->
+                <apex:inputField value="{! Case.Level_of_Priority__c }" rendered="{! TEXT($User.TRLcases__c) != '' && TEXT($User.TRLcases__c) != 'Requestor'}"/>
+                <apex:outputField value="{! Case.Level_of_Priority__c }" rendered="{! TEXT($User.TRLcases__c) == '' || TEXT($User.TRLcases__c) == 'Requestor'}"/>
+                
+                <apex:inputField value="{! Case.Owner.Name }" label="Case Owner"/>
+
+                <apex:inputField value="{! Case.TRL_Request_Type__c }" label="Requested Activity Category" rendered="{! TEXT($User.TRLcases__c) == 'CS Tech Lead' || TEXT($User.TRLcases__c) == 'Super User'}"/>
+                <apex:outputField value="{! Case.TRL_Request_Type__c }" label="Requested Activity Category" rendered="{! TEXT($User.TRLcases__c) != 'CS Tech Lead' && TEXT($User.TRLcases__c) != 'Super User'}"/>
+
+                <apex:inputField value="{! Case.Don_t_escalate_until__c }" rendered="{! TEXT($User.TRLcases__c) == 'CS Tech Lead' || TEXT($User.TRLcases__c) == 'Super User'}"/>
+                <apex:outputField value="{! Case.Don_t_escalate_until__c }" rendered="{! TEXT($User.TRLcases__c) != 'CS Tech Lead' && TEXT($User.TRLcases__c) != 'Super User'}"/>
+
+                <apex:inputField value="{! Case.TRL_Task_Is_Clear__c }" label="Business Justification Provided" 
+                                    rendered="{! TEXT($User.TRLcases__c) == 'CS Tech Lead' || TEXT($User.TRLcases__c) == 'Super User' || TEXT($User.TRLcases__c) == 'AssignedTo Person'}"/>
+                <apex:outputField value="{! Case.TRL_Task_Is_Clear__c }" label="Business Justification Provided" 
+                                    rendered="{! TEXT($User.TRLcases__c) != 'CS Tech Lead' && TEXT($User.TRLcases__c) != 'Super User' && TEXT($User.TRLcases__c) != 'AssignedTo Person' }"/>
+
+                <apex:outputField value="{! Case.TRL_Calc_Prio_Score__c }" label="Prioritization Score"/>
+
+
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection title="Activity Reason" columns="1">
+                <apex:inputField value="{! Case.TRL_Type__c }" required="true"/>
+
+                <apex:inputField value="{! Case.CS_Reason__c }" rendered="{! TEXT($User.TRLcases__c) == 'Super User'}" required="true"/>
+                <apex:outputField value="{! Case.CS_Reason__c }" rendered="{! TEXT($User.TRLcases__c) != 'Super User'}"/>
+
+                <apex:inputField value="{! Case.CS_Activity__c }" rendered="{! TEXT($User.TRLcases__c) == 'Super User'}" required="true"/>
+                <apex:outputField value="{! Case.CS_Activity__c }" rendered="{! TEXT($User.TRLcases__c) != 'Super User'}"/>
+
+               <!-- <apex:inputField value="{! Case.IsEscalated }"/> -->
+            </apex:pageBlockSection>
+
+            <!--  added 2020-10-21, by thoeger for  #W-8097697  
+                A.I. COMMENT reqeust by Ramesh miving tehse fields to main section   
+            <apex:pageBlockSection title="CS Priorization" columns="1" >
+                <apex:inputField value="{! Case.TRL_Request_Type__c }" label="Requested Activity Category" rendered="{! TEXT($User.TRLcases__c) == 'CS Tech Lead' || TEXT($User.TRLcases__c) == 'AssignedTo Person'  ||  TEXT($User.TRLcases__c) == 'Super User'} "/>
+                <apex:inputField value="{! Case.TRL_Task_Is_Clear__c }" label="Business Justification Provided" rendered="{! TEXT($User.TRLcases__c) == 'CS Tech Lead' || TEXT($User.TRLcases__c) == 'AssignedTo Person'  ||  TEXT($User.TRLcases__c) == 'Super User'} "/>
+                <apex:outputField value="{! Case.TRL_Calc_Prio_Score__c }" label="Prioritization Score"/>
+            </apex:pageBlockSection>            
+            -->
+            <apex:pageBlockSection title="Subject" columns="1" rendered="{! TEXT($User.TRLcases__c) != 'Super User'}">
+                <subjectarea><apex:outputField value="{! Case.Subject }" label="Subject" styleClass="subjectarea"/></subjectarea>
+                <apex:outputField value="{! Case.Description }" label="Description" rendered="{! TEXT($User.TRLcases__c) != 'CS Tech Lead'}"/>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection title="Subject" columns="1" rendered="{! TEXT($User.TRLcases__c) == 'Super User'}">
+                <subjectarea><apex:inputField value="{! Case.Subject }" label="Subject" styleClass="subjectarea" required="true"/></subjectarea>
+                <apex:inputField value="{! Case.Description }" label="Description" rendered="{! TEXT($User.TRLcases__c) != 'CS Tech Lead'}" required="true"/>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{! updateRecord }" value="Update" />
+                <apex:commandButton action="{! saveAndNew}" value="Save and New"/>
+                <apex:commandButton action="{! cancel}" value="Cancel" immediate="true"/>
+            </apex:pageBlockButtons>
+
+        </apex:pageBlock>
+
+    </apex:form>
+</apex:page>

@@ -1,0 +1,22 @@
+# Create new scratch org 30 days max
+sfdx force:org:create --setdefaultusername -a trl -f config/project-scratch-def.json -d 1 --nonamespace
+
+# Create test user
+sfdx force:user:create --setalias qa-user --definitionfile config/user-def.json
+sfdx force:user:display -u qa-user
+
+# Push source
+sfdx force:source:push -u trl
+
+# Assign Permission Set to users
+sfdx force:user:permset:assign -n TRL_Permissions
+sfdx force:user:permset:assign --permsetname TRL_Permissions --targetusername trl --onbehalfof qa-user
+
+# Push sample data
+sfdx force:data:tree:import --targetusername lex --plan test-data/export-account-Account-Case-Opportunity-plan.json
+
+# Run Tests
+sfdx force:apex:test:run --classnames TRL_Cases_onlyTest,TRLCase_detail_page_CTRLTest,TRL_WithdrawnCommentCTRLTest,TRL_Action_New_CTRLTest,TRL_Action_Edit_CTRLTest --resultformat tap --codecoverage -u trl
+
+# Open new org
+sfdx force:org:open -u trl

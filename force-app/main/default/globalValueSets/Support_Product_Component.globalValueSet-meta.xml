@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Access and Security</fullName>
+        <default>false</default>
+        <label>Access and Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Access Management</fullName>
+        <default>false</default>
+        <label>Access Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Adapter</fullName>
+        <default>false</default>
+        <label>Adapter</label>
+    </customValue>
+    <customValue>
+        <fullName>Analytics</fullName>
+        <default>false</default>
+        <label>Analytics</label>
+    </customValue>
+    <customValue>
+        <fullName>Anypoint B2B</fullName>
+        <default>false</default>
+        <label>Anypoint B2B</label>
+    </customValue>
+    <customValue>
+        <fullName>Anypoint Monitoring</fullName>
+        <default>false</default>
+        <label>Anypoint Monitoring</label>
+    </customValue>
+    <customValue>
+        <fullName>Anypoint MQ</fullName>
+        <default>false</default>
+        <label>Anypoint MQ</label>
+    </customValue>
+    <customValue>
+        <fullName>Anypoint Visualizer</fullName>
+        <default>false</default>
+        <label>Anypoint Visualizer</label>
+    </customValue>
+    <customValue>
+        <fullName>API Gateway</fullName>
+        <default>false</default>
+        <label>API Gateway</label>
+    </customValue>
+    <customValue>
+        <fullName>API</fullName>
+        <default>false</default>
+        <label>API</label>
+    </customValue>
+    <customValue>
+        <fullName>APIkit</fullName>
+        <default>false</default>
+        <label>APIkit</label>
+    </customValue>
+    <customValue>
+        <fullName>API Manager</fullName>
+        <default>false</default>
+        <label>API Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Assessment tool</fullName>
+        <default>false</default>
+        <label>Assessment tool</label>
+    </customValue>
+    <customValue>
+        <fullName>Batch Processor</fullName>
+        <default>false</default>
+        <label>Batch Processor</label>
+    </customValue>
+    <customValue>
+        <fullName>CloudHub</fullName>
+        <default>false</default>
+        <label>CloudHub</label>
+    </customValue>
+    <customValue>
+        <fullName>CMS</fullName>
+        <default>false</default>
+        <label>CMS</label>
+    </customValue>
+    <customValue>
+        <fullName>CLI</fullName>
+        <default>false</default>
+        <label>CLI</label>
+    </customValue>
+    <customValue>
+        <fullName>Connectors</fullName>
+        <default>false</default>
+        <label>Connectors</label>
+    </customValue>
+    <customValue>
+        <fullName>DataMapper</fullName>
+        <default>false</default>
+        <label>DataMapper</label>
+    </customValue>
+    <customValue>
+        <fullName>DataWeave</fullName>
+        <default>false</default>
+        <label>DataWeave</label>
+    </customValue>
+    <customValue>
+        <fullName>Data Gateway</fullName>
+        <default>false</default>
+        <label>Data Gateway</label>
+    </customValue>
+    <customValue>
+        <fullName>Debugger</fullName>
+        <default>false</default>
+        <label>Debugger</label>
+    </customValue>
+    <customValue>
+        <fullName>Deployment</fullName>
+        <default>false</default>
+        <label>Deployment</label>
+    </customValue>
+    <customValue>
+        <fullName>Design Center</fullName>
+        <default>false</default>
+        <label>Design Center</label>
+    </customValue>
+    <customValue>
+        <fullName>Documentation</fullName>
+        <default>false</default>
+        <label>Documentation</label>
+    </customValue>
+    <customValue>
+        <fullName>Exchange</fullName>
+        <default>false</default>
+        <label>Exchange</label>
+    </customValue>
+    <customValue>
+        <fullName>Flow Control</fullName>
+        <default>false</default>
+        <label>Flow Control</label>
+    </customValue>
+    <customValue>
+        <fullName>Forums</fullName>
+        <default>false</default>
+        <label>Forums</label>
+    </customValue>
+    <customValue>
+        <fullName>Functional Monitoring</fullName>
+        <default>false</default>
+        <label>Functional Monitoring</label>
+    </customValue>
+    <customValue>
+        <fullName>Maven Plugin</fullName>
+        <default>false</default>
+        <label>Maven Plugin</label>
+    </customValue>
+    <customValue>
+        <fullName>Modules</fullName>
+        <default>false</default>
+        <label>Modules</label>
+    </customValue>
+    <customValue>
+        <fullName>Mule Cluster</fullName>
+        <default>false</default>
+        <label>Mule Cluster</label>
+    </customValue>
+    <customValue>
+        <fullName>Ops Center</fullName>
+        <default>false</default>
+        <label>Ops Center</label>
+    </customValue>
+    <customValue>
+        <fullName>Partner Manager</fullName>
+        <default>false</default>
+        <label>Partner Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Policies</fullName>
+        <default>false</default>
+        <label>Policies</label>
+    </customValue>
+    <customValue>
+        <fullName>Runtime Fabric</fullName>
+        <default>false</default>
+        <label>Runtime Fabric</label>
+    </customValue>
+    <customValue>
+        <fullName>Runtime Manager</fullName>
+        <default>false</default>
+        <label>Runtime Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Scopes</fullName>
+        <default>false</default>
+        <label>Scopes</label>
+    </customValue>
+    <customValue>
+        <fullName>Secrets Manager</fullName>
+        <default>false</default>
+        <label>Secrets Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Studio plugin</fullName>
+        <default>false</default>
+        <label>Studio plugin</label>
+    </customValue>
+    <customValue>
+        <fullName>Utilities</fullName>
+        <default>false</default>
+        <label>Utilities</label>
+    </customValue>
+    <customValue>
+        <fullName>Logging</fullName>
+        <default>false</default>
+        <label>Logging</label>
+    </customValue>
+    <customValue>
+        <fullName>Installation</fullName>
+        <default>false</default>
+        <label>Installation</label>
+    </customValue>
+    <customValue>
+        <fullName>Runtime</fullName>
+        <default>false</default>
+        <label>Runtime</label>
+    </customValue>
+    <customValue>
+        <fullName>Application deployments</fullName>
+        <default>false</default>
+        <label>Application deployments</label>
+    </customValue>
+    <customValue>
+        <fullName>Upgrades</fullName>
+        <default>false</default>
+        <label>Upgrades</label>
+    </customValue>
+    <customValue>
+        <fullName>Cluster management</fullName>
+        <default>false</default>
+        <label>Cluster management</label>
+    </customValue>
+    <customValue>
+        <fullName>Network connectivity</fullName>
+        <default>false</default>
+        <label>Network connectivity</label>
+    </customValue>
+    <customValue>
+        <fullName>Tokenization</fullName>
+        <default>false</default>
+        <label>Tokenization</label>
+    </customValue>
+    <customValue>
+        <fullName>Security policies</fullName>
+        <default>false</default>
+        <label>Security policies</label>
+    </customValue>
+    <customValue>
+        <fullName>Load balancing</fullName>
+        <default>false</default>
+        <label>Load balancing</label>
+    </customValue>
+    <customValue>
+        <fullName>Infrastructure</fullName>
+        <default>false</default>
+        <label>Infrastructure</label>
+    </customValue>
+    <customValue>
+        <fullName>Monitoring</fullName>
+        <default>false</default>
+        <label>Monitoring</label>
+    </customValue>
+    <customValue>
+        <fullName>Rtfctl</fullName>
+        <default>false</default>
+        <label>Rtfctl</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <description>A list that will be dependent on the Support Product field selection</description>
+    <masterLabel>Support Product Component</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

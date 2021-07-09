@@ -1,0 +1,63 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef1"
+            },
+            "AccountId": "@AccountRef1",
+            "RecordTypeId": "0128A000001QiwiQAC",
+            "Subject": "INTERNAL JJ Account Activity",
+            "Status": "New",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef2"
+            },
+            "AccountId": "@AccountRef2",
+            "RecordTypeId": "0128A000001QiwiQAC",
+            "Subject": "BOA Account Activity",
+            "Status": "New",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef3"
+            },
+            "AccountId": "@AccountRef4",
+            "RecordTypeId": "0128A000001QiwiQAC",
+            "Subject": "INTERNAL AXA Account Activity",
+            "Status": "New",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef4"
+            },
+            "AccountId": "@AccountRef5",
+            "RecordTypeId": "0128A000001QiwiQAC",
+            "Subject": "ANZ Customer plan",
+            "Status": "New",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Medium"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef5"
+            },
+            "AccountId": "@AccountRef5",
+            "RecordTypeId": "0128A000001QiwiQAC",
+            "Subject": "Test",
+            "Status": "New",
+            "Type": "Tech Request"
+        }
+    ]
+}

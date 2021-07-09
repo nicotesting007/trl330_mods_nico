@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CS Tech New TRL Case Submitted</name>
+    <style>none</style>
+    <subject>New TRL Case Submitted {!Case.CaseNumber} : &quot;{!Case.Subject}&quot;</subject>
+    <textOnly>Hi {!ApprovalRequest.Process_Approver},
+
+A new case requires your attention.
+
+Case Number : {!Case.CaseNumber}
+Case Status : {!Case.Status}
+Account Name : {!Case.Account}
+Account Region : {!Case.Account_Region__c}
+
+Click here  to approve or reject the Case in Salesforce.
+
+Thanks.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TRL_Outgrow_Survey_URL__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( OR(ISBLANK(TRL_Outgrow_Survey_Name__c),ISBLANK(TRL_Outgrow_Survey_UTM__c)) , &quot;ERROR: Outgrow Survey Name and UTM values must be populated to generate a survey URL&quot;, hyperlink(&quot;https://mulesoftcalc.outgrow.us/&quot; +  TRL_Outgrow_Survey_Name__c  + &quot;?utm_source=&quot;+  TRL_Outgrow_Survey_UTM__c , &quot;https://mulesoftcalc.outgrow.us/&quot; +  TRL_Outgrow_Survey_Name__c  + &quot;?utm_source=&quot;+  TRL_Outgrow_Survey_UTM__c))</formula>
+    <label>Outgrow Survey URL</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

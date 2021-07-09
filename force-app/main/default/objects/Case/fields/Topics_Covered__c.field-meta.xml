@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Topics_Covered__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>What topics does this case cover?</inlineHelpText>
+    <label>Topics Covered</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aggregators</fullName>
+                <default>false</default>
+                <label>Aggregators</label>
+            </value>
+            <value>
+                <fullName>Amazon DynamoDB</fullName>
+                <default>false</default>
+                <label>Amazon DynamoDB</label>
+            </value>
+            <value>
+                <fullName>AMF</fullName>
+                <default>false</default>
+                <label>AMF</label>
+            </value>
+            <value>
+                <fullName>Anypoint MQ</fullName>
+                <default>false</default>
+                <label>Anypoint MQ</label>
+            </value>
+            <value>
+                <fullName>AMQP</fullName>
+                <default>false</default>
+                <label>AMQP</label>
+            </value>
+            <value>
+                <fullName>API</fullName>
+                <default>false</default>
+                <label>API</label>
+            </value>
+            <value>
+                <fullName>API designer</fullName>
+                <default>false</default>
+                <label>API designer</label>
+            </value>
+            <value>
+                <fullName>API Notebook</fullName>
+                <default>false</default>
+                <label>API Notebook</label>
+            </value>
+            <value>
+                <fullName>API Portal</fullName>
+                <default>false</default>
+                <label>API Portal</label>
+            </value>
+            <value>
+                <fullName>Alerts</fullName>
+                <default>false</default>
+                <label>Alerts</label>
+            </value>
+            <value>
+                <fullName>Application down</fullName>
+                <default>false</default>
+                <label>Application down</label>
+            </value>
+            <value>
+                <fullName>Artifacts</fullName>
+                <default>false</default>
+                <label>Artifacts</label>
+            </value>
+            <value>
+                <fullName>AS2 Connector</fullName>
+                <default>false</default>
+                <label>AS2 Connector</label>
+            </value>
+            <value>
+                <fullName>Audit Logs</fullName>
+                <default>false</default>
+                <label>Audit Logs</label>
+            </value>
+            <value>
+                <fullName>Batch</fullName>
+                <default>false</default>
+                <label>Batch</label>
+            </value>
+            <value>
+                <fullName>BMC Remedy</fullName>
+                <default>false</default>
+                <label>BMC Remedy</label>
+            </value>
+            <value>
+                <fullName>Box</fullName>
+                <default>false</default>
+                <label>Box</label>
+            </value>
+            <value>
+                <fullName>Build-Ant</fullName>
+                <default>false</default>
+                <label>Build-Ant</label>
+            </value>
+            <value>
+                <fullName>Build-Maven</fullName>
+                <default>false</default>
+                <label>Build-Maven</label>
+            </value>
+            <value>
+                <fullName>Business Groups</fullName>
+                <default>false</default>
+                <label>Business Groups</label>
+            </value>
+            <value>
+                <fullName>B2B Connector</fullName>
+                <default>false</default>
+                <label>B2B Connector</label>
+            </value>
+            <value>
+                <fullName>Cards</fullName>
+                <default>false</default>
+                <label>Cards</label>
+            </value>
+            <value>
+                <fullName>Cassandra</fullName>
+                <default>false</default>
+                <label>Cassandra</label>
+            </value>
+            <value>
+                <fullName>CLI</fullName>
+                <default>false</default>
+                <label>CLI</label>
+            </value>
+            <value>
+                <fullName>CloudHub</fullName>
+                <default>false</default>
+                <label>CloudHub</label>
+            </value>
+            <value>
+                <fullName>CloudHub API</fullName>
+                <default>false</default>
+                <label>CloudHub API</label>
+            </value>
+            <value>
+                <fullName>CloudHub Console</fullName>
+                <default>false</default>
+                <label>CloudHub Console</label>
+            </value>
+            <value>
+                <fullName>CloudHub down</fullName>
+                <default>false</default>
+                <label>CloudHub down</label>
+            </value>
+            <value>
+                <fullName>CloudHub - Other</fullName>
+                <default>false</default>
+                <label>CloudHub - Other</label>
+            </value>
+            <value>
+                <fullName>CloudHub - Secure Data Gateway</fullName>
+                <default>false</default>
+                <label>CloudHub - Secure Data Gateway</label>
+            </value>
+            <value>
+                <fullName>CloudHub Static IP Request</fullName>
+                <default>false</default>
+                <label>CloudHub Static IP Request</label>
+            </value>
+            <value>
+                <fullName>Compression</fullName>
+                <default>false</default>
+                <label>Compression</label>
+            </value>
+            <value>
+                <fullName>Connection Strategies</fullName>
+                <default>false</default>
+                <label>Connection Strategies</label>
+            </value>
+            <value>
+                <fullName>Connector</fullName>
+                <default>false</default>
+                <label>Connector</label>
+            </value>
+            <value>
+                <fullName>Connectors</fullName>
+                <default>false</default>
+                <label>Connectors</label>
+            </value>
+            <value>
+                <fullName>Consumer</fullName>
+                <default>false</default>
+                <label>Consumer</label>
+            </value>
+            <value>
+                <fullName>Contracts</fullName>
+                <default>false</default>
+                <label>Contracts</label>
+            </value>
+            <value>
+                <fullName>Creating/Editing</fullName>
+                <default>false</default>
+                <label>Creating/Editing</label>
+            </value>
+            <value>
+                <fullName>Crowd</fullName>
+                <default>false</default>
+                <label>Crowd</label>
+            </value>
+            <value>
+                <fullName>Customizing Classes</fullName>
+                <default>false</default>
+                <label>Customizing Classes</label>
+            </value>
+            <value>
+                <fullName>Database</fullName>
+                <default>false</default>
+                <label>Database</label>
+            </value>
+            <value>
+                <fullName>DataMapper</fullName>
+                <default>false</default>
+                <label>DataMapper</label>
+            </value>
+            <value>
+                <fullName>DataWeave</fullName>
+                <default>false</default>
+                <label>DataWeave</label>
+            </value>
+            <value>
+                <fullName>Dedicated Load Balancer</fullName>
+                <default>false</default>
+                <label>Dedicated Load Balancer</label>
+            </value>
+            <value>
+                <fullName>Deployment</fullName>
+                <default>false</default>
+                <label>Deployment</label>
+            </value>
+            <value>
+                <fullName>Design environments</fullName>
+                <default>false</default>
+                <label>Design environments</label>
+            </value>
+            <value>
+                <fullName>Documentation</fullName>
+                <default>false</default>
+                <label>Documentation</label>
+            </value>
+            <value>
+                <fullName>Documenting</fullName>
+                <default>false</default>
+                <label>Documenting</label>
+            </value>
+            <value>
+                <fullName>EC2</fullName>
+                <default>false</default>
+                <label>EC2</label>
+            </value>
+            <value>
+                <fullName>EDIFACT EDI</fullName>
+                <default>false</default>
+                <label>EDIFACT EDI</label>
+            </value>
+            <value>
+                <fullName>EDI X12 Connector</fullName>
+                <default>false</default>
+                <label>EDI X12 Connector</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Embedding</fullName>
+                <default>false</default>
+                <label>Embedding</label>
+            </value>
+            <value>
+                <fullName>EndPoints</fullName>
+                <default>false</default>
+                <label>EndPoints</label>
+            </value>
+            <value>
+                <fullName>Environments</fullName>
+                <default>false</default>
+                <label>Environments</label>
+            </value>
+            <value>
+                <fullName>Error Handling</fullName>
+                <default>false</default>
+                <label>Error Handling</label>
+            </value>
+            <value>
+                <fullName>ESG API Management Portal</fullName>
+                <default>false</default>
+                <label>ESG API Management Portal</label>
+            </value>
+            <value>
+                <fullName>ESG Gateway</fullName>
+                <default>false</default>
+                <label>ESG Gateway</label>
+            </value>
+            <value>
+                <fullName>ESG HW Appliance</fullName>
+                <default>false</default>
+                <label>ESG HW Appliance</label>
+            </value>
+            <value>
+                <fullName>ESG Service Designer</fullName>
+                <default>false</default>
+                <label>ESG Service Designer</label>
+            </value>
+            <value>
+                <fullName>ESG Tokenization</fullName>
+                <default>false</default>
+                <label>ESG Tokenization</label>
+            </value>
+            <value>
+                <fullName>Exception Strategies</fullName>
+                <default>false</default>
+                <label>Exception Strategies</label>
+            </value>
+            <value>
+                <fullName>Execution</fullName>
+                <default>false</default>
+                <label>Execution</label>
+            </value>
+            <value>
+                <fullName>External Identity</fullName>
+                <default>false</default>
+                <label>External Identity</label>
+            </value>
+            <value>
+                <fullName>Failure to onboard customer</fullName>
+                <default>false</default>
+                <label>Failure to onboard customer</label>
+            </value>
+            <value>
+                <fullName>File</fullName>
+                <default>false</default>
+                <label>File</label>
+            </value>
+            <value>
+                <fullName>Filters</fullName>
+                <default>false</default>
+                <label>Filters</label>
+            </value>
+            <value>
+                <fullName>Flow designer</fullName>
+                <default>false</default>
+                <label>Flow designer</label>
+            </value>
+            <value>
+                <fullName>FTP</fullName>
+                <default>false</default>
+                <label>FTP</label>
+            </value>
+            <value>
+                <fullName>FTPS</fullName>
+                <default>false</default>
+                <label>FTPS</label>
+            </value>
+            <value>
+                <fullName>FTPS Connector</fullName>
+                <default>false</default>
+                <label>FTPS Connector</label>
+            </value>
+            <value>
+                <fullName>HDFS (Hadoop)</fullName>
+                <default>false</default>
+                <label>HDFS (Hadoop)</label>
+            </value>
+            <value>
+                <fullName>HL7 EDI</fullName>
+                <default>false</default>
+                <label>HL7 EDI</label>
+            </value>
+            <value>
+                <fullName>HL7 MLLP</fullName>
+                <default>false</default>
+                <label>HL7 MLLP</label>
+            </value>
+            <value>
+                <fullName>HTTP</fullName>
+                <default>false</default>
+                <label>HTTP</label>
+            </value>
+            <value>
+                <fullName>High Availability</fullName>
+                <default>false</default>
+                <label>High Availability</label>
+            </value>
+            <value>
+                <fullName>IBM CTG</fullName>
+                <default>false</default>
+                <label>IBM CTG</label>
+            </value>
+            <value>
+                <fullName>IBM MQ</fullName>
+                <default>false</default>
+                <label>IBM MQ</label>
+            </value>
+            <value>
+                <fullName>Installation</fullName>
+                <default>false</default>
+                <label>Installation</label>
+            </value>
+            <value>
+                <fullName>Interconnecting Mule SOA Products</fullName>
+                <default>false</default>
+                <label>Interconnecting Mule SOA Products</label>
+            </value>
+            <value>
+                <fullName>Internal DNS</fullName>
+                <default>false</default>
+                <label>Internal DNS</label>
+            </value>
+            <value>
+                <fullName>Issue affecting all customers</fullName>
+                <default>false</default>
+                <label>Issue affecting all customers</label>
+            </value>
+            <value>
+                <fullName>Issue affecting one customer</fullName>
+                <default>false</default>
+                <label>Issue affecting one customer</label>
+            </value>
+            <value>
+                <fullName>Java</fullName>
+                <default>false</default>
+                <label>Java</label>
+            </value>
+            <value>
+                <fullName>JMS</fullName>
+                <default>false</default>
+                <label>JMS</label>
+            </value>
+            <value>
+                <fullName>JMX</fullName>
+                <default>false</default>
+                <label>JMX</label>
+            </value>
+            <value>
+                <fullName>JNDI</fullName>
+                <default>false</default>
+                <label>JNDI</label>
+            </value>
+            <value>
+                <fullName>JSON</fullName>
+                <default>false</default>
+                <label>JSON</label>
+            </value>
+            <value>
+                <fullName>Kafka</fullName>
+                <default>false</default>
+                <label>Kafka</label>
+            </value>
+            <value>
+                <fullName>LDAP</fullName>
+                <default>false</default>
+                <label>LDAP</label>
+            </value>
+            <value>
+                <fullName>Licensing</fullName>
+                <default>false</default>
+                <label>Licensing</label>
+            </value>
+            <value>
+                <fullName>Logging</fullName>
+                <default>false</default>
+                <label>Logging</label>
+            </value>
+            <value>
+                <fullName>Management UI</fullName>
+                <default>false</default>
+                <label>Management UI</label>
+            </value>
+            <value>
+                <fullName>Marketo</fullName>
+                <default>false</default>
+                <label>Marketo</label>
+            </value>
+            <value>
+                <fullName>Metadata</fullName>
+                <default>false</default>
+                <label>Metadata</label>
+            </value>
+            <value>
+                <fullName>Migration Tools</fullName>
+                <default>false</default>
+                <label>Migration Tools</label>
+            </value>
+            <value>
+                <fullName>Microsoft .NET</fullName>
+                <default>false</default>
+                <label>Microsoft .NET</label>
+            </value>
+            <value>
+                <fullName>Microsoft Dynamics 365</fullName>
+                <default>false</default>
+                <label>Microsoft Dynamics 365</label>
+            </value>
+            <value>
+                <fullName>Microsoft Dynamics 365 Operations</fullName>
+                <default>false</default>
+                <label>Microsoft Dynamics 365 Operations</label>
+            </value>
+            <value>
+                <fullName>Microsoft Dynamics AX</fullName>
+                <default>false</default>
+                <label>Microsoft Dynamics AX</label>
+            </value>
+            <value>
+                <fullName>Microsoft Dynamics CRM</fullName>
+                <default>false</default>
+                <label>Microsoft Dynamics CRM</label>
+            </value>
+            <value>
+                <fullName>Microsoft Dynamics GP</fullName>
+                <default>false</default>
+                <label>Microsoft Dynamics GP</label>
+            </value>
+            <value>
+                <fullName>Microsoft Dynamics NAV</fullName>
+                <default>false</default>
+                <label>Microsoft Dynamics NAV</label>
+            </value>
+            <value>
+                <fullName>Microsoft MSMQ</fullName>
+                <default>false</default>
+                <label>Microsoft MSMQ</label>
+            </value>
+            <value>
+                <fullName>Microsoft Powershell</fullName>
+                <default>false</default>
+                <label>Microsoft Powershell</label>
+            </value>
+            <value>
+                <fullName>Microsoft Service Bus</fullName>
+                <default>false</default>
+                <label>Microsoft Service Bus</label>
+            </value>
+            <value>
+                <fullName>Microsoft SharePoint</fullName>
+                <default>false</default>
+                <label>Microsoft SharePoint</label>
+            </value>
+            <value>
+                <fullName>Migration from Mule 3.x to Mule 4</fullName>
+                <default>false</default>
+                <label>Migration from Mule 3.x to Mule 4</label>
+            </value>
+            <value>
+                <fullName>MongoDB</fullName>
+                <default>false</default>
+                <label>MongoDB</label>
+            </value>
+            <value>
+                <fullName>Mocking service</fullName>
+                <default>false</default>
+                <label>Mocking service</label>
+            </value>
+            <value>
+                <fullName>Monitoring-Availability</fullName>
+                <default>false</default>
+                <label>Monitoring-Availability</label>
+            </value>
+            <value>
+                <fullName>Monitoring-Performance</fullName>
+                <default>false</default>
+                <label>Monitoring-Performance</label>
+            </value>
+            <value>
+                <fullName>MuleClient</fullName>
+                <default>false</default>
+                <label>MuleClient</label>
+            </value>
+            <value>
+                <fullName>Neo4J</fullName>
+                <default>false</default>
+                <label>Neo4J</label>
+            </value>
+            <value>
+                <fullName>NetSuite</fullName>
+                <default>false</default>
+                <label>NetSuite</label>
+            </value>
+            <value>
+                <fullName>NetSuite OpenAir</fullName>
+                <default>false</default>
+                <label>NetSuite OpenAir</label>
+            </value>
+            <value>
+                <fullName>OAS 3</fullName>
+                <default>false</default>
+                <label>OAS 3</label>
+            </value>
+            <value>
+                <fullName>OAS 2</fullName>
+                <default>false</default>
+                <label>OAS 2</label>
+            </value>
+            <value>
+                <fullName>OAuth</fullName>
+                <default>false</default>
+                <label>OAuth</label>
+            </value>
+            <value>
+                <fullName>OAuth2 Provider</fullName>
+                <default>false</default>
+                <label>OAuth2 Provider</label>
+            </value>
+            <value>
+                <fullName>Object Store</fullName>
+                <default>false</default>
+                <label>Object Store</label>
+            </value>
+            <value>
+                <fullName>Oracle EBS 12.2</fullName>
+                <default>false</default>
+                <label>Oracle EBS 12.2</label>
+            </value>
+            <value>
+                <fullName>Oracle EBS 12.1</fullName>
+                <default>false</default>
+                <label>Oracle EBS 12.1</label>
+            </value>
+            <value>
+                <fullName>Oracle PeopleSoft</fullName>
+                <default>false</default>
+                <label>Oracle PeopleSoft</label>
+            </value>
+            <value>
+                <fullName>Oracle Siebel</fullName>
+                <default>false</default>
+                <label>Oracle Siebel</label>
+            </value>
+            <value>
+                <fullName>Partner Manager</fullName>
+                <default>false</default>
+                <label>Partner Manager</label>
+            </value>
+            <value>
+                <fullName>Password Reset</fullName>
+                <default>false</default>
+                <label>Password Reset</label>
+            </value>
+            <value>
+                <fullName>PCF</fullName>
+                <default>false</default>
+                <label>PCF</label>
+            </value>
+            <value>
+                <fullName>Permissions</fullName>
+                <default>false</default>
+                <label>Permissions</label>
+            </value>
+            <value>
+                <fullName>Policies</fullName>
+                <default>false</default>
+                <label>Policies</label>
+            </value>
+            <value>
+                <fullName>Pooling Profiles</fullName>
+                <default>false</default>
+                <label>Pooling Profiles</label>
+            </value>
+            <value>
+                <fullName>Project management</fullName>
+                <default>false</default>
+                <label>Project management</label>
+            </value>
+            <value>
+                <fullName>Publishing</fullName>
+                <default>false</default>
+                <label>Publishing</label>
+            </value>
+            <value>
+                <fullName>Rating</fullName>
+                <default>false</default>
+                <label>Rating</label>
+            </value>
+            <value>
+                <fullName>RDS</fullName>
+                <default>false</default>
+                <label>RDS</label>
+            </value>
+            <value>
+                <fullName>Redis</fullName>
+                <default>false</default>
+                <label>Redis</label>
+            </value>
+            <value>
+                <fullName>Registering Services</fullName>
+                <default>false</default>
+                <label>Registering Services</label>
+            </value>
+            <value>
+                <fullName>Remote Debugging</fullName>
+                <default>false</default>
+                <label>Remote Debugging</label>
+            </value>
+            <value>
+                <fullName>REST API</fullName>
+                <default>false</default>
+                <label>REST API</label>
+            </value>
+            <value>
+                <fullName>Retry Policies</fullName>
+                <default>false</default>
+                <label>Retry Policies</label>
+            </value>
+            <value>
+                <fullName>RosettaNet</fullName>
+                <default>false</default>
+                <label>RosettaNet</label>
+            </value>
+            <value>
+                <fullName>Routers-Inbound</fullName>
+                <default>false</default>
+                <label>Routers-Inbound</label>
+            </value>
+            <value>
+                <fullName>Routers-Outbound</fullName>
+                <default>false</default>
+                <label>Routers-Outbound</label>
+            </value>
+            <value>
+                <fullName>Salesforce</fullName>
+                <default>false</default>
+                <label>Salesforce</label>
+            </value>
+            <value>
+                <fullName>Salesforce Analytics</fullName>
+                <default>false</default>
+                <label>Salesforce Analytics</label>
+            </value>
+            <value>
+                <fullName>Salesforce Composite</fullName>
+                <default>false</default>
+                <label>Salesforce Composite</label>
+            </value>
+            <value>
+                <fullName>Salesforce Marketing</fullName>
+                <default>false</default>
+                <label>Salesforce Marketing</label>
+            </value>
+            <value>
+                <fullName>SAP</fullName>
+                <default>false</default>
+                <label>SAP</label>
+            </value>
+            <value>
+                <fullName>SAP Concur</fullName>
+                <default>false</default>
+                <label>SAP Concur</label>
+            </value>
+            <value>
+                <fullName>SAP SuccessFactors</fullName>
+                <default>false</default>
+                <label>SAP SuccessFactors</label>
+            </value>
+            <value>
+                <fullName>Scripting</fullName>
+                <default>false</default>
+                <label>Scripting</label>
+            </value>
+            <value>
+                <fullName>Security</fullName>
+                <default>false</default>
+                <label>Security</label>
+            </value>
+            <value>
+                <fullName>ServiceNow</fullName>
+                <default>false</default>
+                <label>ServiceNow</label>
+            </value>
+            <value>
+                <fullName>SFTP</fullName>
+                <default>false</default>
+                <label>SFTP</label>
+            </value>
+            <value>
+                <fullName>Sharing</fullName>
+                <default>false</default>
+                <label>Sharing</label>
+            </value>
+            <value>
+                <fullName>SLAs</fullName>
+                <default>false</default>
+                <label>SLAs</label>
+            </value>
+            <value>
+                <fullName>SNS</fullName>
+                <default>false</default>
+                <label>SNS</label>
+            </value>
+            <value>
+                <fullName>Sockets</fullName>
+                <default>false</default>
+                <label>Sockets</label>
+            </value>
+            <value>
+                <fullName>Spring</fullName>
+                <default>false</default>
+                <label>Spring</label>
+            </value>
+            <value>
+                <fullName>Spring Security</fullName>
+                <default>false</default>
+                <label>Spring Security</label>
+            </value>
+            <value>
+                <fullName>SQS</fullName>
+                <default>false</default>
+                <label>SQS</label>
+            </value>
+            <value>
+                <fullName>Standard Components</fullName>
+                <default>false</default>
+                <label>Standard Components</label>
+            </value>
+            <value>
+                <fullName>S3</fullName>
+                <default>false</default>
+                <label>S3</label>
+            </value>
+            <value>
+                <fullName>Tags</fullName>
+                <default>false</default>
+                <label>Tags</label>
+            </value>
+            <value>
+                <fullName>Taxonomies</fullName>
+                <default>false</default>
+                <label>Taxonomies</label>
+            </value>
+            <value>
+                <fullName>Threading Profiles</fullName>
+                <default>false</default>
+                <label>Threading Profiles</label>
+            </value>
+            <value>
+                <fullName>Tomcat: Apache httpd Integration</fullName>
+                <default>false</default>
+                <label>Tomcat: Apache httpd Integration</label>
+            </value>
+            <value>
+                <fullName>Tomcat: Configuration</fullName>
+                <default>false</default>
+                <label>Tomcat: Configuration</label>
+            </value>
+            <value>
+                <fullName>Tomcat: Deploying Applications</fullName>
+                <default>false</default>
+                <label>Tomcat: Deploying Applications</label>
+            </value>
+            <value>
+                <fullName>Tomcat: Installation and Packaging</fullName>
+                <default>false</default>
+                <label>Tomcat: Installation and Packaging</label>
+            </value>
+            <value>
+                <fullName>Tomcat: Security</fullName>
+                <default>false</default>
+                <label>Tomcat: Security</label>
+            </value>
+            <value>
+                <fullName>Tomcat: Troubleshooting (general)</fullName>
+                <default>false</default>
+                <label>Tomcat: Troubleshooting (general)</label>
+            </value>
+            <value>
+                <fullName>Tomcat: Tuning</fullName>
+                <default>false</default>
+                <label>Tomcat: Tuning</label>
+            </value>
+            <value>
+                <fullName>Tomcat: Upgrading</fullName>
+                <default>false</default>
+                <label>Tomcat: Upgrading</label>
+            </value>
+            <value>
+                <fullName>Tomcat: z-Other</fullName>
+                <default>false</default>
+                <label>Tomcat: z-Other</label>
+            </value>
+            <value>
+                <fullName>Transactions</fullName>
+                <default>false</default>
+                <label>Transactions</label>
+            </value>
+            <value>
+                <fullName>Transformers</fullName>
+                <default>false</default>
+                <label>Transformers</label>
+            </value>
+            <value>
+                <fullName>Transports-AMQP</fullName>
+                <default>false</default>
+                <label>Transports-AMQP</label>
+            </value>
+            <value>
+                <fullName>Transports-BPM</fullName>
+                <default>false</default>
+                <label>Transports-BPM</label>
+            </value>
+            <value>
+                <fullName>Transports-Email</fullName>
+                <default>false</default>
+                <label>Transports-Email</label>
+            </value>
+            <value>
+                <fullName>Transports-File</fullName>
+                <default>false</default>
+                <label>Transports-File</label>
+            </value>
+            <value>
+                <fullName>Transports-HTTP</fullName>
+                <default>false</default>
+                <label>Transports-HTTP</label>
+            </value>
+            <value>
+                <fullName>Transports-JDBC</fullName>
+                <default>false</default>
+                <label>Transports-JDBC</label>
+            </value>
+            <value>
+                <fullName>Transports-JMS</fullName>
+                <default>false</default>
+                <label>Transports-JMS</label>
+            </value>
+            <value>
+                <fullName>Transports-JMS-WebSphereMQ</fullName>
+                <default>false</default>
+                <label>Transports-JMS-WebSphereMQ</label>
+            </value>
+            <value>
+                <fullName>Transports-Other</fullName>
+                <default>false</default>
+                <label>Transports-Other</label>
+            </value>
+            <value>
+                <fullName>Transports-REST Services</fullName>
+                <default>false</default>
+                <label>Transports-REST Services</label>
+            </value>
+            <value>
+                <fullName>Transports-VM</fullName>
+                <default>false</default>
+                <label>Transports-VM</label>
+            </value>
+            <value>
+                <fullName>Transports-Web Services</fullName>
+                <default>false</default>
+                <label>Transports-Web Services</label>
+            </value>
+            <value>
+                <fullName>Twilio</fullName>
+                <default>false</default>
+                <label>Twilio</label>
+            </value>
+            <value>
+                <fullName>Transports-WMQ Native (New in 2.2.7)</fullName>
+                <default>false</default>
+                <label>Transports-WMQ Native (New in 2.2.7)</label>
+            </value>
+            <value>
+                <fullName>Upgrades</fullName>
+                <default>false</default>
+                <label>Upgrades</label>
+            </value>
+            <value>
+                <fullName>User Management</fullName>
+                <default>false</default>
+                <label>User Management</label>
+            </value>
+            <value>
+                <fullName>Users and Roles</fullName>
+                <default>false</default>
+                <label>Users and Roles</label>
+            </value>
+            <value>
+                <fullName>Validation</fullName>
+                <default>false</default>
+                <label>Validation</label>
+            </value>
+            <value>
+                <fullName>VM</fullName>
+                <default>false</default>
+                <label>VM</label>
+            </value>
+            <value>
+                <fullName>Versioning</fullName>
+                <default>false</default>
+                <label>Versioning</label>
+            </value>
+            <value>
+                <fullName>VPC</fullName>
+                <default>false</default>
+                <label>VPC</label>
+            </value>
+            <value>
+                <fullName>Web Service Consumer</fullName>
+                <default>false</default>
+                <label>Web Service Consumer</label>
+            </value>
+            <value>
+                <fullName>Workday</fullName>
+                <default>false</default>
+                <label>Workday</label>
+            </value>
+            <value>
+                <fullName>WS-Security and SAML</fullName>
+                <default>false</default>
+                <label>WS-Security and SAML</label>
+            </value>
+            <value>
+                <fullName>TRADACOMS EDI</fullName>
+                <default>false</default>
+                <label>TRADACOMS EDI</label>
+            </value>
+            <value>
+                <fullName>XML</fullName>
+                <default>false</default>
+                <label>XML</label>
+            </value>
+            <value>
+                <fullName>X12 EDI</fullName>
+                <default>false</default>
+                <label>X12 EDI</label>
+            </value>
+            <value>
+                <fullName>Zuora</fullName>
+                <default>false</default>
+                <label>Zuora</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

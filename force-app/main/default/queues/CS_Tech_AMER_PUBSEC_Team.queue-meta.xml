@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>CS Tech AMER PUBSEC Team</name>
+    <queueMembers>
+        <users>
+            <user>test-kxnw5nbtexhf@example.com</user>
+            <!--
+            <user>andy.hui@mulesoft.com</user>
+            <user>dasnani@mulesoft.com</user>
+            <user>gregory.clark@mulesoft.com</user>
+            <user>lradhakrishnan@mulesoft.com</user>
+            <user>mark.sigda@mulesoft.com</user>
+            <user>mike.moore@mulesoft.com</user>
+            <user>monish.venu@mulesoft.com</user>
+            <user>n.gutierrez@mulesoft.com</user>
+            <user>rganapathy@mulesoft.com</user>
+            <user>rpadmanavar@mulesoft.com</user>
+            <user>sid.bhatt@mulesoft.com</user>
+            <user>stephen.fishman@mulesoft.com</user>
+            -->
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Installation</fullName>
+        <default>false</default>
+        <label>Installation</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Equipment Complexity</fullName>
+        <default>false</default>
+        <label>Equipment Complexity</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Performance</fullName>
+        <default>false</default>
+        <label>Performance</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Breakdown</fullName>
+        <default>false</default>
+        <label>Breakdown</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Equipment Design</fullName>
+        <default>false</default>
+        <label>Equipment Design</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Feedback</fullName>
+        <default>false</default>
+        <label>Feedback</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>3rd Party Component Issue</fullName>
+        <default>false</default>
+        <label>3rd Party Component Issue</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Complex Functionality</fullName>
+        <default>false</default>
+        <label>Complex Functionality</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Documentation Issue</fullName>
+        <default>false</default>
+        <label>Documentation Issue</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Platform Maintenance</fullName>
+        <default>false</default>
+        <label>Platform Maintenance</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Platform Regression</fullName>
+        <default>false</default>
+        <label>Platform Regression</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Product Issue</fullName>
+        <default>false</default>
+        <label>Product Issue</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Provisioning</fullName>
+        <default>false</default>
+        <label>Provisioning</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Operations Case</fullName>
+        <default>false</default>
+        <label>Sales Operations Case</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>User Error</fullName>
+        <default>false</default>
+        <label>User Error</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>User Infrastructure Error</fullName>
+        <default>false</default>
+        <label>User Infrastructure Error</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>User Needed Training</fullName>
+        <default>false</default>
+        <label>User Needed Training</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+</StandardValueSet>

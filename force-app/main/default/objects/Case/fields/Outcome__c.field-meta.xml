@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outcome__c</fullName>
+    <externalId>false</externalId>
+    <label>Outcome</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Solution Suggested</fullName>
+                <default>false</default>
+                <label>Solution Suggested</label>
+            </value>
+            <value>
+                <fullName>Patch Provided</fullName>
+                <default>false</default>
+                <label>Patch Provided</label>
+            </value>
+            <value>
+                <fullName>Defect/ER Addressed</fullName>
+                <default>false</default>
+                <label>Defect/ER Addressed</label>
+            </value>
+            <value>
+                <fullName>More Info Required</fullName>
+                <default>false</default>
+                <label>More Info Required</label>
+            </value>
+            <value>
+                <fullName>Duplicate Case</fullName>
+                <default>false</default>
+                <label>Duplicate Case</label>
+            </value>
+            <value>
+                <fullName>Not Supported</fullName>
+                <default>false</default>
+                <label>Not Supported</label>
+            </value>
+            <value>
+                <fullName>Unable to Reproduce</fullName>
+                <default>false</default>
+                <label>Unable to Reproduce</label>
+            </value>
+            <value>
+                <fullName>Works as Designed</fullName>
+                <default>false</default>
+                <label>Works as Designed</label>
+            </value>
+            <value>
+                <fullName>Will Not Fix</fullName>
+                <default>false</default>
+                <label>Will Not Fix</label>
+            </value>
+            <value>
+                <fullName>Defect/ER Submitted</fullName>
+                <default>false</default>
+                <label>Defect/ER Submitted</label>
+            </value>
+            <value>
+                <fullName>With Customer Success</fullName>
+                <default>false</default>
+                <label>With Customer Success</label>
+            </value>
+            <value>
+                <fullName>With Engineering</fullName>
+                <default>false</default>
+                <label>With Engineering</label>
+            </value>
+            <value>
+                <fullName>With InfoSec</fullName>
+                <default>false</default>
+                <label>With InfoSec</label>
+            </value>
+            <value>
+                <fullName>With Product Management</fullName>
+                <default>false</default>
+                <label>With Product Management</label>
+            </value>
+            <value>
+                <fullName>With SalesOps</fullName>
+                <default>false</default>
+                <label>With SalesOps</label>
+            </value>
+            <value>
+                <fullName>Resolved by Customer</fullName>
+                <default>false</default>
+                <label>Resolved by Customer</label>
+            </value>
+            <value>
+                <fullName>Resolved by Support</fullName>
+                <default>false</default>
+                <label>Resolved by Support</label>
+            </value>
+            <value>
+                <fullName>Sales Operations Case</fullName>
+                <default>false</default>
+                <label>Sales Operations Case</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

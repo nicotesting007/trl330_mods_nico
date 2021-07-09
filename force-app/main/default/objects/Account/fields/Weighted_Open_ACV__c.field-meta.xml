@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Weighted_Open_ACV__c</fullName>
+    <externalId>false</externalId>
+    <label>Weighted Open ACV</label>
+    <summarizedField>Opportunity.Weighted_ACV_Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>Opportunity.Type</field>
+        <operation>equals</operation>
+        <value>New Business, Add-On Business, Add-On Business - Renewal Price Uplift</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Opportunity.StageName</field>
+        <operation>equals</operation>
+        <value>1. ID Business Initiative, 2. Educate on MuleSoft Vision, 3. Confirm Need &amp; Impact, 4. Validate Solution, 5. Negotiate &amp; Close, 6. Submitted for Closing, 7. Booking</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Opportunity.AccountId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

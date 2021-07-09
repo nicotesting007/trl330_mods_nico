@@ -1,0 +1,26 @@
+[
+    {
+        "sobject": "Account",
+        "saveRefs": true,
+        "resolveRefs": false,
+        "files": [
+            "export-account-Accounts.json"
+        ]
+    },
+    {
+        "sobject": "Case",
+        "saveRefs": true,
+        "resolveRefs": true,
+        "files": [
+            "export-account-Cases.json"
+        ]
+    },
+    {
+        "sobject": "Time_tracking__c",
+        "saveRefs": false,
+        "resolveRefs": true,
+        "files": [
+            "export-case-Time_tracking__cs.json"
+        ]
+    }
+]

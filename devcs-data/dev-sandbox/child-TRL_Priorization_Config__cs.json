@@ -1,0 +1,320 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef1"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef42",
+            "FilterLow__c": 1000000,
+            "FilterHigh__c": 2000000,
+            "Filter_Score__c": 50
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef2"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef42",
+            "FilterLow__c": 4000000,
+            "FilterHigh__c": 999000000,
+            "Filter_Score__c": 100
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef3"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef42",
+            "FilterLow__c": 2000000,
+            "FilterHigh__c": 4000000,
+            "Filter_Score__c": 75
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef4"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef42",
+            "FilterLow__c": 0,
+            "FilterHigh__c": 1000000,
+            "Filter_Score__c": 25
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef5"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef40",
+            "Filter_Score__c": 66.67,
+            "ScoringString__c": "Area"
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef6"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef40",
+            "Filter_Score__c": 0,
+            "ScoringString__c": "Sales Sub Team"
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef7"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef40",
+            "Filter_Score__c": 33,
+            "ScoringString__c": "Sales Team"
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef8"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef40",
+            "Filter_Score__c": 100,
+            "ScoringString__c": "Theater"
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef9"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef39",
+            "Filter_Score__c": 0,
+            "ScoringString__c": "Sales Sub Team"
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef10"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef39",
+            "Filter_Score__c": 100,
+            "ScoringString__c": "Theater"
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef11"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef39",
+            "Filter_Score__c": 33,
+            "ScoringString__c": "Sales Team"
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef12"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef39",
+            "Filter_Score__c": 66.67,
+            "ScoringString__c": "Area"
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef13"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef37",
+            "FilterLow__c": 1000000,
+            "FilterHigh__c": 9999000000,
+            "Filter_Score__c": 100
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef14"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef37",
+            "FilterLow__c": 750000,
+            "FilterHigh__c": 1000000,
+            "Filter_Score__c": 75
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef15"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef37",
+            "FilterLow__c": 500000,
+            "FilterHigh__c": 750000,
+            "Filter_Score__c": 50
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef16"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef37",
+            "FilterLow__c": 0,
+            "FilterHigh__c": 500000,
+            "Filter_Score__c": 25
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef17"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef36",
+            "FilterLow__c": 2000000,
+            "FilterHigh__c": 4000000,
+            "Filter_Score__c": 75
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef18"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef36",
+            "FilterLow__c": 0,
+            "FilterHigh__c": 1000000,
+            "Filter_Score__c": 25
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef19"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef36",
+            "FilterLow__c": 4000000,
+            "FilterHigh__c": 999000000,
+            "Filter_Score__c": 100
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef20"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef36",
+            "FilterLow__c": 1000000,
+            "FilterHigh__c": 2000000,
+            "Filter_Score__c": 50
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef21"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef35",
+            "Filter_Score__c": 30,
+            "ScoringString__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef22"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef35",
+            "Filter_Score__c": 100,
+            "ScoringString__c": "High"
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef23"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef35",
+            "Filter_Score__c": 60,
+            "ScoringString__c": "Medium"
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef24"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef34",
+            "Filter_Score__c": 60,
+            "ScoringString__c": "Medium"
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef25"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef34",
+            "Filter_Score__c": 100,
+            "ScoringString__c": "High"
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef26"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef34",
+            "Filter_Score__c": 30,
+            "ScoringString__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef27"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef33",
+            "FilterLow__c": 750000,
+            "FilterHigh__c": 1000000,
+            "Filter_Score__c": 75
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef28"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef33",
+            "FilterLow__c": 1000000,
+            "FilterHigh__c": 9999000000,
+            "Filter_Score__c": 100
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef29"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef33",
+            "FilterLow__c": 500000,
+            "FilterHigh__c": 750000,
+            "Filter_Score__c": 50
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef30"
+            },
+            "IsParent__c": false,
+            "Parent_Filter__c": "@TRL_Priorization_Config__cRef33",
+            "FilterLow__c": 0,
+            "FilterHigh__c": 500000,
+            "Filter_Score__c": 25
+        }
+    ]
+}

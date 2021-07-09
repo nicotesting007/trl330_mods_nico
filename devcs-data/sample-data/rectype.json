@@ -1,0 +1,22 @@
+{
+  "status": 0,
+  "result": {
+    "attributes": {
+      "type": "RecordType",
+      "url": "/services/data/v48.0/sobjects/RecordType/0122T000000GJX2QAO"
+    },
+    "Id": "0122T000000GJX2QAO",
+    "Name": "CS Tech Request",
+    "DeveloperName": "TRL",
+    "NamespacePrefix": null,
+    "Description": null,
+    "BusinessProcessId": "0192T0000000gyIQAQ",
+    "SobjectType": "Case",
+    "IsActive": true,
+    "CreatedById": "0052T00000CmpFpQAJ",
+    "CreatedDate": "2019-11-14T10:17:00.000+0000",
+    "LastModifiedById": "0052T00000Ck7bxQAB",
+    "LastModifiedDate": "2020-06-04T13:26:01.000+0000",
+    "SystemModstamp": "2020-06-04T13:26:01.000+0000"
+  }
+}

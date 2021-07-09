@@ -1,0 +1,138 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef1"
+            },
+            "Name": "J&J",
+            "Region__c": "Japan",
+            "CS_Area__c": "Japan",
+            "Territory__c": "APAC",
+            "BillingCountry": "Japan"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef2"
+            },
+            "Name": "Bank Of America",
+            "Region__c": "FINS",
+            "Territory__c": "AMER",
+            "BillingCountry": "USA"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef3"
+            },
+            "Name": "Zurich American Insurance Company",
+            "Region__c": "FINS",
+            "Territory__c": "AMER",
+            "BillingCountry": "USA"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef4"
+            },
+            "Name": "AXA",
+            "Region__c": "Japan",
+            "CS_Area__c": "Japan",
+            "Territory__c": "APAC",
+            "BillingCountry": "Japan"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef5"
+            },
+            "Name": "NEW ZEALAND POST LIMITED",
+            "Region__c": "ANZ",
+            "CS_Area__c": "ANZ",
+            "Territory__c": "APAC",
+            "BillingCountry": "New Zeland"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef6"
+            },
+            "Name": "Zoom Video Communications",
+            "Region__c": "CBU",
+            "Territory__c": "AMER",
+            "BillingCountry": "USA"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef7"
+            },
+            "Name": "Deciem Inc.",
+            "Region__c": "EBU",
+            "Territory__c": "AMER",
+            "BillingCountry": "USA"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef8"
+            },
+            "Name": "Xerox Corporation",
+            "Region__c": "CMT",
+            "Territory__c": "AMER",
+            "BillingCountry": "USA"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef9"
+            },
+            "Name": "Amgen Inc",
+            "Region__c": "HLS",
+            "Territory__c": "AMER",
+            "BillingCountry": "USA"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef10"
+            },
+            "Name": "The Hershey Company",
+            "Region__c": "RCG",
+            "Territory__c": "AMER",
+            "BillingCountry": "USA"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef11"
+            },
+            "Name": "MetroPlus Health Plan, Inc",
+            "Region__c": "EBU",
+            "Territory__c": "AMER",
+            "BillingCountry": "USA"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef12"
+            },
+            "Name": "IDFC FIRST Bank Limited",
+            "Region__c": "Asia",
+            "CS_Area__c": "Asia",
+            "Territory__c": "APAC",
+            "BillingCountry": "India"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef13"
+            },
+            "Name": "Telstra International Limited",
+            "Region__c": "ANZ",
+            "Territory__c": "APAC",
+            "BillingCountry": "Australia"
+        }
+    ]
+}

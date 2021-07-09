@@ -1,0 +1,15 @@
+<P>
+Hi <b>{!IF(CONTAINS(Case.Account_Region__c, "APAC"), "APAC Team", "EMEA Team")}</b>,
+
+<br><br>A new case requires your attention.
+
+<br><br>Case Number : <b>{!Case.CaseNumber}</b>
+<br>Case Status : <b>{!Case.Status}</b>
+<br>Account Name : <b>{!Case.Account}</b>
+<br>Account Region : <b>{!Case.Account_Region__c}</b>
+
+<br><br>Click <a href = '{!ApprovalRequest.Internal_URL}'>here </a> to approve or reject the Case in Salesforce.
+
+<br><br>Thanks.
+
+</P>

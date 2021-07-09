@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Support_Product_Version__c</fullName>
+    <externalId>false</externalId>
+    <label>Version</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Support_Product__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Support_Product_Version</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>MUnit</controllingFieldValue>
+            <valueName>2.1.5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MUnit</controllingFieldValue>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <valueName>2.1.4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MUnit</controllingFieldValue>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <valueName>2.1.3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MUnit</controllingFieldValue>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <valueName>2.1.2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MUnit</controllingFieldValue>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <controllingFieldValue>Anypoint CLI</controllingFieldValue>
+            <valueName>2.1.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MUnit</controllingFieldValue>
+            <valueName>1.7.3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MUnit</controllingFieldValue>
+            <valueName>1.3.10</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MUnit</controllingFieldValue>
+            <valueName>1.3.9</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MUnit</controllingFieldValue>
+            <valueName>1.3.8</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MUnit</controllingFieldValue>
+            <valueName>1.3.7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MUnit</controllingFieldValue>
+            <valueName>1.3.6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MUnit</controllingFieldValue>
+            <valueName>1.3.5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MUnit</controllingFieldValue>
+            <valueName>1.3.4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MUnit</controllingFieldValue>
+            <valueName>1.3.3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MUnit</controllingFieldValue>
+            <valueName>1.3.2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MUnit</controllingFieldValue>
+            <valueName>1.3.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <valueName>2.4.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <controllingFieldValue>Anypoint CLI</controllingFieldValue>
+            <valueName>2.2.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <valueName>2.1.9</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <valueName>2.1.8</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <valueName>2.1.7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <valueName>2.1.6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <valueName>1.14.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <valueName>1.13.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <valueName>1.12.2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <valueName>1.12.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <valueName>1.12.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <valueName>1.11.3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <valueName>1.11.2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <valueName>1.11.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <valueName>1.11.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <valueName>1.10.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <valueName>1.9.6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <valueName>1.9.5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <valueName>1.9.4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <valueName>1.9.3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <valueName>1.9.2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <valueName>1.9.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <valueName>1.9.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <valueName>1.8.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <controllingFieldValue>Anypoint Private Cloud Edition</controllingFieldValue>
+            <valueName>1.7.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <controllingFieldValue>Anypoint Private Cloud Edition</controllingFieldValue>
+            <valueName>1.7.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <valueName>1.6.4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <valueName>1.6.3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <valueName>1.6.2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <controllingFieldValue>Anypoint Private Cloud Edition</controllingFieldValue>
+            <valueName>1.6.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <controllingFieldValue>Anypoint Private Cloud Edition</controllingFieldValue>
+            <valueName>1.6.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <valueName>1.5.3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <controllingFieldValue>Anypoint Private Cloud Edition</controllingFieldValue>
+            <valueName>1.5.2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <controllingFieldValue>Anypoint Private Cloud Edition</controllingFieldValue>
+            <valueName>1.5.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Agent</controllingFieldValue>
+            <controllingFieldValue>Anypoint Private Cloud Edition</controllingFieldValue>
+            <valueName>1.5.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <valueName>3.2.7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <valueName>3.2.6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <valueName>3.2.5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <valueName>3.2.4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <valueName>3.2.3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <valueName>3.2.2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <valueName>3.2.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <valueName>3.2.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <valueName>3.1.7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <valueName>3.1.6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <valueName>3.1.5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <valueName>3.1.4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <valueName>3.1.3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <valueName>3.1.2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <valueName>3.1.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <valueName>3.1.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <controllingFieldValue>Anypoint CLI</controllingFieldValue>
+            <valueName>3.0.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <valueName>2.3.3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <valueName>2.3.2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <valueName>2.3.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <valueName>2.3.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <valueName>2.2.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <controllingFieldValue>Anypoint CLI</controllingFieldValue>
+            <valueName>2.1.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Maven Plugin</controllingFieldValue>
+            <controllingFieldValue>Anypoint Private Cloud Edition</controllingFieldValue>
+            <valueName>2.0.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule SDK</controllingFieldValue>
+            <controllingFieldValue>Anypoint Runtime Fabric</controllingFieldValue>
+            <valueName>1.1.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule SDK</controllingFieldValue>
+            <controllingFieldValue>Anypoint Private Cloud Edition</controllingFieldValue>
+            <valueName>1.0.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DevKit</controllingFieldValue>
+            <valueName>3.9.4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DevKit</controllingFieldValue>
+            <valueName>3.9.3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DevKit</controllingFieldValue>
+            <valueName>3.9.2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DevKit</controllingFieldValue>
+            <valueName>3.9.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DevKit</controllingFieldValue>
+            <valueName>3.9.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DevKit</controllingFieldValue>
+            <controllingFieldValue>MMC</controllingFieldValue>
+            <valueName>3.8.2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DevKit</controllingFieldValue>
+            <controllingFieldValue>MMC</controllingFieldValue>
+            <valueName>3.8.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DevKit</controllingFieldValue>
+            <controllingFieldValue>MMC</controllingFieldValue>
+            <valueName>3.8.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DevKit</controllingFieldValue>
+            <controllingFieldValue>MMC</controllingFieldValue>
+            <valueName>3.7.2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DevKit</controllingFieldValue>
+            <controllingFieldValue>MMC</controllingFieldValue>
+            <valueName>3.7.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DevKit</controllingFieldValue>
+            <controllingFieldValue>MMC</controllingFieldValue>
+            <valueName>3.7.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DevKit</controllingFieldValue>
+            <controllingFieldValue>MMC</controllingFieldValue>
+            <valueName>3.6.2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DevKit</controllingFieldValue>
+            <controllingFieldValue>MMC</controllingFieldValue>
+            <valueName>3.6.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DevKit</controllingFieldValue>
+            <controllingFieldValue>MMC</controllingFieldValue>
+            <valueName>3.6.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DevKit</controllingFieldValue>
+            <controllingFieldValue>MMC</controllingFieldValue>
+            <valueName>3.5.3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DevKit</controllingFieldValue>
+            <controllingFieldValue>MMC</controllingFieldValue>
+            <valueName>3.5.2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DevKit</controllingFieldValue>
+            <controllingFieldValue>MMC</controllingFieldValue>
+            <valueName>3.5.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DevKit</controllingFieldValue>
+            <controllingFieldValue>MMC</controllingFieldValue>
+            <valueName>3.5.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>7.4.0 Early Access</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>7.3.4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>7.3.3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>7.3.2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>7.3.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>7.3.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>7.2.3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>7.2.2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>7.2.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>7.2.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>7.1.4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>7.1.3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>7.1.2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>7.1.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>7.1.0 Early Access</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>7.0.2 Early Access</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>7.0.1 Early Access</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>7.0.0 Early Access</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>6.6.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>6.6.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>6.5.2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>6.5.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>6.5.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>6.4.4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>6.4.3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>6.4.2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>6.4.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>6.4.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>6.3.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>6.2.5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>6.2.4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>6.2.3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>6.2.2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>6.2.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>6.2.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>6.1.2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>6.1.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>6.1.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>6.0.3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>6.0.2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>6.0.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>6.0.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>5.4.3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>5.4.2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>5.4.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>5.4.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>5.3.2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>5.3.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>5.3.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>5.2.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>5.2.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>5.1.2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>5.1.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>5.1.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>5.0.2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>5.0.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>5.0.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Private Cloud Edition</controllingFieldValue>
+            <controllingFieldValue>Anypoint CLI</controllingFieldValue>
+            <valueName>2.0.3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Private Cloud Edition</controllingFieldValue>
+            <controllingFieldValue>Anypoint CLI</controllingFieldValue>
+            <valueName>2.0.2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Private Cloud Edition</controllingFieldValue>
+            <valueName>2.0.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Runtime Fabric</controllingFieldValue>
+            <valueName>1.3.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Runtime Fabric</controllingFieldValue>
+            <valueName>1.2.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Runtime Fabric</controllingFieldValue>
+            <valueName>1.0.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MMC</controllingFieldValue>
+            <valueName>3.8.6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MMC</controllingFieldValue>
+            <valueName>3.8.5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MMC</controllingFieldValue>
+            <valueName>3.8.4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MMC</controllingFieldValue>
+            <valueName>3.8.3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MMC</controllingFieldValue>
+            <valueName>3.8.0-HF1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MMC</controllingFieldValue>
+            <valueName>3.7.3-HF1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MMC</controllingFieldValue>
+            <valueName>3.7.3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MMC</controllingFieldValue>
+            <valueName>3.5.4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MMC</controllingFieldValue>
+            <valueName>3.5.2-HF1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint CLI</controllingFieldValue>
+            <valueName>3.0.1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint CLI</controllingFieldValue>
+            <valueName>2.0.4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tcat Server</controllingFieldValue>
+            <valueName>7.1.0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tcat Server</controllingFieldValue>
+            <valueName>7.0.2</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

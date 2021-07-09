@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Operating_System__c</fullName>
+    <externalId>false</externalId>
+    <label>Operating System</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>AIX</fullName>
+                <default>false</default>
+                <label>AIX</label>
+            </value>
+            <value>
+                <fullName>CentOS</fullName>
+                <default>false</default>
+                <label>CentOS</label>
+            </value>
+            <value>
+                <fullName>CloudHub</fullName>
+                <default>false</default>
+                <label>CloudHub</label>
+            </value>
+            <value>
+                <fullName>Debian</fullName>
+                <default>false</default>
+                <label>Debian</label>
+            </value>
+            <value>
+                <fullName>HP-UX</fullName>
+                <default>false</default>
+                <label>HP-UX</label>
+            </value>
+            <value>
+                <fullName>Mac OS</fullName>
+                <default>false</default>
+                <label>Mac OS</label>
+            </value>
+            <value>
+                <fullName>Red Hat Linux</fullName>
+                <default>false</default>
+                <label>Red Hat Linux</label>
+            </value>
+            <value>
+                <fullName>Solaris</fullName>
+                <default>false</default>
+                <label>Solaris</label>
+            </value>
+            <value>
+                <fullName>Suse Linux</fullName>
+                <default>false</default>
+                <label>Suse Linux</label>
+            </value>
+            <value>
+                <fullName>Ubuntu Linux</fullName>
+                <default>false</default>
+                <label>Ubuntu Linux</label>
+            </value>
+            <value>
+                <fullName>Windows (Generic)</fullName>
+                <default>false</default>
+                <label>Windows (Generic)</label>
+            </value>
+            <value>
+                <fullName>Windows 2000</fullName>
+                <default>false</default>
+                <label>Windows 2000</label>
+            </value>
+            <value>
+                <fullName>Windows 7</fullName>
+                <default>false</default>
+                <label>Windows 7</label>
+            </value>
+            <value>
+                <fullName>Windows 8</fullName>
+                <default>false</default>
+                <label>Windows 8</label>
+            </value>
+            <value>
+                <fullName>Windows Server 2003</fullName>
+                <default>false</default>
+                <label>Windows Server 2003</label>
+            </value>
+            <value>
+                <fullName>Windows Server 2008</fullName>
+                <default>false</default>
+                <label>Windows Server 2008</label>
+            </value>
+            <value>
+                <fullName>Windows Server 2008 R2</fullName>
+                <default>false</default>
+                <label>Windows Server 2008 R2</label>
+            </value>
+            <value>
+                <fullName>Windows Server 2012</fullName>
+                <default>false</default>
+                <label>Windows Server 2012</label>
+            </value>
+            <value>
+                <fullName>Windows Server 2012 R2</fullName>
+                <default>false</default>
+                <label>Windows Server 2012 R2</label>
+            </value>
+            <value>
+                <fullName>Windows XP</fullName>
+                <default>false</default>
+                <label>Windows XP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

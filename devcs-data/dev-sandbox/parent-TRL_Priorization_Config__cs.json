@@ -1,0 +1,148 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef31"
+            },
+            "IsParent__c": true,
+            "Filterfield__c": "account.CSSA_Renewal_Quota__c",
+            "FilterType__c": "Boolean",
+            "Score_Weight__c": 20,
+            "Scoring_Factor__c": 2,
+            "Theather__c": "EMEA"
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef32"
+            },
+            "IsParent__c": true,
+            "Filterfield__c": "account.CSSA_Renewal_Quota__c",
+            "FilterType__c": "Boolean",
+            "Score_Weight__c": 20,
+            "Scoring_Factor__c": 2,
+            "Theather__c": "AMER"
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef33"
+            },
+            "IsParent__c": true,
+            "Filterfield__c": "account.Weighted_Open_ACV__c",
+            "FilterType__c": "Range",
+            "Score_Weight__c": 15,
+            "Scoring_Factor__c": 1.5,
+            "Theather__c": "EMEA"
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef34"
+            },
+            "IsParent__c": true,
+            "Filterfield__c": "case.CS_Tech_Priority__c",
+            "FilterType__c": "Range",
+            "Score_Weight__c": 5,
+            "Scoring_Factor__c": 0.4,
+            "Theather__c": "AMER"
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef35"
+            },
+            "IsParent__c": true,
+            "Filterfield__c": "case.CS_Tech_Priority__c",
+            "FilterType__c": "Range",
+            "Score_Weight__c": 5,
+            "Scoring_Factor__c": 0.4,
+            "Theather__c": "EMEA"
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef36"
+            },
+            "IsParent__c": true,
+            "Filterfield__c": "account.ARR__c",
+            "FilterType__c": "Range",
+            "Score_Weight__c": 25,
+            "Scoring_Factor__c": 1,
+            "Theather__c": "EMEA"
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef37"
+            },
+            "IsParent__c": true,
+            "Filterfield__c": "account.Weighted_Open_ACV__c",
+            "FilterType__c": "Range",
+            "Score_Weight__c": 15,
+            "Scoring_Factor__c": 1.5,
+            "Theather__c": "AMER"
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef38"
+            },
+            "IsParent__c": true,
+            "Filterfield__c": "case.TRL_Task_Is_Clear__c",
+            "FilterType__c": "Range",
+            "Score_Weight__c": 20,
+            "Scoring_Factor__c": 1.4,
+            "Theather__c": "EMEA"
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef39"
+            },
+            "IsParent__c": true,
+            "Filterfield__c": "account.Focus_Account_Level__c",
+            "FilterType__c": "Value",
+            "Score_Weight__c": 12,
+            "Scoring_Factor__c": 1.2,
+            "Theather__c": "EMEA"
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef40"
+            },
+            "IsParent__c": true,
+            "Filterfield__c": "account.Focus_Account_Level__c",
+            "FilterType__c": "Value",
+            "Score_Weight__c": 12,
+            "Scoring_Factor__c": 1.2,
+            "Theather__c": "AMER"
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef41"
+            },
+            "IsParent__c": true,
+            "Filterfield__c": "case.TRL_Task_Is_Clear__c",
+            "FilterType__c": "Range",
+            "Score_Weight__c": 20,
+            "Scoring_Factor__c": 1.4,
+            "Theather__c": "AMER"
+        },
+        {
+            "attributes": {
+                "type": "TRL_Priorization_Config__c",
+                "referenceId": "TRL_Priorization_Config__cRef42"
+            },
+            "IsParent__c": true,
+            "Filterfield__c": "account.ARR__c",
+            "FilterType__c": "Range",
+            "Score_Weight__c": 25,
+            "Scoring_Factor__c": 1,
+            "Theather__c": "AMER"
+        }       
+    ]
+}

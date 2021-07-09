@@ -1,0 +1,39 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef1"
+            },
+            "AccountId": "@AccountRef5",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "support case for sharing",
+            "Status": "New",
+            "Type": "Idea"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef2"
+            },
+            "AccountId": "@AccountRef5",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "It doesn't work",
+            "Description": "Something wrong",
+            "Status": "Withdrawn",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef3"
+            },
+            "AccountId": "@AccountRef5",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "How to add field",
+            "Description": "test8",
+            "Status": "Awaiting info from customer",
+            "Type": "Idea"
+        }
+    ]
+}

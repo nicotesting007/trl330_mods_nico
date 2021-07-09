@@ -1,0 +1,66 @@
+#!/bin/sh
+# Deployment script using DX CLI to push selected metadata files to any ORG Sanbox
+# Input parameter specify target org alias for DX testdeploy, testdeploy etc
+
+echo "--- START DEPLOYMENT FOR: testdeploy"
+
+# Push Fields the -m option will deploy all Case object
+#sfdx force:source:deploy -m CustomField:Case.Instance_URL__c -u testdeploy --wait 10
+# For single field update use direct file path -p
+sfdx force:source:deploy -p force-app/main/default/objects/Case/fields/CS_Reason__c.field-meta.xml -u testdeploy --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Case/fields/CS_Activity__c.field-meta.xml -u testdeploy --wait 10
+
+sfdx force:source:deploy -m CustomObject:TRL_Priorization_Config__c -u testdeploy --wait 10
+
+# sfdx force:source:retrieve -p force-app/main/default/objects/Case/fields/CS_Activity__c.field-meta.xml -u testdeploy --wait 10
+# sfdx force:source:retrieve -p force-app/main/default/objects/Case/fields/CS_Reason__c.field-meta.xml -u testdeploy --wait 10
+
+# Case Record Type
+sfdx force:source:deploy -p force-app/main/default/objects/Case/recordTypes/TRL.recordType-meta.xml -u testdeploy --wait 10
+# sfdx force:source:retrieve -p force-app/main/default/objects/Case/recordTypes/TRL.recordType-meta.xml -u testdeploy --wait 10
+
+# sfdx force:source:deploy -p force-app/main/default/objects/Time_tracking__c/fields/CS_Reason__c.field-meta.xml -u testdeploy --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Time_tracking__c/fields/CS_Activity__c.field-meta.xml -u testdeploy --wait 10
+
+# Push Layout change
+sfdx force:source:deploy -m "Layout:Case-TRL" -u testdeploy --wait 10
+
+# Push Classes
+sfdx force:source:deploy -m ApexClass:TRL_TimeTracking_ExtCtrl -u testdeploy --wait 10
+sfdx force:source:deploy -m ApexClass:TRL_TimeTracking_ExtCtrlTest -u testdeploy --wait 10
+sfdx force:source:deploy -m ApexClass:TRL_Action_Edit_CTRL -u testdeploy --wait 10
+sfdx force:source:deploy -m ApexClass:TRL_Action_Edit_CTRLTest -u testdeploy --wait 10
+
+# Push Templates
+sfdx force:source:deploy -m EmailTemplate:TRL/Assignment_rule -u testdeploy --wait 10
+sfdx force:source:deploy -m EmailTemplate:TRL/Notification_to_CSA_CSE -u testdeploy --wait 10
+sfdx force:source:deploy -m EmailTemplate:TRL/TRL_case_status_is_work_in_progress -u testdeploy --wait 10
+
+# Has error deploy fail:This Template Unique Name already exists or has been previously used.
+#sfdx force:source:deploy -m EmailTemplate:TRL/Global_Assignment_rule -u testdeploy --wait 10
+#
+
+# Validatyion rules
+sfdx force:source:deploy -p force-app/main/default/objects/Case/validationRules/TRL_AssignedTo_Person.validationRule-meta.xml -u testdeploy --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Case/validationRules/TRL_CS_Tech_Lead.validationRule-meta.xml -u testdeploy --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Case/validationRules/TRL_Requestor.validationRule-meta.xml -u testdeploy --wait 10
+
+## Proiritzation updates
+
+# sfdx force:source:retrieve -m ApexClass:TRL_Case_Priorization_Calculation -u csdev --wait 10
+# sfdx force:source:retrieve -m ApexClass:TRL_Case_Priorization_CalculationTest -u csdev --wait 10
+sfdx force:source:deploy -m ApexClass:TRL_Case_Priorization_Calculation -u testdeploy --wait 10
+
+sfdx force:source:deploy -m ApexTrigger:TRL_Case_Priorization_EventListener -u testdeploy --wait 10
+
+# Tab
+## sfdx force:source:retrieve -m CustomTab:TRL_Priorization_Config__c -u csdev --wait 10
+sfdx force:source:deploy -m CustomTab:TRL_Priorization_Config__c -u testdeploy --wait 10
+
+# App update
+sfdx force:source:deploy -p force-app/main/default/applications/TRL_cases.app-meta.xml -u testdeploy --wait 10
+
+# Permission set
+sfdx force:source:deploy -m PermissionSet:TRL_manager -u testdeploy --wait 10
+
+echo "--- END DEPLOYMENT FOR: testdeploy"

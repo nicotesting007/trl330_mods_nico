@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>All_Child_Entries</fullName>
+    <columns>NAME</columns>
+    <columns>Theather__c</columns>
+    <columns>Score_Weight__c</columns>
+    <columns>Scoring_Factor__c</columns>
+    <columns>ScoringString__c</columns>
+    <columns>TRL_Config_Field__c</columns>
+    <columns>TRL_Config_Region__c</columns>
+    <columns>FilterLow__c</columns>
+    <columns>FilterHigh__c</columns>
+    <columns>Filter_Score__c</columns>
+    <columns>FilterType__c</columns>
+    <columns>Parent_Filter__c</columns>
+    <columns>IsParent__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Child Entries</label>
+    <language>en_US</language>
+</ListView>

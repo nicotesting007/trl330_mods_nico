@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Log_Time</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Log Task</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>/apex/TRL_TimeLog_New?casenumber={!Case.CaseNumber}&caseid={!Case.Id}&account_name={!Account.Name}&retURL=/apex/TRLCase_detail_page?id={!Case.Case_Id_18_digit__c}&newid={!Time_tracking__c.Id}p&saveURL=/apex/TRLCase_detail_page?id={!Case.Case_Id_18_digit__c}&newid={!Time_tracking__c.Id}</url>
+</WebLink>

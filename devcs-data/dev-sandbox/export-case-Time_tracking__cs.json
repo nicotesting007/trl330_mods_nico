@@ -1,0 +1,84 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Time_tracking__c",
+                "referenceId": "Time_tracking__cRef1"
+            },
+            "Name": "ALC Workshop Prep",
+            "Case__c": "@CaseRef1",
+            "Description__c": "Prep work ALC",
+            "Time_spent__c": 1
+        },
+        {
+            "attributes": {
+                "type": "Time_tracking__c",
+                "referenceId": "Time_tracking__cRef2"
+            },
+            "Name": "Internal account cadence",
+            "Case__c": "@CaseRef1",
+            "Description__c": "Test cadence",
+            "Time_spent__c": 1
+        },
+        {
+            "attributes": {
+                "type": "Time_tracking__c",
+                "referenceId": "Time_tracking__cRef3"
+            },
+            "Name": "ADVISORY Cadance",
+            "Case__c": "@CaseRef1",
+            "Description__c": "Test task",
+            "Time_spent__c": 1
+        },
+        {
+            "attributes": {
+                "type": "Time_tracking__c",
+                "referenceId": "Time_tracking__cRef4"
+            },
+            "Name": "Performance tuning",
+            "Case__c": "@CaseRef2",
+            "Description__c": "Performance tuning workshop study group",
+            "Time_spent__c": 2
+        },
+        {
+            "attributes": {
+                "type": "Time_tracking__c",
+                "referenceId": "Time_tracking__cRef5"
+            },
+            "Name": "Test task",
+            "Case__c": "@CaseRef3",
+            "Description__c": "testing task",
+            "Time_spent__c": 1
+        },
+        {
+            "attributes": {
+                "type": "Time_tracking__c",
+                "referenceId": "Time_tracking__cRef6"
+            },
+            "Name": "Project cadence",
+            "Case__c": "@CaseRef3",
+            "Description__c": "CaMA workshop delivery",
+            "Time_spent__c": 1
+        },
+        {
+            "attributes": {
+                "type": "Time_tracking__c",
+                "referenceId": "Time_tracking__cRef7"
+            },
+            "Name": "C4E Workshop",
+            "Case__c": "@CaseRef5",
+            "Time_spent__c": 1,
+            "Description__c": "Run a workshop with customer C4E set up"
+        },
+        {
+            "attributes": {
+                "type": "Time_tracking__c",
+                "referenceId": "Time_tracking__cRef8"
+            },
+            "Name": "Test ALC Workshop",
+            "Case__c": "@CaseRef5",
+            "Description__c": "New task data entry",
+            "Time_spent__c": 1
+        }
+    ]
+}

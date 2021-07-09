@@ -1,0 +1,1156 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef1"
+            },
+            "AccountId": "@AccountRef5",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "support case for sharing",
+            "Status": "New",
+            "Type": "Idea"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef2"
+            },
+            "AccountId": "@AccountRef5",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "It doesn't work",
+            "Description": "Something wrong",
+            "Status": "Withdrawn",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef3"
+            },
+            "AccountId": "@AccountRef5",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "How to add field",
+            "Description": "test8",
+            "Status": "Awaiting info from customer",
+            "Type": "Idea"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef4"
+            },
+            "AccountId": "@AccountRef5",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Assignment rule",
+            "Description": "Test",
+            "Status": "Work in Progress",
+            "Type": "Support Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef5"
+            },
+            "AccountId": "@AccountRef5",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "test",
+            "Description": "test",
+            "Status": "New",
+            "Type": "Support Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef6"
+            },
+            "AccountId": "@AccountRef5",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "terst",
+            "Status": "New",
+            "Type": "Support Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef7"
+            },
+            "AccountId": "@AccountRef6",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Access to edit page by requestor",
+            "Description": "Test",
+            "Status": "Assigned",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef8"
+            },
+            "AccountId": "@AccountRef6",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Look at this",
+            "Description": "something wrong",
+            "Status": "Work in Progress",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef9"
+            },
+            "AccountId": "@AccountRef7",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Support case",
+            "Status": "Closed",
+            "Type": "Idea"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef10"
+            },
+            "AccountId": "@AccountRef7",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Test",
+            "Description": "Jsut Test",
+            "Status": "New",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef11"
+            },
+            "AccountId": "@AccountRef7",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Support NA",
+            "Description": "test",
+            "Status": "Assigned",
+            "Type": "Support Request",
+            "Level_of_Priority__c": "Medium"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef12"
+            },
+            "AccountId": "@AccountRef7",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Test3",
+            "Status": "New",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef13"
+            },
+            "AccountId": "@AccountRef7",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "How to add field",
+            "Description": "Sorry",
+            "Status": "Work in Progress",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef14"
+            },
+            "AccountId": "@AccountRef7",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Layout",
+            "Status": "Completed",
+            "Type": "Support Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef15"
+            },
+            "AccountId": "@AccountRef7",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Please run a CAMA for Dickenson PLC 2",
+            "Description": "My customer need a CAMA doing please",
+            "Status": "Assigned",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Medium"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef16"
+            },
+            "AccountId": "@AccountRef7",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Test Outgrow Survey",
+            "Description": "Do a CAMA",
+            "Status": "Assigned",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef17"
+            },
+            "AccountId": "@AccountRef7",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Please run a CAMA for Dickenson PLC",
+            "Description": "My customer need a CAMA doing please",
+            "Status": "Assigned",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Medium"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef18"
+            },
+            "AccountId": "@AccountRef7",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "rules",
+            "Description": "123",
+            "Status": "New",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef19"
+            },
+            "AccountId": "@AccountRef7",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "aaa",
+            "Description": "aaa",
+            "Status": "New",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Medium"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef20"
+            },
+            "AccountId": "@AccountRef7",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "test",
+            "Description": "test",
+            "Status": "Withdrawn",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef21"
+            },
+            "AccountId": "@AccountRef7",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "test",
+            "Description": "test",
+            "Status": "New",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef22"
+            },
+            "AccountId": "@AccountRef7",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Test Outgrow Survey",
+            "Description": "ttt",
+            "Status": "New",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef23"
+            },
+            "AccountId": "@AccountRef7",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "test",
+            "Description": "test",
+            "Status": "New",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef24"
+            },
+            "AccountId": "@AccountRef7",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "test",
+            "Description": "test",
+            "Status": "New",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef25"
+            },
+            "AccountId": "@AccountRef7",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "test",
+            "Description": "test",
+            "Status": "New",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef26"
+            },
+            "AccountId": "@AccountRef7",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "test",
+            "Description": "test",
+            "Status": "Assigned",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef27"
+            },
+            "AccountId": "@AccountRef7",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "DM Test Survey 27th April",
+            "Description": "Test survey please do.",
+            "Status": "New",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "High"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef28"
+            },
+            "AccountId": "@AccountRef7",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "test",
+            "Description": "test",
+            "Status": "Assigned",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef29"
+            },
+            "AccountId": "@AccountRef7",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "test",
+            "Description": "test",
+            "Status": "Withdrawn",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef30"
+            },
+            "AccountId": "@AccountRef7",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "test",
+            "Description": "test",
+            "Status": "Assigned",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef31"
+            },
+            "AccountId": "@AccountRef8",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "slack4",
+            "Description": "1",
+            "Status": "New",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef32"
+            },
+            "AccountId": "@AccountRef8",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Not a TRL case",
+            "Status": "New",
+            "Type": "Idea"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef33"
+            },
+            "AccountId": "@AccountRef8",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Status": "Work in Progress",
+            "Type": "Support Request",
+            "Level_of_Priority__c": "High"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef34"
+            },
+            "AccountId": "@AccountRef8",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Something needs to be done again",
+            "Description": "please do it",
+            "Status": "Work in Progress",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef35"
+            },
+            "AccountId": "@AccountRef8",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "slack test",
+            "Description": "slack",
+            "Status": "New",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef36"
+            },
+            "AccountId": "@AccountRef8",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "slack5",
+            "Description": "1",
+            "Status": "Assigned",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef37"
+            },
+            "AccountId": "@AccountRef8",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "slack2",
+            "Description": "test",
+            "Status": "New",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef38"
+            },
+            "AccountId": "@AccountRef8",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "emae",
+            "Description": "test",
+            "Status": "Assigned",
+            "Type": "Support Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef39"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "test",
+            "Description": "hello",
+            "Status": "Assigned",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Medium"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef40"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Hi David please do Cama for this account",
+            "Description": "test survey",
+            "Status": "Completed",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "High"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef41"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Notification test 2",
+            "Description": "test",
+            "Status": "New",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef42"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Test Notification",
+            "Description": "test",
+            "Status": "New",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef43"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Notification 3",
+            "Description": "Test",
+            "Status": "New",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef44"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "notification test 1",
+            "Description": "test",
+            "Status": "New",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef45"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Notification 4",
+            "Description": "Test",
+            "Status": "Completed",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef46"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Testing assignment rules",
+            "Description": "12434",
+            "Status": "New",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef47"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "qwertyuiop",
+            "Status": "New",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef48"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "It doesn't work",
+            "Description": "1",
+            "Status": "New",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef49"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "federal",
+            "Description": "1246",
+            "Status": "New",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef50"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "test assignment rule notification",
+            "Description": "2",
+            "Status": "New",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef51"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "asdfghjk",
+            "Description": "qtbhchj",
+            "Status": "New",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Medium"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef52"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Need some help with how to setup VPC",
+            "Description": "Need help with understanding the steps with VPC setup.",
+            "Status": "Completed",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef53"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "test assignment rule notification",
+            "Description": "test",
+            "Status": "Completed",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Medium"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef54"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "It doesn't work",
+            "Description": "e",
+            "Status": "New",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef55"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "It doesn't work",
+            "Description": "test",
+            "Status": "New",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef56"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "test queue",
+            "Description": "test queue",
+            "Status": "Completed",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef57"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Works fine",
+            "Description": "ilklghf",
+            "Status": "New",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef58"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Test a new closed status",
+            "Description": "test",
+            "Status": "Cant Accommodate",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Medium"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef59"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "test self assignment",
+            "Description": "test",
+            "Status": "New",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef60"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Testing the severity selection",
+            "Description": "test",
+            "Status": "Cant Accommodate",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef61"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "test",
+            "Description": "test",
+            "Status": "Assigned",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef62"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "History",
+            "Description": "Test",
+            "Status": "Assigned",
+            "Type": "Support Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef63"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "rule test",
+            "Description": "1",
+            "Status": "New",
+            "Type": "Support Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef64"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "testS",
+            "Description": "4",
+            "Status": "Assigned",
+            "Type": "Support Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef65"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "rule test2",
+            "Status": "New",
+            "Type": "Support Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef66"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "terst",
+            "Description": "test",
+            "Status": "New",
+            "Type": "Support Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef67"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Arch review",
+            "Description": "Requesting Arch Review",
+            "Status": "Completed",
+            "Type": "Support Request",
+            "Level_of_Priority__c": "Medium"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef68"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Status": "New",
+            "Level_of_Priority__c": "Medium"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef69"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Test Status",
+            "Description": "Test",
+            "Status": "Assigned",
+            "Type": "Support Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef70"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "slack3",
+            "Description": "1",
+            "Status": "New",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef71"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "test",
+            "Description": "test",
+            "Status": "Work in Progress",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef72"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Something important",
+            "Description": "Detail description of the case",
+            "Status": "Completed",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef73"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Something needs to be done now",
+            "Description": "NOt many details here",
+            "Status": "Assigned",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Medium"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef74"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "something",
+            "Description": "something",
+            "Status": "Assigned",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "High"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef75"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Setup",
+            "Description": "test",
+            "Status": "New",
+            "Type": "Support Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef76"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "test case",
+            "Description": "They want to have something done.",
+            "Status": "Assigned",
+            "Type": "Sales System Project",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef77"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Test OV",
+            "Description": "CSM test",
+            "Status": "Work in Progress",
+            "Type": "Support Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef78"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Test2",
+            "Status": "Completed",
+            "Type": "Support Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef79"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Test",
+            "Status": "Completed",
+            "Type": "Support Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef80"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "CSA",
+            "Status": "Work in Progress",
+            "Type": "Support Request",
+            "Level_of_Priority__c": "Medium"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef81"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "How to add field",
+            "Description": "Test",
+            "Status": "Assigned",
+            "Type": "Support Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef82"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "CSA test",
+            "Status": "Assigned",
+            "Type": "Support Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef83"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Meeting",
+            "Description": "Just for fun",
+            "Status": "Completed",
+            "Type": "Support Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef84"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Assignment rule",
+            "Description": "Testing",
+            "Status": "Assigned",
+            "Type": "Support Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef85"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "KPI Day Test",
+            "Description": "KPI Day Test",
+            "Status": "Assigned",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Medium"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef86"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "CaMA Test KN",
+            "Description": "CaMA Test KN",
+            "Status": "Assigned",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef87"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Error",
+            "Description": "something went wrong",
+            "Status": "New",
+            "Type": "Support Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef88"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Something needs to be done",
+            "Description": "ASAP",
+            "Status": "Work in Progress",
+            "Type": "Support Request",
+            "Level_of_Priority__c": "High"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef89"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "CaMA",
+            "Description": "CaMA",
+            "Status": "Assigned",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Medium"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef90"
+            },
+            "AccountId": "@AccountRef10",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Status": "Assigned",
+            "Type": "Support Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef91"
+            },
+            "AccountId": "@AccountRef10",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Test3",
+            "Description": "test",
+            "Status": "Assigned",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef92"
+            },
+            "AccountId": "@AccountRef10",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Test CL",
+            "Status": "Completed",
+            "Type": "Support Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef93"
+            },
+            "AccountId": "@AccountRef11",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "APAC North",
+            "Description": "test",
+            "Status": "New",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef94"
+            },
+            "AccountId": "@AccountRef11",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "APAC",
+            "Description": "1hrj",
+            "Status": "New",
+            "Type": "Tech Request"
+        }
+    ]
+}

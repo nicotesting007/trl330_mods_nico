@@ -1,0 +1,11 @@
+[
+    {
+        "sobject": "TRL_Priorization_Config__c",
+        "saveRefs": true,
+        "resolveRefs": true,
+        "files": [
+            "parent-TRL_Priorization_Config__cs.json",
+            "child-TRL_Priorization_Config__cs.json"
+        ]
+    }
+]

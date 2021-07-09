@@ -1,0 +1,51 @@
+#!/bin/sh
+
+##########################################################################################
+#
+#   Author: Igor Androsov 2020
+#
+##########################################################################################
+
+# --- Import sample data into new blank Scartch org
+ORG_ALIAS="$1"
+
+# Clean tempdata directory
+rm -R tempdata-out
+rm -R tempdata
+mkdir tempdata
+
+# Copy data files to temp/ this will also copy dir name adn files be in subdirectory tempdata/test-data
+cp -R test-data tempdata
+
+# Export New record Type ID for TRL
+#
+# sfdx force:data:tree:export --query \
+# "SELECT Id, DeveloperName \
+#      FROM RecordType WHERE DeveloperName = 'TRL'" \
+# --prefix export --outputdir tempdata --plan -u trl
+
+# Get the Record Type for TRL Case from new target org
+# This step not needed since  DX plugin used to replace record type ID, keeping this as doc
+# sfdx force:data:record:get --json -u trl -s RecordType -w "DeveloperName='TRL'" > rectype.json
+
+# Run a replace on Record Type IDs from new scratch org
+# Here using the open source dx plugin: sfdx-wry-plugin https://github.com/billryoung/sfdx-wry-plugin
+# to install plugin requires additional git submodule node dependnecies
+# clone the main repo locally then need make utils directory, install submodule adn link to sfdx
+#
+# mkdir utils
+# git submodule add https://github.com/billryoung/sfdx-wry-plugin.git utils/sfdx-wry-plugin
+# sfdx plugins:link utils/sfdx-wry-plugin
+# 
+sfdx wry:file:replace -u $ORG_ALIAS -i tempdata -o tempdata-out
+
+# Run import of data to ORG
+sfdx force:data:tree:import -u $ORG_ALIAS -p tempdata-out/test-data/export-account-Account-Case-Opportunity-plan.json
+
+# Run Import task for DEV Sandbox
+# sfdx force:data:tree:import --targetusername csdev --plan devcs-data/export-Account-Case-plan.json
+# sfdx force:data:tree:import --targetusername testdeploy --plan test-data/dev-sandbox/export-Account-Case-plan.json
+
+# After complete remove tem directory
+rm -R tempdata
+rm -R tempdata-out

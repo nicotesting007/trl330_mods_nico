@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CSSA_Renewal_Quota__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Location: will be used for reporting only – should not be on a page layout for any function – we just need to be able to report on this field
+Business justification: For compensation, we need a reliable way to track which accounts will be included in the CSSA renewal quota.
+
+
+Case #08239234</description>
+    <externalId>false</externalId>
+    <label>CSSA Renewal Quota</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

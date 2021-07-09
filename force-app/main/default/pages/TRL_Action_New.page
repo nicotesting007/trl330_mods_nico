@@ -1,0 +1,84 @@
+<apex:page controller="TRL_Action_New_CTRL" showHeader="true" tabStyle="TRL_cases__tab">
+    <style type="text/css" >
+        textarea {
+            width: 70%;
+            height: 300px
+        }
+
+        .subjectarea {
+            width: 70%;
+        }
+    </style>
+
+    <apex:pageMessages />
+
+    <apex:form >
+        <apex:pageBlock id="trlblock" title="CS Tech Request Details">
+
+            <!-- A.I. Comment: Use ActionStatus to prevent multiple save actions and show progress loading -->
+            <apex:pageBlockSection columns="1">
+                <apex:pageBlockSectionItem >
+                    <apex:actionStatus id="mySaveStatus0">           
+                        <apex:facet name="stop">
+                            <apex:outputPanel layout="block" style="text-align: center">
+                                <apex:commandButton id="btnsave0" action="{! save }" value="Save" rerender="trlblock" status="mySaveStatus0" />
+                                <apex:commandButton id="btnsavenew" value="Save and New" onClick="saveNewOnClick(this);"  />
+                                <!-- A.I. Comment: STOP duplicated button clicks on SAVE NEW and PREVENT Balnk page afterwar redirect of VFP
+                                <apex:commandButton id="btnsavenew0" action="{!saveAndNew}" value="Save and New" rerender="trlblock" status="mySaveStatus0" />
+                                 Skip Form Validation only for Cancel button -->
+                                <apex:commandButton id="btncancel0" action="{!cancel}" value="Cancel" immediate="true" rerender="dummy" status="mySaveStatus0"/>
+
+                            </apex:outputPanel>
+                        </apex:facet>
+                        <apex:facet name="start">
+                            <apex:outputPanel layout="block" style="text-align: center">
+                                <apex:image value="/img/loading32.gif" style="height: 15px;"/>
+                                <apex:commandButton value="Processing..." status="mySaveStatus0" disabled="true"/>
+                            </apex:outputPanel>
+                        </apex:facet>
+                    </apex:actionStatus>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>    
+        
+            <apex:pageBlockSection columns="2">
+                <apex:inputField value="{! newCase.AccountID }" required="true"/>
+                <apex:inputField value="{! newCase.Request_for_Assistance_by__c }"/>
+                <apex:inputField value="{! newCase.Timeframe__c }" required="true"/>
+                <apex:inputField value="{! newCase.Don_t_escalate_until__c }"/>                
+                <apex:inputField value="{! newCase.Level_of_Priority__c }"/>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection title="Select Activity" columns="1">
+                <apex:inputField value="{! newCase.TRL_Type__c }" required="true" />
+                <apex:inputField value="{! newCase.CS_Reason__c }" required="true" />
+                <apex:inputField value="{! newCase.CS_Activity__c }" required="true" />
+                <!--
+                <apex:inputField value="{! newCase.Reason__c }" required="true"/>
+                -->
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection title="Subject" columns="1" >
+                <apex:inputField value="{! newCase.Subject }" label="Subject" styleClass="subjectarea" required="true"/>
+                <apex:inputField value="{! newCase.Description }" label="Description" required="true"/>
+            </apex:pageBlockSection>
+
+            <!--
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{! save }" value="Save" />
+                <apex:commandButton action="{!saveAndNew}" value="Save and New"/>
+                <apex:commandButton action="{!cancel}" value="Cancel" immediate="true"/>
+            </apex:pageBlockButtons>
+        -->
+        
+        </apex:pageBlock>
+        <apex:actionFunction name="doSaveAndNew" action="{!saveAndNew}" />
+    </apex:form>
+
+    <script language="Javascript">
+        function saveNewOnClick (objSubmitBtn) {
+          objSubmitBtn.disabled = true;
+          objSubmitBtn.value = 'Saving...';
+          doSaveAndNew();
+        }
+    </script>    
+</apex:page>

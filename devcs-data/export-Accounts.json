@@ -1,0 +1,124 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef1"
+            },
+            "Name": "TestAccount2",
+            "Region__c": "NE",
+            "Territory__c": "EMEA",
+            "BillingCountry": "France"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef2"
+            },
+            "Name": "AcoountApex",
+            "Region__c": "NE",
+            "Territory__c": "EMEA",
+            "BillingCountry": "France"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef3"
+            },
+            "Name": "TestAccount1",
+            "Region__c": "North",
+            "Territory__c": "AMER",
+            "BillingCountry": "US"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef4"
+            },
+            "Name": "TestAccount1",
+            "Region__c": "North",
+            "Territory__c": "AMER",
+            "BillingCountry": "US"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef5"
+            },
+            "Name": "Burlington Textiles Corp of America",
+            "Region__c": "East",
+            "Territory__c": "AMER",
+            "BillingCountry": "USA"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef6"
+            },
+            "Name": "Pyramid Construction Inc.",
+            "Region__c": "West",
+            "Territory__c": "AMER",
+            "BillingCountry": "France"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef7"
+            },
+            "Name": "Dickenson plc",
+            "Region__c": "Federal",
+            "Territory__c": "AMER",
+            "BillingCountry": "USA"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef8"
+            },
+            "Name": "sForce",
+            "Region__c": "UK",
+            "Territory__c": "EMEA",
+            "BillingCountry": "US"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef9"
+            },
+            "Name": "AdvancedCommunities",
+            "Region__c": "South",
+            "Territory__c": "AMER",
+            "BillingCountry": "USA"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef10"
+            },
+            "Name": "Pyramid Insurance",
+            "Region__c": "East",
+            "Territory__c": "AMER",
+            "BillingCountry": "France"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef11"
+            },
+            "Name": "Tom plc",
+            "Region__c": "ANZ North",
+            "Territory__c": "APAC",
+            "BillingCountry": "USA"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef12"
+            },
+            "Name": "sPower",
+            "Region__c": "NE",
+            "Territory__c": "EMEA",
+            "BillingCountry": "US"
+        }
+    ]
+}

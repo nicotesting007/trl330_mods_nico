@@ -1,0 +1,17 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; background-color: rgb(255, 255, 255);"><font face="Arial, Helvetica, sans-serif"><span style="font-size: 11.36px;">The following CS Tech Request&nbsp;has been assigned to you.&nbsp;</span></font></span><br style="font-family: Arial, Helvetica, sans-serif; font-size: 11.36px;"><br style="font-family: Arial, Helvetica, sans-serif; font-size: 11.36px;"><div style=""><font face="Arial, Helvetica, sans-serif"><span style="font-size: 12px;">Company: {!Case.Account}&nbsp;</span></font></div><div style=""><font face="Arial, Helvetica, sans-serif"><span style="font-size: 12px;">Theatre: {!Case.Account_Region__c}&nbsp;</span></font></div><div style=""><font face="Arial, Helvetica, sans-serif"><span style="font-size: 12px;">Prioritization Score: {!ROUND(Case.TRL_Calc_Prio_Score__c,2)}</span></font></div><div style=""><font face="Arial, Helvetica, sans-serif"><span style="font-size: 12px;"><br></span></font></div>
+<span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);">Subject: {!Case.Subject}&nbsp;</span>
+<br style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">
+<span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);">Description: {!Case.Description}&nbsp;</span>
+<br style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">
+<span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);">Reason: {!Case.CS_Reason__c}&nbsp;</span>
+<br style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">
+<span style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);">Activity: {!Case.CS_Activity__c}&nbsp;</span>
+<br style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">
+<span style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; background-color: rgb(255, 255, 255);">
+<font face="Arial, Helvetica, sans-serif"><span style="font-size: 12px;">Timeframe: {!Case.Timeframe__c}</span></font>
+</span><div style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);">Requested By: {!Case.CreatedBy}</span><font face="Arial, Helvetica, sans-serif"><span style="font-size: 12px;"><br></span></font><div style="font-family: arial; font-size: 12pt; color: rgb(0, 0, 0);"><div style="font-family: arial; font-size: 12pt;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 11.36px; background-color: rgb(255, 255, 255);"><br></span></div><div style="font-family: arial; font-size: 12pt;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 11.36px; background-color: rgb(255, 255, 255);">Click the following URL to go directly to the <a href="{!Case.Instance_URL__c}apex/TRLCase_detail_page?id={!Case.Id}">case</a></span></div></div></div>]]></td>
+</tr>
+</table>

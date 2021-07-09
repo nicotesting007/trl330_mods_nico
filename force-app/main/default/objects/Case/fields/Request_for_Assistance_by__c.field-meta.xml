@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Request_for_Assistance_by__c</fullName>
+    <externalId>false</externalId>
+    <label>Requested by</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CSM</fullName>
+                <default>false</default>
+                <label>CSM</label>
+            </value>
+            <value>
+                <fullName>CSSA</fullName>
+                <default>false</default>
+                <label>CSSA</label>
+            </value>
+            <value>
+                <fullName>CSD</fullName>
+                <default>false</default>
+                <label>CSD</label>
+            </value>
+            <value>
+                <fullName>CS RVP</fullName>
+                <default>false</default>
+                <label>CS RVP</label>
+            </value>
+            <value>
+                <fullName>Customer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Customer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

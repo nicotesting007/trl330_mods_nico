@@ -1,0 +1,34 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Time_tracking__c",
+                "referenceId": "Time_tracking__cRef2"
+            },
+            "Name": "started analysing",
+            "Case__c": "@CaseRef1",
+            "Description__c": "Analysed little bit.",
+            "Time_spent__c": 4
+        },
+        {
+            "attributes": {
+                "type": "Time_tracking__c",
+                "referenceId": "Time_tracking__cRef4"
+            },
+            "Name": "T-0028",
+            "Case__c": "@CaseRef2",
+            "Description__c": "lt",
+            "Time_spent__c": 2.5
+        },
+        {
+            "attributes": {
+                "type": "Time_tracking__c",
+                "referenceId": "Time_tracking__cRef5"
+            },
+            "Name": "T-0029",
+            "Case__c": "@CaseRef3",
+            "Description__c": "yes",
+            "Time_spent__c": 1
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Team__c</fullName>
+    <externalId>false</externalId>
+    <label>Team</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sales Operations</fullName>
+                <default>false</default>
+                <label>Sales Operations</label>
+            </value>
+            <value>
+                <fullName>Marketing Operations</fullName>
+                <default>false</default>
+                <label>Marketing Operations</label>
+            </value>
+            <value>
+                <fullName>Executive</fullName>
+                <default>false</default>
+                <label>Executive</label>
+            </value>
+            <value>
+                <fullName>Product Management</fullName>
+                <default>false</default>
+                <label>Product Management</label>
+            </value>
+            <value>
+                <fullName>Industry Marketing</fullName>
+                <default>false</default>
+                <label>Industry Marketing</label>
+            </value>
+            <value>
+                <fullName>Sales Leadership</fullName>
+                <default>false</default>
+                <label>Sales Leadership</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>account.ARR__c</fullName>
+        <default>false</default>
+        <label>AOV</label>
+    </customValue>
+    <customValue>
+        <fullName>case.TRL_Task_Is_Clear__c</fullName>
+        <default>false</default>
+        <label>Business Justification Provided</label>
+    </customValue>
+    <customValue>
+        <fullName>account.Focus_Account_Level__c</fullName>
+        <default>false</default>
+        <label>Focus Account</label>
+    </customValue>
+    <customValue>
+        <fullName>case.CS_Tech_Priority__c</fullName>
+        <default>false</default>
+        <label>CS Priority</label>
+    </customValue>
+    <customValue>
+        <fullName>account.Weighted_Open_ACV__c</fullName>
+        <default>false</default>
+        <label>Open ACV</label>
+    </customValue>
+    <customValue>
+        <fullName>account.CSSA_Renewal_Quota__c</fullName>
+        <default>false</default>
+        <label>Renewal Base</label>
+    </customValue>
+    <masterLabel>TRL_Prio_Fields</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

@@ -1,0 +1,39 @@
+#!/bin/sh
+# Deployment script using DX CLI to push selected metadata files to any ORG Sanbox
+# Input parameter specify target org alias for DX testdeploy, csdev etc
+
+echo "--- START DEPLOYMENT FOR: csdev"
+
+# Push Fields the -m option will deploy all Case object
+#sfdx force:source:deploy -m CustomField:Case.Instance_URL__c -u csdev --wait 10
+# For single field update use direct file path -p
+sfdx force:source:deploy -p force-app/main/default/objects/Case/fields/Instance_URL__c.field-meta.xml -u csdev --wait 10
+
+# Push Templates
+sfdx force:source:deploy -m EmailTemplate:TRL/Assignment_rule -u csdev --wait 10
+sfdx force:source:deploy -m EmailTemplate:TRL/Notification_to_CSA_CSE -u csdev --wait 10
+
+# Has error
+# sfdx force:source:deploy -m EmailTemplate:TRL/Global_Assignment_rule -u csdev --wait 10
+#
+
+sfdx force:source:deploy -m EmailTemplate:TRL/TRL_New_comment -u csdev --wait 10
+sfdx force:source:deploy -m EmailTemplate:TRL/TRL_case_status_is_work_in_progress -u csdev --wait 10
+sfdx force:source:deploy -m EmailTemplate:TRL/Survey_to_CSM -u csdev --wait 10
+
+# Push Classes
+sfdx force:source:deploy -m ApexClass:TRLCase_detail_page_CTRL -u csdev --wait 10
+sfdx force:source:deploy -m ApexClass:TRL_Action_Edit_CTRL -u csdev --wait 10
+sfdx force:source:deploy -m ApexClass:TRL_Cases_only -u csdev --wait 10
+sfdx force:source:deploy -m ApexClass:TRL_TimeTracking_ExtCtrl -u csdev --wait 10
+sfdx force:source:deploy -m ApexClass:TRL_TimeTracking_ExtCtrlTest -u csdev --wait 10
+sfdx force:source:deploy -m ApexClass:TRL_WithdrawnCommentCTRL -u csdev --wait 10
+
+# Push Pages
+sfdx force:source:deploy -m ApexPage:TRLCases -u csdev --wait 10
+sfdx force:source:deploy -m ApexPage:TRL_TimeLog_New -u csdev --wait 10
+sfdx force:source:deploy -m ApexPage:TRLCase_detail_page -u csdev --wait 10
+sfdx force:source:deploy -m ApexPage:TRL_Action_New -u csdev --wait 10
+sfdx force:source:deploy -m ApexPage:TRL_WithdrawnComment -u csdev --wait 10
+
+echo "--- END DEPLOYMENT FOR: csdev"

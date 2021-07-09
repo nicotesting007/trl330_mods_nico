@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>partner-team@mulesoft.com</email>
+    <name>Channel Partner Team</name>
+    <queueMembers>
+        <roles>
+            <role>APAC_Partner_Manager</role>
+            <role>EMEA_Partner_Manager</role>
+            <role>LATAM_Partner_Manager</role>
+            <role>NA_Partner_Manager</role>
+        </roles>
+        <users>
+            <user>test-kxnw5nbtexhf@example.com</user>
+            <!--
+            <user>dan.ahmadi@mulesoft.com</user>
+            -->
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

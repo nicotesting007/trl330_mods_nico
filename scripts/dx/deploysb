@@ -1,0 +1,29 @@
+# --- TEST DEPLOY Metadata to Sandbox OR PROD ---
+# --- This poprcess expected to work for Sandbox & Production ---
+
+# Clean metadata directory
+rm -R metadata
+mkdir metadata
+
+# Convert DX source to metadata
+sfdx force:source:convert -r force-app -d metadata
+
+# After convert clean metadata remove items from Sandbox deployment
+rm metadata/applications/Account.app
+rm metadata/applications/Case.app
+rm metadata/applications/TRL_LEX.app
+rm metadata/applications/Time_tracking.app
+rm -R metadata/email/SupportEmailTemplates
+
+rm metadata/standardValueSets/CaseStatus.standardValueSet
+
+# VALIDATE These files cause error removing temporary
+# metadata/assignmentRules/Case.assignmentRules           Case.Support                In field: template - no EmailTemplate named TRL/Global_Assignment_rule found
+# metadata/email/TRL/Global_Assignment_rule.email         TRL/Global_Assignment_rule  This Template Unique Name already exists or has been previously used.  Please choose a different name.
+#
+rm metadata/assignmentRules/Case.assignmentRules
+rm metadata/email/TRL/Global_Assignment_rule.email
+
+
+# TEST Deploy metadata to Target Sandbox or and run local tests
+sfdx force:mdapi:deploy -d metadata -u csdev -l RunLocalTests --wait 10

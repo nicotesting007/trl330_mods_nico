@@ -1,0 +1,14 @@
+{
+    "Username": "ramesh.rangaiah@mulesoft.com",
+    "LastName": "QA",
+    "FirstName": "USER",
+    "Email": "iandrosov@mulesoft.com",
+    "Alias": "tester1",
+    "TimeZoneSidKey": "America/Denver",
+    "LocaleSidKey": "en_US",
+    "EmailEncodingKey": "UTF-8",
+    "LanguageLocaleKey": "en_US",
+    "profileName": "Standard User",
+    "permsets": [],
+    "generatePassword": true
+}

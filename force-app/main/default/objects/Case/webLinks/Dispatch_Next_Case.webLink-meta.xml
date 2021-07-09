@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dispatch_Next_Case</fullName>
+    <availability>online</availability>
+    <description>Used by Support Engineers in Dispatch duty.</description>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Dispatch Next Case</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+    <url>{!REQUIRESCRIPT(&apos;/soap/ajax/40.0/connection.js&apos;)}
+{!REQUIRESCRIPT(&apos;/soap/ajax/40.0/apex.js&apos;)}
+
+if( confirm(&quot;Are you ready to dispatch the next Support case?&quot;) == true ) {
+  var cases =  sforce.connection.query(&quot;SELECT Id,CaseNumber,Status from Case WHERE Owner.Id=&apos;00G30000000xfS9EAI&apos; AND Status IN (&apos;New&apos;,&apos;Pending Review&apos;) AND Dispatch_Completed__c=False ORDER BY QPS__c DESC LIMIT 1&quot;);
+  var caseRecords = cases.getArray(&quot;records&quot;);
+  var nextCaseToDispatch = cases.getArray(&quot;records&quot;);
+
+  if( caseRecords[0] != null) {
+    var nextCaseToDispatch = new sforce.SObject(&quot;Case&quot;);
+    nextCaseToDispatch.Id = caseRecords[0].Id
+    nextCaseToDispatch.Status = &quot;Work in Progress&quot;;
+    var result = sforce.connection.update([nextCaseToDispatch]);
+
+    if( result[0].success == &apos;false&apos; ) {
+      alert(&quot;Could not update Case: &quot; + caseRecords[0].CaseNumber + 
+         &quot;. Please review the error message below and edit the case accordingly\n\n&quot; +
+         result[0].errors.statusCode + &quot;\n&quot; + result[0].errors.message + &quot;\n&quot;);
+    } else {
+      window.open(nextCaseToDispatch.Id);
+      if ( caseRecords[0].Status == &quot;New&quot; ) {
+        alert(&quot;Case Status is now \&quot;Work in Progress\&quot;.\nPlease, add an Initial Response as soon as possible!&quot;);
+      }
+    }
+  } else {
+    alert(&quot;Currently, there are no cases to be dispatched.&quot;);
+  }
+} else {
+  alert(&quot;Please, come back soon to dispatch the next case!&quot;);
+}</url>
+</WebLink>

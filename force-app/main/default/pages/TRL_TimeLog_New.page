@@ -1,0 +1,84 @@
+<apex:page controller="TRL_TimeTracking_ExtCtrl" showHeader="true" tabStyle="TRL_cases__tab" lightningStylesheets="true" >
+    <style type="text/css" >
+        textarea {
+            width: 70%;
+        }
+    </style>
+
+    
+    <apex:form >
+        
+        <apex:pageBlock id="trlblock" title="New Task Tracking">
+            <apex:pageMessages />
+
+            <apex:pageBlockSection title="Related Request Information" columns="2" collapsible="false">
+                <!-- READ ONLY Dsiplay fields -->
+                <apex:outputText label="Case" value="{!$CurrentPage.parameters.casenumber}" />
+                <apex:outputText label="Account" value="{!$CurrentPage.parameters.account_name}" />
+                <!-- EDIT Fields -->
+                <!-- AI COMMENT: REMOVE For 2.1.2 
+                -->
+                <apex:inputField value="{! newTimeTrack.CS_Reason__c }" label="Reason"/>
+                <apex:inputField value="{! newTimeTrack.Delivery_Resource__c }"/>
+                <!-- 
+                <apex:pageBlockSectionItem helpText="{!$ObjectType.Time_tracking__c.fields.Delivery_Resource__c.InlineHelpText}">
+                    <apex:outputLabel value="Delivery Resource"/>
+                    <apex:inputField value="{! newTimeTrack.Delivery_Resource__c }"/>
+                </apex:pageBlockSectionItem>
+            -->
+                <apex:inputField value="{! newTimeTrack.CS_Activity__c }" label="Activity Type"/>
+                <apex:inputField value="{! newTimeTrack.Activity_Date__c }" label="Task Date"/>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection title="Task Information" columns="1" collapsible="false">
+                <apex:inputField value="{! newTimeTrack.Name }" label="Task" id="page-field-focus" required="true" />   
+                <apex:inputField value="{! newTimeTrack.Time_spent__c }"/>
+                <apex:inputField value="{! newTimeTrack.Description__c }"/>   
+            </apex:pageBlockSection>
+            
+            <!-- A.I. Comment: Use ActionStatus to prevent multiple save actions and show progress loading -->
+            <apex:pageBlockSection columns="1">
+                <apex:pageBlockSectionItem >
+                    <apex:actionStatus id="mySaveStatus1">           
+                        <apex:facet name="stop">
+                            <apex:outputPanel layout="block" style="text-align: center">
+                                <apex:commandButton id="btntimelog" action="{!save}" value="Save" rerender="trlblock" status="mySaveStatus1" />
+                                <apex:commandButton id="btnnewtimelog" action="{!saveNew}" value="Save & New" rerender="trlblock" status="mySaveStatus1" />
+                                <!-- Skip Form Validation only for Cancel button -->
+                                <apex:commandButton id="btncancel" action="{!cancelAction}" value="Cancel" immediate="true" rerender="dummy" status="mySaveStatus1" />
+                            </apex:outputPanel>
+                        </apex:facet>
+                        <apex:facet name="start">
+                            <apex:outputPanel layout="block" style="text-align: center">
+                                <apex:image value="/img/loading32.gif" style="height: 15px;"/>
+                                <apex:commandButton value="Processing..." status="mySaveStatus1" disabled="true"/>
+                            </apex:outputPanel>
+                        </apex:facet>
+                    </apex:actionStatus>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>    
+            
+        </apex:pageBlock>
+    
+    </apex:form>
+    <!-- NEED This to set focus  manuall 
+    <script type="text/javascript">
+        function addLoadEvent(func) { 
+            var oldonload = window.onload;
+            if (typeof window.onload != 'function') {
+                window.onload = func;
+            } else {
+                window.onload = function() {
+                    oldonload();
+                    func();
+                }
+            }
+        }
+        
+        function setFocus() {
+            document.getElementById('page-field-focus').focus();
+        }
+        addLoadEvent(setFocus);
+    </script>
+    -->
+</apex:page>

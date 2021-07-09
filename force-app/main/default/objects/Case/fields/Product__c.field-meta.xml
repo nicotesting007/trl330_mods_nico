@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product__c</fullName>
+    <externalId>false</externalId>
+    <label>Product-OLD</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Access Management</fullName>
+                <default>false</default>
+                <label>Access Management</label>
+            </value>
+            <value>
+                <fullName>Analytics</fullName>
+                <default>false</default>
+                <label>Analytics</label>
+            </value>
+            <value>
+                <fullName>Anypoint MQ</fullName>
+                <default>false</default>
+                <label>Anypoint MQ</label>
+            </value>
+            <value>
+                <fullName>API Gateway</fullName>
+                <default>false</default>
+                <label>API Gateway</label>
+            </value>
+            <value>
+                <fullName>APIkit</fullName>
+                <default>false</default>
+                <label>APIkit</label>
+            </value>
+            <value>
+                <fullName>API Manager</fullName>
+                <default>false</default>
+                <label>API Manager</label>
+            </value>
+            <value>
+                <fullName>CloudHub</fullName>
+                <default>false</default>
+                <label>CloudHub</label>
+            </value>
+            <value>
+                <fullName>Design Center</fullName>
+                <default>false</default>
+                <label>Design Center</label>
+            </value>
+            <value>
+                <fullName>Expressway Service Gateway</fullName>
+                <default>false</default>
+                <label>Expressway Service Gateway</label>
+            </value>
+            <value>
+                <fullName>MuleSoft Tokenization Service</fullName>
+                <default>false</default>
+                <label>MuleSoft Tokenization Service</label>
+            </value>
+            <value>
+                <fullName>Anypoint CLI</fullName>
+                <default>false</default>
+                <label>Anypoint CLI</label>
+            </value>
+            <value>
+                <fullName>Anypoint Private Cloud Edition</fullName>
+                <default>false</default>
+                <label>Anypoint Private Cloud Edition</label>
+            </value>
+            <value>
+                <fullName>Anypoint Platform</fullName>
+                <default>false</default>
+                <label>Anypoint Platform</label>
+            </value>
+            <value>
+                <fullName>Connectors</fullName>
+                <default>false</default>
+                <label>Connectors</label>
+            </value>
+            <value>
+                <fullName>Data Gateway</fullName>
+                <default>false</default>
+                <label>Data Gateway</label>
+            </value>
+            <value>
+                <fullName>DataMapper</fullName>
+                <default>false</default>
+                <label>DataMapper</label>
+            </value>
+            <value>
+                <fullName>DataWeave</fullName>
+                <default>false</default>
+                <label>DataWeave</label>
+            </value>
+            <value>
+                <fullName>DevKit</fullName>
+                <default>false</default>
+                <label>DevKit</label>
+            </value>
+            <value>
+                <fullName>Exchange</fullName>
+                <default>false</default>
+                <label>Exchange</label>
+            </value>
+            <value>
+                <fullName>Mule Agent</fullName>
+                <default>false</default>
+                <label>Mule Agent</label>
+            </value>
+            <value>
+                <fullName>Mule Management Console (MMC)</fullName>
+                <default>false</default>
+                <label>Mule Management Console (MMC)</label>
+            </value>
+            <value>
+                <fullName>Mule Maven Plugin</fullName>
+                <default>false</default>
+                <label>Mule Maven Plugin</label>
+            </value>
+            <value>
+                <fullName>Mule Runtime</fullName>
+                <default>false</default>
+                <label>Mule Runtime</label>
+            </value>
+            <value>
+                <fullName>MUnit</fullName>
+                <default>false</default>
+                <label>MUnit</label>
+            </value>
+            <value>
+                <fullName>Partner Manager</fullName>
+                <default>false</default>
+                <label>Partner Manager</label>
+            </value>
+            <value>
+                <fullName>Runtime Manager</fullName>
+                <default>false</default>
+                <label>Runtime Manager</label>
+            </value>
+            <value>
+                <fullName>Anypoint Enterprise Security Module</fullName>
+                <default>false</default>
+                <label>Anypoint Enterprise Security Module</label>
+            </value>
+            <value>
+                <fullName>Anypoint Studio</fullName>
+                <default>false</default>
+                <label>Anypoint Studio</label>
+            </value>
+            <value>
+                <fullName>Support Center</fullName>
+                <default>false</default>
+                <label>Support Center</label>
+            </value>
+            <value>
+                <fullName>Tcat Server</fullName>
+                <default>false</default>
+                <label>Tcat Server</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

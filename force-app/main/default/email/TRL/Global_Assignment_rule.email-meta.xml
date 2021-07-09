@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Global_Assignment_rule</name>
+    <style>none</style>
+    <subject>ATTENTION: CS Tech Request {!Case.CaseNumber}:&quot;{!Case.Subject}&quot; was assigned to global team</subject>
+    <textOnly>The following CS Tech Request has been assigned to the global team.
+
+Company: {!Case.Account} 
+Theatre: {!Case.Account_Region__c} 
+Prioritization Score: {!Case.TRL_Calc_Prio_Score__c} 
+
+Subject: {!Case.Subject} 
+Description: {!Case.Description} 
+Reason: {!Case.CS_Reason__c} 
+Activity: {!Case.CS_Activity__c} 
+Timeframe: {!Case.Timeframe__c}
+Requested By: {!Case.CreatedBy}
+
+Click the following url to go directly to the case - {!Case.Instance_URL__c}apex/TRLCase_detail_page?id={!Case.Id}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

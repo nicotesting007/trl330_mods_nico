@@ -1,0 +1,26 @@
+#!/bin/sh
+
+##########################################################################################
+#
+#   Author: Igor Androsov 2020
+#
+##########################################################################################
+
+# Clean metadata directory
+rm -R metadata
+mkdir metadata
+
+# Convert DX source to metadata
+sfdx force:source:convert -r force-app -d metadata
+# ----
+
+# Convert metadata to DX source
+# sfdx force:mdapi:convert -r metadata -d force-app
+
+#sfdx force:mdapi:convert -r force-app -d dx
+
+# Pull report and folder on mdapi as metadata
+# sfdx force:source:retrieve --manifest assets/report.xml --targetusername trl --wait 10
+
+# Pull report adn folder need to add folder and report separate entry
+# sfdx force:source:retrieve -m "Report:TRL_project, Report:TRL_project/TRL_APAC_non_completed_cases" -u trl --wait 10

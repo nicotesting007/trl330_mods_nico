@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TRL_Requestor</fullName>
+    <active>true</active>
+    <description>Requestors not allow to change TRL cases after request has been submitted</description>
+    <errorConditionFormula>AND(TEXT($User.TRLcases__c) == &apos;Requestor&apos;,
+$RecordType.Name==&quot;TRL&quot;,
+ OR(
+ ISCHANGED( AccountId ),
+ (ISCHANGED(Status) &amp;&amp;
+Text( Status ) != &apos;Withdrawn&apos; &amp;&amp;
+PRIORVALUE(Status)!=&apos;New&apos;),
+ ISCHANGED(Timeframe__c),
+ ISCHANGED(CSA_CSE__c),
+ ISCHANGED(Subject),
+ ISCHANGED(Description),
+ ISCHANGED( Level_of_Priority__c ),
+ ISCHANGED( CS_Reason__c ),
+ ISCHANGED( Request_for_Assistance_by__c )
+ )
+)</errorConditionFormula>
+    <errorMessage>Requestors not allow to change TRL cases after request has been submitted</errorMessage>
+</ValidationRule>

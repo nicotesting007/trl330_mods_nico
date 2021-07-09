@@ -1,0 +1,24 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef1",
+                "BillingCountry": "Japan"
+            },
+            "Name": "ABC",
+            "Region__c": "Japan",
+            "Territory__c": "APAC"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef2"
+            },
+            "Name": "B26",
+            "Region__c": "East",
+            "Territory__c": "AMER",
+            "BillingCountry": "USA"
+        }
+    ]
+}

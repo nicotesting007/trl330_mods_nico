@@ -1,0 +1,207 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef1"
+            },
+            "AccountId": "@AccountRef1",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "INTERNAL JJ Account Activity",
+            "Status": "New",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef2"
+            },
+            "AccountId": "@AccountRef2",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "BOA Account Activity",
+            "Status": "New",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef20"
+            },
+            "AccountId": "@AccountRef3",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "INTERNAL - Nintendo NA CSSA activities",
+            "Description": "Tracking of Nintendo NA Advisor's activities",
+            "Status": "Work in Progress",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef3"
+            },
+            "AccountId": "@AccountRef4",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "INTERNAL AXA Account Activity",
+            "Status": "New",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef4"
+            },
+            "AccountId": "@AccountRef5",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "ANZ Customer plan",
+            "Status": "New",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Medium"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef5"
+            },
+            "AccountId": "@AccountRef5",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "Test",
+            "Status": "New",
+            "Type": "Tech Request"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef6"
+            },
+            "AccountId": "@AccountRef6",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "INTERNAL:  CSSA Activities",
+            "Description": "INTERNAL:  CSSA Activities",
+            "Status": "Work in Progress",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Medium"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef7"
+            },
+            "AccountId": "@AccountRef7",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "INTERNAL:  CSSA Activities",
+            "Description": "INTERNAL:  CSSA Activities",
+            "Status": "Work in Progress",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef8"
+            },
+            "AccountId": "@AccountRef8",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "INTERNAL: BNP Paribas CSS Activities",
+            "Description": "Used for BNP Paribas CSS Activities",
+            "Status": "Work in Progress",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef9"
+            },
+            "AccountId": "@AccountRef9",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "INTERNAL: Skatteverket CSSA Activities",
+            "Description": "Used for Skatteverket CSSA Activities",
+            "Status": "Work in Progress",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Medium"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef10"
+            },
+            "AccountId": "@AccountRef10",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "ACS - Salesforce consolidation go-live",
+            "Description": "ACS is a computing society that acquires many start ups and has several systems due to M&A. They have been a minor user of Mule in the past for their Salesforce",
+            "Status": "Assigned",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "High"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef11"
+            },
+            "AccountId": "@AccountRef11",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "INTERNAL - Pacific Life CSSA activities",
+            "Description": "Tracking of Pacific Life Advisor's activities",
+            "Status": "Work in Progress",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "High"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef12"
+            },
+            "AccountId": "@AccountRef12",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "INTERNAL - Teck Resources Activities",
+            "Description": "Teck Resources Activities",
+            "Status": "Work in Progress",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef13"
+            },
+            "AccountId": "@AccountRef13",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "INTERNAL:  CSSA Activities",
+            "Description": "FY21 tracking request.   This case is being used as an activity tracking/reporting capability for the CSSA organization.",
+            "Status": "Work in Progress",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef14"
+            },
+            "AccountId": "@AccountRef14",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "INTERNAL: KONE CSSA Activities",
+            "Description": "Used for KONE CSSA Activities",
+            "Status": "Work in Progress",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Low"
+        },
+        {
+            "attributes": {
+                "type": "Case",
+                "referenceId": "CaseRef15"
+            },
+            "AccountId": "@AccountRef15",
+            "RecordTypeId": "0122T000000GJX2QAO",
+            "Subject": "INTERNAL: Big Bus Tours",
+            "Description": "INTERNAL: Big Bus Tourss",
+            "Status": "Work in Progress",
+            "Type": "Tech Request",
+            "Level_of_Priority__c": "Low"
+        }
+
+    ]
+}

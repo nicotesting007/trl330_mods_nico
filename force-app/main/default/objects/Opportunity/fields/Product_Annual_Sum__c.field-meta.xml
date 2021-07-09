@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Annual_Sum__c</fullName>
+    <description>Calculates the annualized sum of products</description>
+    <externalId>false</externalId>
+    <label>Product Annual Sum</label>
+    <summarizedField>OpportunityLineItem.Product_Total_Annual_Rate__c</summarizedField>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.Rollup_Category__c</field>
+        <operation>equals</operation>
+        <value>Subscription</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

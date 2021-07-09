@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Originator__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>From whom did this request originate?</inlineHelpText>
+    <label>Originator</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Act II</fullName>
+                <default>false</default>
+                <label>Act II</label>
+            </value>
+            <value>
+                <fullName>Beta Program</fullName>
+                <default>false</default>
+                <label>Beta Program</label>
+            </value>
+            <value>
+                <fullName>Other Internal</fullName>
+                <default>false</default>
+                <label>Other Internal</label>
+            </value>
+            <value>
+                <fullName>Other Sales</fullName>
+                <default>false</default>
+                <label>Other Sales</label>
+            </value>
+            <value>
+                <fullName>Paid Customer</fullName>
+                <default>false</default>
+                <label>Paid Customer</label>
+            </value>
+            <value>
+                <fullName>Partner</fullName>
+                <default>false</default>
+                <label>Partner</label>
+            </value>
+            <value>
+                <fullName>PS Engagement</fullName>
+                <default>false</default>
+                <label>PS Engagement</label>
+            </value>
+            <value>
+                <fullName>SE - POC</fullName>
+                <default>false</default>
+                <label>SE - POC</label>
+            </value>
+            <value>
+                <fullName>SE - Pre-Closing</fullName>
+                <default>false</default>
+                <label>SE - Pre-Closing</label>
+            </value>
+            <value>
+                <fullName>Sales Operations Case</fullName>
+                <default>false</default>
+                <label>Sales Operations Case</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

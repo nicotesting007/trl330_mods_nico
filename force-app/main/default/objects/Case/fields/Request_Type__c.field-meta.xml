@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Request_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Request Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Account - Merge</fullName>
+                <default>false</default>
+                <label>Account - Merge</label>
+            </value>
+            <value>
+                <fullName>Account - Update</fullName>
+                <default>false</default>
+                <label>Account - Update</label>
+            </value>
+            <value>
+                <fullName>Close Opportunity</fullName>
+                <default>false</default>
+                <label>Close Opportunity</label>
+            </value>
+            <value>
+                <fullName>Dashboard / Report</fullName>
+                <default>false</default>
+                <label>Dashboard / Report</label>
+            </value>
+            <value>
+                <fullName>Feature Request -- Custom App</fullName>
+                <default>false</default>
+                <label>Feature Request -- Custom App</label>
+            </value>
+            <value>
+                <fullName>Feature Request -- Custom Field</fullName>
+                <default>false</default>
+                <label>Feature Request -- Custom Field</label>
+            </value>
+            <value>
+                <fullName>Feature Request -- Workflow / Validation Rule</fullName>
+                <default>false</default>
+                <label>Feature Request -- Workflow / Validation Rule</label>
+            </value>
+            <value>
+                <fullName>Invoice Reminder</fullName>
+                <default>false</default>
+                <label>Invoice Reminder</label>
+            </value>
+            <value>
+                <fullName>Lead Routing Request</fullName>
+                <default>false</default>
+                <label>Lead Routing Request</label>
+            </value>
+            <value>
+                <fullName>NDA / MNDA</fullName>
+                <default>false</default>
+                <label>NDA / MNDA</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Salesforce Issue</fullName>
+                <default>false</default>
+                <label>Salesforce Issue</label>
+            </value>
+            <value>
+                <fullName>Support Portal User</fullName>
+                <default>false</default>
+                <label>Support Portal User</label>
+            </value>
+            <value>
+                <fullName>Temp Key</fullName>
+                <default>false</default>
+                <label>Temp Key</label>
+            </value>
+            <value>
+                <fullName>User Access</fullName>
+                <default>false</default>
+                <label>User Access</label>
+            </value>
+            <value>
+                <fullName>Vendor Form</fullName>
+                <default>false</default>
+                <label>Vendor Form</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

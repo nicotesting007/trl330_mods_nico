@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NA_LATAM_Team_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>CS Tech LATAM Team</label>
+    <queue>NA_LATAM_Team</queue>
+    <sharedTo>
+        <allInternalUsers/>
+    </sharedTo>
+</ListView>

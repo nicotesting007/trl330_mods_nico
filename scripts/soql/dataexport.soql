@@ -1,0 +1,98 @@
+# --- DATA Operations
+# --- THIS IS NOT A SCRIPT SEPARATE COMMANDS SET TO HANDLE DATA
+
+sfdx force:data:record:get --json -u trl -s RecordType -w DeveloperName = 'TRL'
+
+sfdx force:data:soql:query --query \
+      "SELECT Id \
+      FROM RecordType WHERE DeveloperName = 'TRL'" -u trl
+
+
+      SELECT Id, Name, DeveloperName, Description, NamespacePrefix, SobjectType FROM RecordType
+
+    List<Time_tracking__c> ts = [SELECT Id From Time_tracking__c];
+    delete ls;
+      List<Case> cs = [Select Id FROM Case];
+delete cs;
+
+List<Account> lst = [SELECT Id, Name From Account];
+delete lst;
+
+
+sfdx force:data:soql:query --query \
+      "SELECT Id, Name, Region__c, Territory__c, \
+            (SELECT AccountId, RecordType.DeveloperName, Subject, Status, Type, \
+             Level_of_Priority__c FROM Cases), 
+            (SELECT Id, AccountId, Name, Amount, StageName, CloseDate, Probability, Type FROM Opportunities)
+      FROM Account"
+
+
+sfdx force:data:soql:query --query \
+    "SELECT AccountId, RecordType.DeveloperName, Subject, Status, Type, \
+           Level_of_Priority__c, CSA_CSE__c, \
+        (SELECT Id, Name, Case__c, Activity_Date__c, CS_Reason__c, CS_Activity__c, \
+            Delivery_Resource__c, Description__c, Opportunity__c, Time_spent__c FROM Time_tracking__r)     
+        FROM Case"
+
+# ------- EXPORT -------
+# Expport Account Oppty to JSON file
+sfdx force:data:tree:export --query \
+"SELECT Id, Name, Region__c, Territory__c, \
+(SELECT AccountId, RecordType.DeveloperName, Subject, Description, Status, Type, \
+ Level_of_Priority__c FROM Cases), 
+(SELECT Id, AccountId, Name, Amount, StageName, CloseDate, Probability, Type FROM Opportunities)
+FROM Account" \
+--prefix export-account --outputdir test-data --plan -u trl
+
+# ---- DEVCS -----
+sfdx force:data:tree:export --query \
+"SELECT Id, Name, Region__c, Territory__c, \
+(SELECT AccountId, RecordType.DeveloperName, Subject, Description, Status, Type, \
+ Level_of_Priority__c FROM Cases), 
+(SELECT Id, AccountId, Name, Amount, StageName, CloseDate, Probability, Type FROM Opportunities)
+FROM Account" \
+--prefix export-account --outputdir devcs-data --plan -u devcs
+
+
+# Export Case, Time Tracking JSON
+sfdx force:data:tree:export --query \
+    "SELECT AccountId, RecordType.DeveloperName, Subject, CaseNumber, Status, Type, \
+         Level_of_Priority__c, CSA_CSE__c, \
+        (SELECT Id, Name, Case__c, Activity_Date__c, CS_Reason__c, CS_Activity__c, \
+            Delivery_Resource__c, Description__c, Opportunity__c, Time_spent__c FROM Time_tracking__r)    
+    FROM Case" \
+--prefix export-case --outputdir test-data --plan -u trl
+
+# --- DEVCS ----
+sfdx force:data:tree:export --query \
+    "SELECT AccountId, RecordType.DeveloperName, Subject, CaseNumber, Status, Type, \
+         Level_of_Priority__c, CSA_CSE__c, \
+        (SELECT Id, Name, Case__c, \
+             Description__c, Time_spent__c FROM Time_tracking__r)    
+    FROM Case" \
+--prefix export-case --outputdir devcs-data --plan -u devcs
+
+#---------- IMPORT SCRTCH DATA ------
+sfdx force:data:tree:import --targetusername csdev \
+    --plan test-data/export-account-Account-Case-Opportunity-plan.json
+
+# --------- IMPORT DEV SANDBOX CLEAN DATA -------    
+sfdx force:data:tree:import --targetusername csdev \
+    --plan devcs-data/export-Account-Case-plan.json
+
+##    statusCode:MALFORMED_ID message:Case id value of incorrect type: @CaseRef1,fields:[Case__c]
+
+sfdx force:data:tree:import --targetusername trl \
+    --plan tempdata/test-data/export-account-Account-Case-Opportunity-plan.json
+
+# ---- EXPORT Priority Config data ---
+sfdx force:data:tree:export --query \
+    "SELECT Id, IsParent__c, Filterfield__c, FilterType__c, Score_Weight__c, \
+    Scoring_Factor__c, Theather__c, Parent_Filter__c, FilterLow__c, FilterHigh__c, \
+    Filter_Score__c, ScoringString__c, TRL_Config_Field__c, TRL_Config_Region__c \
+    FROM TRL_Priorization_Config__c" \
+    --prefix export-config --outputdir test-data/dev-sandbox --plan -u csdev
+
+# ---- IMPORT Priority CONFIG DATA to Test6 deploy ---
+sfdx force:data:tree:import \
+    --plan test-data/dev-sandbox/export-config-TRL_Priorization_Config__c-plan.json -u testdeploy

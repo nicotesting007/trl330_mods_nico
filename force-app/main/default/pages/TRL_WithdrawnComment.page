@@ -1,0 +1,47 @@
+<apex:page id="TRL_WithdrawnComment" standardController="Case" extensions="TRL_WithdrawnCommentCTRL" showHeader="true" tabStyle="TRL_cases__tab" lightningStylesheets="true">
+    <style type="text/css" >
+        .withdrawnComment {
+            width: 70%;
+        }
+    </style>
+    <apex:form id="commentform">
+        <!-- A.I. Comment: Add error messages and Loding image when page refresh wait indicator -->
+        <apex:messages />
+        <br/>
+        <apex:actionStatus id="pageStatus">
+    		<apex:facet name="start">
+        		<apex:outputPanel >
+					<img src="/img/loading32.gif" width="25" height="25" />
+            		<apex:outputLabel value="Loading..."/>
+                </apex:outputPanel>            
+    		</apex:facet>
+        </apex:actionStatus>
+        <!-- A.I. Comment  END -->
+
+        <apex:pageBlock title="CS Tech Request Details">
+
+            <apex:pageBlockSection >
+                <apex:outputField value="{! Case.CaseNumber }"/>
+                <apex:outputField value="{! Case.AccountID }"/>
+                <apex:outputField value="{! Case.Account_Region__c }"/>
+                <apex:outputField value="{! Case.TRL_Type__c }" />
+                <apex:outputField value="{! Case.CS_Reason__c }"/>
+                <apex:outputField value="{! Case.CS_Activity__c }"/>            
+                <apex:outputField value="{! Case.Subject }" label="Subject"/>
+                <apex:outputField value="{! Case.Description }" label="Description"/>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection title="Comment" columns="1">
+                <apex:inputField value="{! withdrawnComment.CommentBody}" required="true" label="Comment" styleClass="withdrawnComment"/>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{! saveComment }" value="Save Comment" status="pageStatus" rerender="commentform" />
+                <apex:commandButton action="{! cancel}" value="Cancel" immediate="true" />
+            </apex:pageBlockButtons>
+
+        </apex:pageBlock>
+
+    </apex:form>
+
+</apex:page>

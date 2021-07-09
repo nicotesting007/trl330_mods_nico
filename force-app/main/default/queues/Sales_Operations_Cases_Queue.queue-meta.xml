@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>Sales Operations Cases Queue</name>
+    <queueMembers>
+        <users>
+            <user>test-kxnw5nbtexhf@example.com</user>
+            <!--
+            <user>alexandra.magnell@mulesoft.com</user>
+            <user>andreas.slovacek@mulesoft.com</user>
+            <user>daniel.bruno@mulesoft.com</user>
+            <user>jennifer.alexander@mulesoft.com</user>
+            <user>jonathan.fisher@mulesoft.com</user>
+            <user>marc.eisenberg@mulesoft.com</user>
+            <user>matt.langdon@mulesoft.com</user>
+            <user>stephanie.pires@mulesoft.com</user>
+            -->
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

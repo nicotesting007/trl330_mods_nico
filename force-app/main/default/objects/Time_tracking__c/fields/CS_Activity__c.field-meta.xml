@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS_Activity__c</fullName>
+    <description>Defines a list of CS Activities and Plays</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Defines a list of CS Activities and Plays</inlineHelpText>
+    <label>Activity Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>CS_Reason__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Anypoint Community Manager</fullName>
+                <default>false</default>
+                <label>Anypoint Community Manager</label>
+            </value>
+            <value>
+                <fullName>Anypoint Partner Manager</fullName>
+                <default>false</default>
+                <label>Anypoint Partner Manager</label>
+            </value>
+            <value>
+                <fullName>API Designer API Manager</fullName>
+                <default>false</default>
+                <label>API Designer API Manager</label>
+            </value>
+            <value>
+                <fullName>API LC - Async</fullName>
+                <default>false</default>
+                <label>API LC - Async</label>
+            </value>
+            <value>
+                <fullName>API Lifecycle - CICD</fullName>
+                <default>false</default>
+                <label>API Lifecycle - CICD</label>
+            </value>
+            <value>
+                <fullName>API Monetization</fullName>
+                <default>false</default>
+                <label>API Monetization</label>
+            </value>
+            <value>
+                <fullName>Architecture Roadmapping</fullName>
+                <default>false</default>
+                <label>Architecture Roadmapping</label>
+            </value>
+            <value>
+                <fullName>Architecture Review</fullName>
+                <default>false</default>
+                <label>Architecture Review</label>
+            </value>
+            <value>
+                <fullName>BrownBags</fullName>
+                <default>false</default>
+                <label>BrownBags</label>
+            </value>
+            <value>
+                <fullName>CaMA</fullName>
+                <default>false</default>
+                <label>CaMA</label>
+            </value>
+            <value>
+                <fullName>Citizen</fullName>
+                <default>false</default>
+                <label>Citizen</label>
+            </value>
+            <value>
+                <fullName>Composability Workshop</fullName>
+                <default>false</default>
+                <label>Composability Workshop</label>
+            </value>
+            <value>
+                <fullName>Customer cadence/ Relationship building</fullName>
+                <default>false</default>
+                <label>Customer cadence/ Relationship building</label>
+            </value>
+            <value>
+                <fullName>C4E Workshop</fullName>
+                <default>false</default>
+                <label>C4E Workshop</label>
+            </value>
+            <value>
+                <fullName>Dashboard and Metrics</fullName>
+                <default>false</default>
+                <label>Dashboard and Metrics</label>
+            </value>
+            <value>
+                <fullName>Deployment - Cloud</fullName>
+                <default>false</default>
+                <label>Deployment - Cloud</label>
+            </value>
+            <value>
+                <fullName>Deployment - GovCloud</fullName>
+                <default>false</default>
+                <label>Deployment - GovCloud</label>
+            </value>
+            <value>
+                <fullName>Deployment - Hybrid</fullName>
+                <default>false</default>
+                <label>Deployment - Hybrid</label>
+            </value>
+            <value>
+                <fullName>Deployment - Onprem</fullName>
+                <default>false</default>
+                <label>Deployment - Onprem</label>
+            </value>
+            <value>
+                <fullName>Enterprise Connectivity - Connectors</fullName>
+                <default>false</default>
+                <label>Enterprise Connectivity - Connectors</label>
+            </value>
+            <value>
+                <fullName>Enterprise Connectivity - ERP</fullName>
+                <default>false</default>
+                <label>Enterprise Connectivity - ERP</label>
+            </value>
+            <value>
+                <fullName>Enterprise Connectivity - Salesforce</fullName>
+                <default>false</default>
+                <label>Enterprise Connectivity - Salesforce</label>
+            </value>
+            <value>
+                <fullName>Exchange</fullName>
+                <default>false</default>
+                <label>Exchange</label>
+            </value>
+            <value>
+                <fullName>General architectural advice</fullName>
+                <default>false</default>
+                <label>General architectural advice</label>
+            </value>
+            <value>
+                <fullName>General Design advice</fullName>
+                <default>false</default>
+                <label>General Design advice</label>
+            </value>
+            <value>
+                <fullName>General Product advice</fullName>
+                <default>false</default>
+                <label>General Product advice</label>
+            </value>
+            <value>
+                <fullName>Go-Live Readiness</fullName>
+                <default>false</default>
+                <label>Go-Live Readiness</label>
+            </value>
+            <value>
+                <fullName>GraphQL(API Federation)</fullName>
+                <default>false</default>
+                <label>GraphQL(API Federation)</label>
+            </value>
+            <value>
+                <fullName>Hackathon</fullName>
+                <default>false</default>
+                <label>Hackathon</label>
+            </value>
+            <value>
+                <fullName>Health Check</fullName>
+                <default>false</default>
+                <label>Health Check</label>
+            </value>
+            <value>
+                <fullName>Internal account cadence</fullName>
+                <default>false</default>
+                <label>Internal account cadence</label>
+            </value>
+            <value>
+                <fullName>JSP Mgmt</fullName>
+                <default>false</default>
+                <label>JSP Mgmt</label>
+            </value>
+            <value>
+                <fullName>KPI Day</fullName>
+                <default>false</default>
+                <label>KPI Day</label>
+            </value>
+            <value>
+                <fullName>Monitoring and Alerts</fullName>
+                <default>false</default>
+                <label>Monitoring and Alerts</label>
+            </value>
+            <value>
+                <fullName>Mule Runtime</fullName>
+                <default>false</default>
+                <label>Mule Runtime</label>
+            </value>
+            <value>
+                <fullName>Office Hours</fullName>
+                <default>false</default>
+                <label>Office Hours</label>
+            </value>
+            <value>
+                <fullName>Performance Workshop</fullName>
+                <default>false</default>
+                <label>Performance Workshop</label>
+            </value>
+            <value>
+                <fullName>Product Lifecycle</fullName>
+                <default>false</default>
+                <label>Product Lifecycle</label>
+            </value>
+            <value>
+                <fullName>Sec &amp; Network - Access</fullName>
+                <default>false</default>
+                <label>Sec &amp; Network - Access</label>
+            </value>
+            <value>
+                <fullName>Sec &amp; Network - Networking</fullName>
+                <default>false</default>
+                <label>Sec &amp; Network - Networking</label>
+            </value>
+            <value>
+                <fullName>Sec &amp; Network - Security Process</fullName>
+                <default>false</default>
+                <label>Sec &amp; Network - Security Process</label>
+            </value>
+            <value>
+                <fullName>Service Mesh</fullName>
+                <default>false</default>
+                <label>Service Mesh</label>
+            </value>
+            <value>
+                <fullName>Testing Strategies</fullName>
+                <default>false</default>
+                <label>Testing Strategies</label>
+            </value>
+            <value>
+                <fullName>ThinkTank</fullName>
+                <default>false</default>
+                <label>ThinkTank</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Success Planning and Advisory</controllingFieldValue>
+            <valueName>Customer cadence/ Relationship building</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Success Planning and Advisory</controllingFieldValue>
+            <valueName>General architectural advice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Success Planning and Advisory</controllingFieldValue>
+            <valueName>General Design advice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Success Planning and Advisory</controllingFieldValue>
+            <valueName>General Product advice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Success Planning and Advisory</controllingFieldValue>
+            <valueName>Internal account cadence</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Success Planning and Advisory</controllingFieldValue>
+            <valueName>JSP Mgmt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Success Planning and Advisory</controllingFieldValue>
+            <valueName>Office Hours</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Specialization</controllingFieldValue>
+            <valueName>Anypoint Community Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Specialization</controllingFieldValue>
+            <valueName>Anypoint Partner Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Specialization</controllingFieldValue>
+            <valueName>API Designer API Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Specialization</controllingFieldValue>
+            <valueName>API LC - Async</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Specialization</controllingFieldValue>
+            <valueName>API Lifecycle - CICD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Specialization</controllingFieldValue>
+            <valueName>Citizen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Specialization</controllingFieldValue>
+            <valueName>Dashboard and Metrics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Specialization</controllingFieldValue>
+            <valueName>Deployment - Cloud</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Specialization</controllingFieldValue>
+            <valueName>Deployment - GovCloud</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Specialization</controllingFieldValue>
+            <valueName>Deployment - Hybrid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Specialization</controllingFieldValue>
+            <valueName>Deployment - Onprem</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Specialization</controllingFieldValue>
+            <valueName>Enterprise Connectivity - Connectors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Specialization</controllingFieldValue>
+            <valueName>Enterprise Connectivity - ERP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Specialization</controllingFieldValue>
+            <valueName>Enterprise Connectivity - Salesforce</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Specialization</controllingFieldValue>
+            <valueName>Exchange</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Specialization</controllingFieldValue>
+            <valueName>GraphQL(API Federation)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Specialization</controllingFieldValue>
+            <valueName>Monitoring and Alerts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Specialization</controllingFieldValue>
+            <valueName>Mule Runtime</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Specialization</controllingFieldValue>
+            <valueName>Product Lifecycle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Specialization</controllingFieldValue>
+            <valueName>Sec &amp; Network - Security Process</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Specialization</controllingFieldValue>
+            <valueName>Sec &amp; Network - Access</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Specialization</controllingFieldValue>
+            <valueName>Sec &amp; Network - Networking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Specialization</controllingFieldValue>
+            <valueName>Service Mesh</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Specialization</controllingFieldValue>
+            <valueName>Testing Strategies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CSSA Strategic Plays</controllingFieldValue>
+            <valueName>API Monetization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CSSA Strategic Plays</controllingFieldValue>
+            <valueName>Architecture Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CSSA Strategic Plays</controllingFieldValue>
+            <valueName>Architecture Roadmapping</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CSSA Strategic Plays</controllingFieldValue>
+            <valueName>BrownBags</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CSSA Strategic Plays</controllingFieldValue>
+            <valueName>CaMA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CSSA Strategic Plays</controllingFieldValue>
+            <valueName>Composability Workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CSSA Strategic Plays</controllingFieldValue>
+            <valueName>C4E Workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CSSA Strategic Plays</controllingFieldValue>
+            <valueName>Hackathon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CSSA Strategic Plays</controllingFieldValue>
+            <valueName>Health Check</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CSSA Strategic Plays</controllingFieldValue>
+            <valueName>Go-Live Readiness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CSSA Strategic Plays</controllingFieldValue>
+            <valueName>KPI Day</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CSSA Strategic Plays</controllingFieldValue>
+            <valueName>Performance Workshop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CSSA Strategic Plays</controllingFieldValue>
+            <valueName>ThinkTank</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

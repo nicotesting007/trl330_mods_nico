@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>NA1</fullName>
+        <default>false</default>
+        <label>NA1</label>
+    </customValue>
+    <customValue>
+        <fullName>EU1</fullName>
+        <default>false</default>
+        <label>EU1</label>
+    </customValue>
+    <customValue>
+        <fullName>GovCloud</fullName>
+        <default>false</default>
+        <label>GovCloud</label>
+    </customValue>
+    <description>Picklist values used for AnypointPlatformOrganizationId Region and AnypointPlatformOrganizationId2 Region fields on account</description>
+    <masterLabel>AnypointPlatformOrganizationId Region</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

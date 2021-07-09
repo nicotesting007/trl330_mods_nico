@@ -1,0 +1,184 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef1"
+            },
+            "AccountId": "@AccountRef1",
+            "Name": "Sales services",
+            "Amount": 100000,
+            "StageName": "Closed Won",
+            "CloseDate": "2021-03-01",
+            "Probability": 100,
+            "CurrencyIsoCode": "USD",
+            "Type": "New Business",
+            "Opportunity_Source__c": "Direct",
+            "ForecastCategoryName": "Pipeline",
+            "forecast__c": "Likely",
+            "MuleSoft_ACV__c": 100000
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef2"
+            },
+            "AccountId": "@AccountRef1",
+            "Name": "Base Anypoint subscription",
+            "Amount": 250000,
+            "StageName": "Negotiation",
+            "CloseDate": "2021-08-01",
+            "Probability": 20,
+            "CurrencyIsoCode": "USD",
+            "Type": "New Business",
+            "Opportunity_Source__c": "Direct",
+            "ForecastCategoryName": "Pipeline",
+            "forecast__c": "Likely",
+            "MuleSoft_ACV__c": 100000
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef3"
+            },
+            "AccountId": "@AccountRef2",
+            "Name": "training operation",
+            "Amount": 200000,
+            "StageName": "Negotiation",
+            "CloseDate": "2021-09-01",
+            "Probability": 20,
+            "CurrencyIsoCode": "USD",
+            "Type": "New Business",
+            "Opportunity_Source__c": "Direct",
+            "ForecastCategoryName": "Pipeline",
+            "forecast__c": "Likely",
+            "MuleSoft_ACV__c": 200000
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef4"
+            },
+            "AccountId": "@AccountRef3",
+            "Name": "Test1",
+            "Amount": 1200000,
+            "StageName": "Negotiation",
+            "CloseDate": "2021-08-01",
+            "Probability": 20,
+            "CurrencyIsoCode": "USD",
+            "Type": "New Business",
+            "Opportunity_Source__c": "Direct",
+            "ForecastCategoryName": "Pipeline",
+            "forecast__c": "Likely",
+            "MuleSoft_ACV__c": 120000
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef5"
+            },
+            "AccountId": "@AccountRef4",
+            "Name": "360 Operation",
+            "Amount": 100000,
+            "StageName": "Negotiation",
+            "CloseDate": "2021-08-01",
+            "Probability": 20,
+            "CurrencyIsoCode": "USD",
+            "Type": "New Business",
+            "Opportunity_Source__c": "Direct",
+            "ForecastCategoryName": "Pipeline",
+            "forecast__c": "Likely",
+            "MuleSoft_ACV__c": 100000
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef6"
+            },
+            "AccountId": "@AccountRef5",
+            "Name": "Project1 start platform",
+            "Amount": 600000,
+            "StageName": "Negotiation",
+            "CloseDate": "2021-08-01",
+            "Probability": 20,
+            "CurrencyIsoCode": "USD",
+            "Type": "New Business",
+            "Opportunity_Source__c": "Direct",
+            "ForecastCategoryName": "Pipeline",
+            "forecast__c": "Likely",
+            "MuleSoft_ACV__c": 600000
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef7"
+            },
+            "AccountId": "@AccountRef7",
+            "Name": "Services migration to 4",
+            "Amount": 80000,
+            "StageName": "Negotiation",
+            "CloseDate": "2021-10-01",
+            "Probability": 20,
+            "CurrencyIsoCode": "USD",
+            "Type": "New Business",
+            "Opportunity_Source__c": "Direct",
+            "ForecastCategoryName": "Pipeline",
+            "forecast__c": "Likely",
+            "MuleSoft_ACV__c": 80000
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef8"
+            },
+            "AccountId": "@AccountRef8",
+            "Name": "Services",
+            "Amount": 100000,
+            "StageName": "Negotiation",
+            "CloseDate": "2021-11-01",
+            "Probability": 20,
+            "CurrencyIsoCode": "USD",
+            "Type": "New Business",
+            "Opportunity_Source__c": "Direct",
+            "ForecastCategoryName": "Pipeline",
+            "forecast__c": "Likely",
+            "MuleSoft_ACV__c": 100000
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef9"
+            },
+            "AccountId": "@AccountRef9",
+            "Name": "Portal project API",
+            "Amount": 150000,
+            "StageName": "Negotiation",
+            "CloseDate": "2021-09-01",
+            "Probability": 20,
+            "CurrencyIsoCode": "USD",
+            "Type": "New Business",
+            "Opportunity_Source__c": "Direct",
+            "ForecastCategoryName": "Pipeline",
+            "forecast__c": "Likely",
+            "MuleSoft_ACV__c": 100000
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef10"
+            },
+            "AccountId": "@AccountRef10",
+            "Name": "It trnsformation 360",
+            "Amount": 500000,
+            "StageName": "Negotiation",
+            "CloseDate": "2021-08-01",
+            "Probability": 20,
+            "CurrencyIsoCode": "USD",
+            "Type": "New Business",
+            "Opportunity_Source__c": "Direct",
+            "ForecastCategoryName": "Pipeline",
+            "forecast__c": "Likely",
+            "MuleSoft_ACV__c": 500000
+        }
+    ]
+}

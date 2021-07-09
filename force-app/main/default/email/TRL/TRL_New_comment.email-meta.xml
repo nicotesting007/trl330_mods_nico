@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notification to requester and CSA once a new comment is added</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>MuleSoftGeneral</letterhead>
+    <name>CS Tech Request New comment</name>
+    <style>freeForm</style>
+    <subject>New comment was added to CS Tech Request {!Case.CaseNumber}:&quot;{!Case.Subject}&quot;</subject>
+    <textOnly>A new comment has been added to your case regarding {!Case.Subject}. To reply to this comment, please click the URL below to view the case.
+
+Case URL:
+{!Case.Instance_URL__c}apex/TRLCase_detail_page?id={!Case.Id}
+
+
+
+Comment:
+
+{!Contact.LastModifiedBy} said:
+
+{!Case.Last_Comment__c}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

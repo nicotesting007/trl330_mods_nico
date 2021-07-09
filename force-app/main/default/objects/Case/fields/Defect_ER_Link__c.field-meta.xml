@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Defect_ER_Link__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(!ISBLANK(Defect_ER_Number__c), HYPERLINK(&apos;http://www.mulesoft.org/jira/browse/&apos; &amp; Defect_ER_Number__c, Defect_ER_Number__c) ,&apos;&apos; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Link to Defect DB</inlineHelpText>
+    <label>Defect/ER Link</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

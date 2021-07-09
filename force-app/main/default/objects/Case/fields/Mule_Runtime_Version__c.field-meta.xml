@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mule_Runtime_Version__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the affected Runtime version (API Gateway, CloudHub)</inlineHelpText>
+    <label>Mule Runtime Version</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Support_Product_Version</valueSetName>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,25 @@
+#!/bin/sh
+# Deployment script using DX CLI to push selected metadata files to any ORG Sanbox
+# Input parameter specify target org alias for DX testdeploy, csdev etc
+
+echo "--- START DEPLOYMENT FOR: csdev"
+
+# --- START W-9116826 ---
+# Queue
+sfdx force:source:deploy -p force-app/main/default/queues/FINS.queue-meta.xml -u csdev -w 10
+sfdx force:source:deploy -p force-app/main/default/queues/CBU.queue-meta.xml -u csdev -w 10
+sfdx force:source:deploy -p force-app/main/default/queues/CMT.queue-meta.xml -u csdev -w 10
+sfdx force:source:deploy -p force-app/main/default/queues/EBU.queue-meta.xml -u csdev -w 10
+sfdx force:source:deploy -p force-app/main/default/queues/HLS.queue-meta.xml -u csdev -w 10
+sfdx force:source:deploy -p force-app/main/default/queues/RCG.queue-meta.xml -u csdev -w 10
+sfdx force:source:deploy -p force-app/main/default/queues/PubSec.queue-meta.xml -u csdev -w 10
+
+
+# Routing Case riules
+sfdx force:source:deploy -p force-app/main/default/assignmentRules/Support.assignmentRules-meta.xml -u csdev -w 10
+sfdx force:source:deploy -m AssignmentRules:Support -u csdev -w 10
+
+# --- END W-9116826 ---
+
+
+echo "--- END DEPLOYMENT FOR: csdev"

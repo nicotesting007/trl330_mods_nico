@@ -1,0 +1,27 @@
+#!/bin/sh
+# Deployment script using DX CLI to push selected metadata files to any ORG Sanbox
+# Input parameter specify target org alias for DX testdeploy, testdeploy etc
+
+echo "--- START DEPLOYMENT FOR: testdeploy"
+
+# Push Fields the -m option will deploy all Case object
+#sfdx force:source:deploy -m CustomField:Case.Instance_URL__c -u testdeploy --wait 10
+# For single field update use direct file path -p
+#sfdx force:source:deploy -p force-app/main/default/objects/Account/fields/Region__c.field-meta.xml -u testdeploy --wait 10
+
+#sfdx force:source:deploy -m CustomField:Account.CS_Area__c -u testdeploy --wait 10
+sfdx force:source:deploy -m CustomField:Account.Region__c -u testdeploy --wait 10
+sfdx force:source:deploy -m CustomField:Case.Region__c -u testdeploy --wait 10
+
+
+# Case Record Type
+sfdx force:source:deploy -p force-app/main/default/objects/Case/recordTypes/TRL.recordType-meta.xml -u testdeploy --wait 10
+# sfdx force:source:retrieve -p force-app/main/default/objects/Case/recordTypes/TRL.recordType-meta.xml -u testdeploy --wait 10
+
+# Queue - missing 
+sfdx force:source:deploy -p force-app/main/default/queues/Global_Team.queue-meta.xml -u testdeploy -w 10
+
+# Routing Case riules
+sfdx force:source:deploy -p force-app/main/default/assignmentRules/Case.assignmentRules-meta.xml -u testdeploy -w 10
+
+echo "--- END DEPLOYMENT FOR: testdeploy"

@@ -1,0 +1,89 @@
+#!/bin/sh
+# Deployment script using DX CLI to push selected metadata files to any ORG Sanbox
+# Input parameter specify target org alias for DX testdeploy, csdev etc
+
+echo "--- START DEPLOYMENT FOR: csdev"
+
+# Push Fields the -m option will deploy all Case object
+#sfdx force:source:deploy -m CustomField:Case.Instance_URL__c -u csdev --wait 10
+# For single field update use direct file path -p
+sfdx force:source:deploy -p force-app/main/default/objects/Case/fields/CS_Reason__c.field-meta.xml -u csdev --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Case/fields/CS_Activity__c.field-meta.xml -u csdev --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Case/fields/TRL_Type__c.field-meta.xml -u csdev --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Case/fields/TRL_Request_Type__c.field-meta.xml -u csdev --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Case/fields/TRL_Task_Is_Clear__c.field-meta.xml -u csdev --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Case/fields/TRL_Calc_Prio_Score__c.field-meta.xml -u csdev --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Case/fields/Request_for_Assistance_by__c.field-meta.xml -u csdev --wait 10
+
+# sfdx force:source:retrieve -p force-app/main/default/objects/Case/fields/CS_Activity__c.field-meta.xml -u csdev --wait 10
+# sfdx force:source:retrieve -p force-app/main/default/objects/Case/fields/CS_Reason__c.field-meta.xml -u csdev --wait 10
+
+# --- FIX metdata pull from TESTDEPOKOY adn push to CSDEV to align values picks etc closewr to PROD ---
+# Fix filed pick values
+#sfdx force:source:retrieve -p force-app/main/default/objects/Case/fields/MuleSoft_May_Access_My_CloudHub_Workers__c.field-meta.xml -u testdeploy --wait 10
+#sfdx force:source:retrieve -p force-app/main/default/objects/Case/fields/Mule_Runtime_Version__c.field-meta.xml -u testdeploy --wait 10
+
+#sfdx force:source:retrieve -p force-app/main/default/objects/Case/fields/Topics_Covered__c.field-meta.xml -u testdeploy --wait 10
+#sfdx force:source:deploy -p force-app/main/default/objects/Case/fields/Topics_Covered__c.field-meta.xml -u csdev --wait 10
+
+## Fix Global value sets
+#sfdx force:source:retrieve -p force-app/main/default/globalValueSets/Support_Product_Version.globalValueSet-meta.xml -u testdeploy --wait 10
+#sfdx force:source:retrieve -p force-app/main/default/globalValueSets/Support_Product.globalValueSet-meta.xml -u testdeploy --wait 10
+#sfdx force:source:retrieve -p force-app/main/default/globalValueSets/Support_Product_Component.globalValueSet-meta.xml -u testdeploy --wait 10
+#sfdx force:source:retrieve -p force-app/main/default/globalValueSets/Support_Product_Subcomponent.globalValueSet-meta.xml -u testdeploy --wait 10
+# sfdx force:source:retrieve -p force-app/main/default/globalValueSets/Migration_Source.globalValueSet-meta.xml -u testdeploy --wait 10
+
+#sfdx force:source:deploy -p force-app/main/default/globalValueSets/Support_Product_Version.globalValueSet-meta.xml -u csdev --wait 10
+#sfdx force:source:deploy -p force-app/main/default/globalValueSets/Support_Product.globalValueSet-meta.xml -u csdev --wait 10
+#sfdx force:source:deploy -p force-app/main/default/globalValueSets/Support_Product_Component.globalValueSet-meta.xml -u csdev --wait 10
+#sfdx force:source:deploy -p force-app/main/default/globalValueSets/Support_Product_Subcomponent.globalValueSet-meta.xml -u csdev --wait 10
+# --- END of FIX section
+
+# Case Record Type
+sfdx force:source:deploy -p force-app/main/default/objects/Case/recordTypes/TRL.recordType-meta.xml -u csdev --wait 10
+# sfdx force:source:retrieve -p force-app/main/default/objects/Case/recordTypes/TRL.recordType-meta.xml -u csdev --wait 10
+
+# Business process - Support process
+sfdx force:source:deploy -p "force-app/main/default/objects/Case/businessProcesses/CS Tech Request.businessProcess-meta.xml" -u csdev --wait 10
+
+sfdx force:source:deploy -p force-app/main/default/objects/Time_tracking__c/fields/CS_Reason__c.field-meta.xml -u csdev --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Time_tracking__c/fields/CS_Activity__c.field-meta.xml -u csdev --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Time_tracking__c/fields/Activity_Date__c.field-meta.xml -u csdev --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Time_tracking__c/fields/Delivery_Resource__c.field-meta.xml -u csdev --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Time_tracking__c/fields/Account_Name__c.field-meta.xml -u csdev --wait 10
+sfdx force:source:deploy -p force-app/main/default/objects/Time_tracking__c/fields/AccountID__c.field-meta.xml -u csdev --wait 10
+
+# Push Platform Event
+sfdx force:source:deploy -m CustomObject:TRL_Case_Priorization_Event__e -u csdev --wait 10
+
+# Push Layout change
+sfdx force:source:deploy -m "Layout:Case-TRL" -u csdev --wait 10
+sfdx force:source:deploy -m "Layout:Time_tracking__c-Time tracking Layout" -u csdev --wait 10
+
+##sfdx force:source:retrieve -m "Layout:Time_tracking__c-Time tracking Layout" -u csdev --wait 10
+##sfdx force:source:retrieve -m "Layout:Case-TRL" -u csdev --wait 10
+
+# Push Classes
+sfdx force:source:deploy -m ApexClass:TRL_Submit_CasePlatformEvent -u csdev --wait 10
+sfdx force:source:deploy -m ApexClass:TRL_Submit_CasePlatformEventTest -u csdev --wait 10
+sfdx force:source:deploy -m ApexClass:TRL_Submit_CasePlatformEvent -u csdev --wait 10
+sfdx force:source:deploy -m ApexClass:TRL_Action_New_CTRL -u csdev --wait 10
+sfdx force:source:deploy -m ApexClass:TRL_Action_New_CTRLTest -u csdev --wait 10
+sfdx force:source:deploy -m ApexClass:TRL_TimeTracking_ExtCtrl -u csdev --wait 10
+sfdx force:source:deploy -m ApexClass:TRL_TimeTracking_ExtCtrlTest -u csdev --wait 10
+# W-8372735 W-8372927
+sfdx force:source:deploy -m ApexClass:TRL_Cases_only -u csdev --wait 10
+
+# Push Pages
+sfdx force:source:deploy -m ApexPage:TRL_TimeLog_New -u csdev --wait 10
+sfdx force:source:deploy -m ApexPage:TRLCase_detail_page -u csdev --wait 10
+sfdx force:source:deploy -m ApexPage:TRL_Action_New -u csdev --wait 10
+sfdx force:source:deploy -m ApexPage:TRL_Action_Edit -u csdev --wait 10
+sfdx force:source:deploy -m ApexPage:TRL_WithdrawnComment -u csdev --wait 10
+# W-8372735 W-8372927
+sfdx force:source:deploy -m ApexPage:TRLCases -u csdev --wait 10
+
+# Push Permission Set fro DEV ONLY
+sfdx force:source:deploy -m PermissionSet:TRL_Permissions -u csdev --wait 10
+
+echo "--- END DEPLOYMENT FOR: csdev"

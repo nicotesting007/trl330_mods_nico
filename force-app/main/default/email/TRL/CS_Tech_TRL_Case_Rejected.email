@@ -1,0 +1,12 @@
+<P>
+Hi <B>{!Approval_Requesting_User.FirstName}</B>,
+
+<BR><BR>The Case <B>{!Case.CaseNumber}</B> has been rejected with the following comments:
+
+<BR><BR>{!ApprovalRequest.Comments}.
+
+<BR><BR>Click <a href ='{!Case.Link}'> here</a> to access the case in Salesforce.
+
+<BR><BR>Thanks.
+
+</P>

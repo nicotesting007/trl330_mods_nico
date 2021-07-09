@@ -1,0 +1,125 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef1"
+            },
+            "AccountId": "@AccountRef1",
+            "Name": "Trining and services",
+            "Amount": 56000,
+            "StageName": "Closed Won",
+            "CloseDate": "2020-06-09",
+            "Probability": 0
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef2"
+            },
+            "AccountId": "@AccountRef1",
+            "Name": "commerce portal DCL",
+            "Amount": 250000,
+            "StageName": "Closed Won",
+            "CloseDate": "2020-02-04",
+            "Probability": 100,
+            "Type": "New Customer"
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef3"
+            },
+            "AccountId": "@AccountRef2",
+            "Name": "training operation",
+            "Amount": 600000,
+            "StageName": "Negotiation/Review",
+            "CloseDate": "2020-01-01",
+            "Probability": 90
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef4"
+            },
+            "AccountId": "@AccountRef2",
+            "Name": "Test1",
+            "Amount": 1200000,
+            "StageName": "Closed Won",
+            "CloseDate": "2019-01-24",
+            "Probability": 100
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef5"
+            },
+            "AccountId": "@AccountRef4",
+            "Name": "training operation",
+            "Amount": 15000,
+            "StageName": "Closed Won",
+            "CloseDate": "2020-06-09",
+            "Probability": 0
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef6"
+            },
+            "AccountId": "@AccountRef4",
+            "Name": "Drgonfly project start platform",
+            "Amount": 600000,
+            "StageName": "Closed Won",
+            "CloseDate": "2020-01-14",
+            "Probability": 100
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef7"
+            },
+            "AccountId": "@AccountRef4",
+            "Name": "Services migration to 4",
+            "Amount": 80000,
+            "StageName": "Negotiation/Review",
+            "CloseDate": "2020-05-12",
+            "Probability": 90
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef8"
+            },
+            "AccountId": "@AccountRef5",
+            "Name": "Services",
+            "Amount": 65000,
+            "StageName": "Value Proposition",
+            "CloseDate": "2020-06-12",
+            "Probability": 50
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef9"
+            },
+            "AccountId": "@AccountRef5",
+            "Name": "Portal project API",
+            "Amount": 150000,
+            "StageName": "Closed Won",
+            "CloseDate": "2020-06-01",
+            "Probability": 0
+        },
+        {
+            "attributes": {
+                "type": "Opportunity",
+                "referenceId": "OpportunityRef10"
+            },
+            "AccountId": "@AccountRef5",
+            "Name": "It trnsformatio 360",
+            "Amount": 500000,
+            "StageName": "Value Proposition",
+            "CloseDate": "2020-06-03",
+            "Probability": 50
+        }
+    ]
+}

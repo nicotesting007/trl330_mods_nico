@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>adr@mulesoft.com</email>
+    <name>Nurture</name>
+    <queueMembers>
+        <!--
+        <publicGroups>
+            <publicGroup>InternalUsers</publicGroup>
+            <publicGroup>WW_ADRs</publicGroup>
+        </publicGroups>
+    -->
+        <users>
+            <user>test-kxnw5nbtexhf@example.com</user>
+            <!--
+            <user>aaron.landgraf@mulesoft.com</user>
+            <user>aubrey.morgan@mulesoft.com</user>
+            -->
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

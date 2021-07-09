@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TRL_CS_Tech_Lead</fullName>
+    <active>true</active>
+    <description>TRL cases Validation rule for CS Tech Lead</description>
+    <errorConditionFormula>AND(TEXT($User.TRLcases__c) == &apos;CS Tech Lead&apos;,
+$RecordType.Name==&quot;TRL&quot;,
+OR(
+ISCHANGED( AccountId ),
+ISCHANGED(Subject),
+ISCHANGED(Description),
+ISCHANGED( CS_Reason__c ),
+ISCHANGED( Request_for_Assistance_by__c )
+)
+)</errorConditionFormula>
+    <errorMessage>CS Tech Lead only allow to change Anticipated Delivery Date, CSA/CSE, Status, Level of priority</errorMessage>
+</ValidationRule>

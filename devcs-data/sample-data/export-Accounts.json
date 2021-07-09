@@ -1,0 +1,44 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef3"
+            },
+            "Name": "TestAccount1",
+            "Region__c": "North",
+            "Territory__c": "NA",
+            "BillingCountry": "US"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef4"
+            },
+            "Name": "TestAccount1",
+            "Region__c": "North",
+            "Territory__c": "NA",
+            "BillingCountry": "US"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef5"
+            },
+            "Name": "Burlington Textiles Corp of America",
+            "Region__c": "East",
+            "Territory__c": "NA",
+            "BillingCountry": "USA"
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef6"
+            },
+            "Name": "Pyramid Construction Inc.",
+            "Region__c": "West",
+            "Territory__c": "NA",
+            "BillingCountry": "France"
+        }
+    ]
+}

@@ -1,0 +1,108 @@
+#!/bin/sh
+# Deployment script using DX CLI to push selected metadata files to any ORG Sanbox
+# Input parameter specify target org alias for DX testdeploy, testdeploy etc
+
+echo "--- START DEPLOYMENT FOR: testdeploy"
+
+# Push Fields the -m option will deploy all Case object
+#sfdx force:source:deploy -m CustomField:Case.Instance_URL__c -u testdeploy --wait 10
+# For single field update use direct file path -p
+#sfdx force:source:deploy -p force-app/main/default/objects/Account/fields/Region__c.field-meta.xml -u testdeploy --wait 10
+
+#sfdx force:source:deploy -m CustomField:Account.CS_Area__c -u testdeploy --wait 10
+#sfdx force:source:deploy -m CustomField:Account.Region__c -u testdeploy --wait 10
+#sfdx force:source:deploy -p force-app/main/default/objects/Case/recordTypes/TRL.recordType-meta.xml -u testdeploy --wait 10
+
+
+# W-8953847 & W-8596637 BUG Fix
+sfdx force:source:deploy -m ApexClass:TRL_Action_New_CTRL -u testdeploy -w 10
+sfdx force:source:deploy -m ApexPage:TRL_Action_New -u testdeploy -w 10
+
+# --- START W-9023374
+sfdx force:source:deploy -m ApexClass:TRL_Action_Edit_CTRLTest -u testdeploy -w 10
+sfdx force:source:deploy -m ApexClass:TRL_Action_New_CTRLTest -u testdeploy -w 10
+sfdx force:source:deploy -m ApexClass:TRL_Case_Priorization_CalculationTest -u testdeploy -w 10
+# --- END W-9023374
+
+# --- START W-8937505
+sfdx force:source:deploy -m CustomField:Case.TRL_Calc_Prio_Score__c -u testdeploy -w 10
+sfdx force:source:deploy -m CustomField:Case.TRL_Priorisation_Details__c -u testdeploy -w 10
+sfdx force:source:deploy -m CustomField:Case.TRL_Score__c -u testdeploy -w 10
+sfdx force:source:deploy -m CustomField:Case.TRL_Type__c -u testdeploy -w 10
+
+sfdx force:source:deploy -m ApexClass:TRLCase_detail_page_CTRL -u testdeploy -w 10
+#sfdx force:source:deploy -m ApexClass:TRL_Case_Priorization_Calculation -u testdeploy -w 10
+
+sfdx force:source:deploy -m ApexPage:TRLCase_detail_page -u testdeploy -w 10
+#W 8937505 #57
+#force-app/main/default/pages/TRLCase_detail_page.page
+# --- END W-8937505
+
+# --- START W-8937494
+sfdx force:source:deploy -p force-app/main/default/globalValueSets/TRL_Prio_Fields.globalValueSet-meta.xml -u testdeploy -w 10
+sfdx force:source:deploy -m CustomObject:TRL_Priorization_Config__c -u testdeploy -w 10
+sfdx force:source:deploy -m ApexClass:TRL_Case_Priorization_Calculation -u testdeploy -w 10
+sfdx force:source:deploy -m ApexClass:TRL_Case_Priorization_CalculationTest -u testdeploy -w 10
+sfdx force:source:deploy -p "force-app/main/default/layouts/TRL_Priorization_Config__c-TRL Priorization Config Layout.layout-meta.xml" -u testdeploy -w 10
+
+# Permission set
+sfdx force:source:deploy -m PermissionSet:TRL_Permissions -u testdeploy --wait 10
+sfdx force:source:deploy -m PermissionSet:TRL_manager -u testdeploy --wait 10
+
+#force-app/main/default/objects/TRL_Priorization_Config__c/TRL_Priorization_Config__c.object-meta.xml
+#force-app/main/default/objects/TRL_Priorization_Config__c/fields/FieldLabel__c.field-meta.xml
+#force-app/main/default/objects/TRL_Priorization_Config__c/fields/FilterHigh__c.field-meta.xml
+#force-app/main/default/objects/TRL_Priorization_Config__c/fields/FilterLow__c.field-meta.xml
+#force-app/main/default/objects/TRL_Priorization_Config__c/fields/FilterType__c.field-meta.xml
+#force-app/main/default/objects/TRL_Priorization_Config__c/fields/Filter_Score__c.field-meta.xml
+#force-app/main/default/objects/TRL_Priorization_Config__c/fields/IsParent__c.field-meta.xml
+#force-app/main/default/objects/TRL_Priorization_Config__c/fields/Parent_Filter__c.field-meta.xml
+#force-app/main/default/objects/TRL_Priorization_Config__c/fields/Score_Weight__c.field-meta.xml
+#force-app/main/default/objects/TRL_Priorization_Config__c/fields/ScoringString__c.field-meta.xml
+#force-app/main/default/objects/TRL_Priorization_Config__c/fields/Scoring_Factor__c.field-meta.xml
+#force-app/main/default/objects/TRL_Priorization_Config__c/fields/TRL_Config_Field__c.field-meta.xml
+#force-app/main/default/objects/TRL_Priorization_Config__c/fields/TRL_Config_Region__c.field-meta.xml
+#force-app/main/default/objects/TRL_Priorization_Config__c/fields/Theather__c.field-meta.xml
+
+#force-app/main/default/objects/TRL_Priorization_Config__c/listViews/All_Child_Entries.listView-meta.xml
+##force-app/main/default/objects/TRL_Priorization_Config__c/listViews/All_Master_Entries.listView-meta.xml
+#force-app/main/default/objects/TRL_Priorization_Config__c/compactLayouts/Enhanced.compactLayout-meta.xml
+
+#force-app/main/default/layouts/TRL_Priorization_Config__c-TRL Priorization Config Layout.layout-meta.xml
+
+#force-app/main/default/classes/TRL_Case_Priorization_Calculation.cls
+#force-app/main/default/classes/TRL_Case_Priorization_CalculationTest.cls
+
+#force-app/main/default/permissionsets/TRL_Permissions.permissionset-meta.xml
+#force-app/main/default/permissionsets/TRL_manager.permissionset-meta.xml
+# --- END W-8937494
+
+# --- START W-8937511
+#force-app/main/default/pages/TRL_Action_Edit.page
+sfdx force:source:deploy -m ApexPage:TRL_Action_Edit -u testdeploy -w 10
+# --- END W-8937511
+
+# --- START W-8937525
+#force-app/main/default/classes/TRL_Cases_only.cls
+#force-app/main/default/pages/TRLCases.page
+sfdx force:source:deploy -m ApexClass:TRL_Cases_only -u testdeploy -w 10
+sfdx force:source:deploy -m ApexPage:TRLCases -u testdeploy -w 10
+# --- END W-8937525
+
+# --- START W-8937515
+sfdx force:source:deploy -p force-app/main/default/email/TRL/global_assignment_rule.email-meta.xml -u testdeploy -w 10
+
+sfdx force:source:deploy -p force-app/main/default/email/TRL/Assignment_rule.email -u testdeploy -w 10
+sfdx force:source:deploy -p force-app/main/default/email/TRL/Assignment_rule.email-meta.xml -u testdeploy -w 10
+sfdx force:source:deploy -p force-app/main/default/email/TRL/Notification_to_CSA_CSE.email -u testdeploy -w 10
+sfdx force:source:deploy -p force-app/main/default/email/TRL/Notification_to_CSA_CSE.email-meta.xml -u testdeploy -w 10
+sfdx force:source:deploy -p force-app/main/default/email/TRL/TRL_case_status_is_work_in_progress.email -u testdeploy -w 10
+sfdx force:source:deploy -p force-app/main/default/email/TRL/TRL_case_status_is_work_in_progress.email-meta.xml -u testdeploy -w 10
+
+
+sfdx force:source:deploy -p force-app/main/default/classes/TRL_Action_New_CTRL.cls -u testdeploy -w 10
+sfdx force:source:deploy -p force-app/main/default/classes/TRL_Case_Priorization_Calculation.cls -u testdeploy -w 10
+
+# --- END W-8937515
+
+echo "--- END DEPLOYMENT FOR: testdeploy"

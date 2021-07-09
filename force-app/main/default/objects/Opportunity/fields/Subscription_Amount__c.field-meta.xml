@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subscription_Amount__c</fullName>
+    <description>Roll up of subscription fees in opportunity</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Subscription Fees</inlineHelpText>
+    <label>Subscription Amount</label>
+    <summarizedField>OpportunityLineItem.TotalPrice</summarizedField>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.Rollup_Category__c</field>
+        <operation>equals</operation>
+        <value>Subscription, Subscription Royalty, Credit</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Support_Product_Component__c</fullName>
+    <externalId>false</externalId>
+    <label>Component</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Support_Product__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Support_Product_Component</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>MUnit</controllingFieldValue>
+            <valueName>Maven Plugin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MUnit</controllingFieldValue>
+            <valueName>Studio plugin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MUnit</controllingFieldValue>
+            <controllingFieldValue>MMC</controllingFieldValue>
+            <valueName>Utilities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MUnit</controllingFieldValue>
+            <controllingFieldValue>MuleSoft Enterprise Maven Repository</controllingFieldValue>
+            <controllingFieldValue>Support Center</controllingFieldValue>
+            <controllingFieldValue>Anypoint Community Manager</controllingFieldValue>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <controllingFieldValue>Mule Runtime 3.x</controllingFieldValue>
+            <controllingFieldValue>Mule Runtime 4.x</controllingFieldValue>
+            <controllingFieldValue>Anypoint Platform</controllingFieldValue>
+            <controllingFieldValue>Anypoint Private Cloud Edition</controllingFieldValue>
+            <controllingFieldValue>MMC</controllingFieldValue>
+            <controllingFieldValue>Tcat Server</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MuleSoft Enterprise Maven Repository</controllingFieldValue>
+            <controllingFieldValue>Support Center</controllingFieldValue>
+            <controllingFieldValue>Anypoint Platform</controllingFieldValue>
+            <controllingFieldValue>Anypoint Private Cloud Edition</controllingFieldValue>
+            <controllingFieldValue>MMC</controllingFieldValue>
+            <controllingFieldValue>Tcat Server</controllingFieldValue>
+            <valueName>Access Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Community Manager</controllingFieldValue>
+            <valueName>Access and Security</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Community Manager</controllingFieldValue>
+            <valueName>API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Community Manager</controllingFieldValue>
+            <valueName>CMS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Community Manager</controllingFieldValue>
+            <valueName>Forums</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <controllingFieldValue>Mule Runtime 3.x</controllingFieldValue>
+            <controllingFieldValue>Mule Runtime 4.x</controllingFieldValue>
+            <valueName>APIkit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <controllingFieldValue>Mule Runtime 3.x</controllingFieldValue>
+            <controllingFieldValue>Mule Runtime 4.x</controllingFieldValue>
+            <valueName>Batch Processor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <controllingFieldValue>Mule Runtime 3.x</controllingFieldValue>
+            <controllingFieldValue>Mule Runtime 4.x</controllingFieldValue>
+            <valueName>Connectors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <controllingFieldValue>Mule Runtime 3.x</controllingFieldValue>
+            <valueName>DataMapper</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <controllingFieldValue>Mule Runtime 3.x</controllingFieldValue>
+            <controllingFieldValue>Mule Runtime 4.x</controllingFieldValue>
+            <valueName>DataWeave</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <valueName>Debugger</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Studio</controllingFieldValue>
+            <controllingFieldValue>Mule Runtime 3.x</controllingFieldValue>
+            <valueName>Modules</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Runtime 3.x</controllingFieldValue>
+            <controllingFieldValue>Mule Runtime 4.x</controllingFieldValue>
+            <valueName>API Gateway</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Runtime 3.x</controllingFieldValue>
+            <controllingFieldValue>Mule Runtime 4.x</controllingFieldValue>
+            <valueName>Deployment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Runtime 3.x</controllingFieldValue>
+            <controllingFieldValue>Mule Runtime 4.x</controllingFieldValue>
+            <valueName>Flow Control</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Runtime 3.x</controllingFieldValue>
+            <controllingFieldValue>Mule Runtime 4.x</controllingFieldValue>
+            <valueName>Mule Cluster</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mule Runtime 3.x</controllingFieldValue>
+            <controllingFieldValue>Mule Runtime 4.x</controllingFieldValue>
+            <valueName>Scopes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Platform</controllingFieldValue>
+            <valueName>Anypoint Monitoring</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Platform</controllingFieldValue>
+            <controllingFieldValue>Anypoint Private Cloud Edition</controllingFieldValue>
+            <valueName>Anypoint MQ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Platform</controllingFieldValue>
+            <valueName>Anypoint Visualizer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Platform</controllingFieldValue>
+            <controllingFieldValue>Anypoint Private Cloud Edition</controllingFieldValue>
+            <valueName>API Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Platform</controllingFieldValue>
+            <valueName>CloudHub</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Platform</controllingFieldValue>
+            <controllingFieldValue>Anypoint Private Cloud Edition</controllingFieldValue>
+            <valueName>Data Gateway</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Platform</controllingFieldValue>
+            <controllingFieldValue>Anypoint Private Cloud Edition</controllingFieldValue>
+            <valueName>Design Center</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Platform</controllingFieldValue>
+            <controllingFieldValue>Anypoint Private Cloud Edition</controllingFieldValue>
+            <valueName>Exchange</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Platform</controllingFieldValue>
+            <controllingFieldValue>Anypoint Private Cloud Edition</controllingFieldValue>
+            <valueName>Partner Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Platform</controllingFieldValue>
+            <controllingFieldValue>Anypoint Private Cloud Edition</controllingFieldValue>
+            <valueName>Runtime Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Platform</controllingFieldValue>
+            <valueName>Secrets Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Private Cloud Edition</controllingFieldValue>
+            <valueName>Ops Center</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

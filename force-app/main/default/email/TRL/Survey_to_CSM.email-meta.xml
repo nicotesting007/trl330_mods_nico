@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BlankLetterhead</letterhead>
+    <name>CS Tech Request Survey to CSM</name>
+    <style>freeForm</style>
+    <subject>CS Tech Request {!Survey_Result__c.Case__c}:{!Survey_Result__c.Case_Subject__c} was completed -Please leave feedback!</subject>
+    <textOnly>Hi there!
+
+Could you please fill the survey! Click the following link to open edit page here
+{!Survey_Result__c.Instance_URL__c}{!Survey_Result__c.Id}/e?retURL=%2F{!Survey_Result__c.Id}
+
+We really need this information. Thanks in advance!
+
+Have a nice day!</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

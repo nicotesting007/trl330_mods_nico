@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>APAC_Team_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>CS Tech APAC Team</label>
+    <queue>APAC_Team</queue>
+    <sharedTo>
+        <allInternalUsers/>
+    </sharedTo>
+</ListView>

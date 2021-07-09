@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TRLcases__c</fullName>
+    <externalId>false</externalId>
+    <label>TRL cases user type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Requestor</fullName>
+                <default>true</default>
+                <label>Requestor</label>
+            </value>
+            <value>
+                <fullName>CS Tech Lead</fullName>
+                <default>false</default>
+                <label>CS Tech Lead</label>
+            </value>
+            <value>
+                <fullName>AssignedTo Person</fullName>
+                <default>false</default>
+                <label>AssignedTo Person</label>
+            </value>
+            <value>
+                <fullName>Super User</fullName>
+                <default>false</default>
+                <label>Super User</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

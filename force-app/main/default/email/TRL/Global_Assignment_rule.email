@@ -1,0 +1,23 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);">The following CS Tech Request has been assigned to the global team.</span><br style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;"><br style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">
+<span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);">Company: {!Case.Account}</span>
+<br style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">
+<span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);">Theater:{!Case.Account_Region__c}</span>
+<br style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">
+<br style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">
+<span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);">Subject: {!Case.Subject}</span>
+<br style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">
+<span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);">Description: {!Case.Description}</span>
+<br style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">
+<span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);">Reason: {!Case.CS_Reason__c}</span>
+<br style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">
+<span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);">Activity: {!Case.CS_Activity__c}</span>
+<br style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">
+<span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);">Timeframe: {!Case.Timeframe__c}</span>
+<br style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">
+<span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);">Requested By: {!Case.CreatedBy}</span>
+<br style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;"><br style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);">Click the following url to go directly to the <a href="{!Case.Instance_URL__c}apex/TRLCase_detail_page?id={!Case.Id}">case</a></span>]]></td>
+</tr>
+</table>

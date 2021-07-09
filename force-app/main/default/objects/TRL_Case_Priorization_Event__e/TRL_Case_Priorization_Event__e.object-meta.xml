@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>#W-8097697 TRL Priorization thoeger@mulesoft.com</description>
+    <eventType>HighVolume</eventType>
+    <label>TRL_Case_Priorization_Event</label>
+    <pluralLabel>TRL_Case_Priorization_Events</pluralLabel>
+    <publishBehavior>PublishAfterCommit</publishBehavior>
+</CustomObject>

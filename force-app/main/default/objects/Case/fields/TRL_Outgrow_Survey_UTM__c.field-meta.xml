@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TRL_Outgrow_Survey_UTM__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>Field used by CS to configure Outgrow Surveys. The value in this field is used to match Survey Results to Case records via a Process Builder flow.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the unique identifier / collector code that Survey responses are logged against. This value must be unique for each request.</inlineHelpText>
+    <label>Outgrow Survey UTM</label>
+    <length>20</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

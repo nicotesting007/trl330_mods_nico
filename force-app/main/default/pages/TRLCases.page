@@ -1,0 +1,423 @@
+<apex:page controller="TRL_Cases_only" showHeader="true" sidebar="true" tabStyle="TRL_cases__tab" lightningStylesheets="true">
+    <!-- A.I. COmment: Added styles to show inof box and manage search field layout -->
+    <style>
+        .vfHelpText a            {position:relative;}
+        .vfHelpText a span       {display: none;}
+        .vfHelpText a:hover span {display: block;
+                                  position:absolute;
+                                  top:1.25em;
+                                  padding:2px 5px;
+                                  left:-15em; width:15em;
+                                  z-index:100;
+                                  border:1px solid orange;
+                                  background-color:#FEFDB9;
+                                  color:black;
+                                 }
+        .search-box {
+            display:flex;
+            flex-direction:row;
+            justify-content: flex-end;
+            align-items: baseline;
+            margin-bottom:10px;
+            white-space: normal;
+        }
+        .filter-box {
+            display:flex;
+            flex-direction:row;
+            align-content: flex-start;
+            align-items: baseline;
+            margin-bottom:10px;
+            white-space: normal;
+        }
+    </style>
+    <!-- A.I. Comment: END -->
+    <apex:form id="trlform">
+        <!-- A.I.  Comment: Add Action to reload page from controller action -->
+        <apex:actionFunction action="{!reloadCases}" name="reloadPageJS" oncomplete="handleRegionSelect()" status="pageStatus" rerender="pbfilter, case-list" />
+        <apex:messages />
+        <br/>
+        <!-- A.I. Comment: Add Loding image when page refresh wait indicator -->
+        <apex:actionStatus id="pageStatus">
+    		<apex:facet name="start">
+        		<apex:outputPanel >
+					<img src="/img/loading32.gif" width="25" height="25" />
+            		<apex:outputLabel value="Loading..."/>
+                </apex:outputPanel>            
+    		</apex:facet>
+        </apex:actionStatus>
+        <!-- A.I. Comment  END -->
+        <apex:pageBlock title="CS Tech Requests Home" id="pbfilter">
+            <div class="filter-box">
+                <div>
+                    <apex:outputtext >
+                        <H2>Quick Filters:&nbsp;</H2>
+                    </apex:outputtext>
+                </div>   
+                <!-- A.I. CHANGE: Picklists to use controller varaibles instead of Account/Cas object has validation restrictions
+                <div>
+                    <apex:outputtext >
+                        <H2>Status:&nbsp;</H2>    
+                        <apex:inputField value="{! caseForStatus.Status }" onchange="refreshCases()" label="Select Status:&nbsp;" required="false"/>
+                    </apex:outputtext>
+                </div>
+                <div>
+                     
+                    <apex:outputtext>
+                        <H2>&nbsp;Theater:&nbsp;</H2> 
+                        <apex:inputField value="{! accountForTerritory.Territory__c }" onchange="refreshCases()" label="Select Theater:&nbsp;" required="false"/>
+                    </apex:outputtext>
+                    
+                </div>    
+                <div>
+                    <apex:outputtext>
+                        <H2>&nbsp;Region:&nbsp;</H2>
+                        <apex:inputField value="{! accountForTerritory.Region__c }" onchange="refreshCases()" label="Select Region:&nbsp;" required="false"/>
+                    </apex:outputtext>
+                    <apex:actionsupport event="onchange" onsubmit="parameterSave()" rerender="theaterarea, case-list" action="{!reloadCases}" status="pageStatus" />
+
+                    oncomplete="parameterSave()"
+                </div>
+                -->
+                <!-- A.I. CHANGE: New Picklists use controller varaibles instead of Account validation restrictions -->
+                <div>
+                    <H2>Status:&nbsp;</H2>
+                    <apex:actionRegion >
+                        <apex:selectList value="{!selectedCaseStatus}" id="casestatus" multiselect="false" size="1">
+                            <apex:selectOptions value="{!StatusItems}"/>
+                            <apex:actionsupport event="onchange" oncomplete="parameterSave()"  rerender="case-list" action="{!reloadCases}" status="pageStatus" />
+                        </apex:selectList>
+                    </apex:actionRegion>
+                </div>
+                <div>
+                    <H2>&nbsp;Theater:&nbsp;</H2>
+                    <apex:actionRegion >
+                        <apex:selectList value="{!selectedTheater}" id="selectedtheater" multiselect="false" size="1">
+                            <apex:selectOptions value="{!theaterItems}"/>
+                            <apex:actionsupport event="onchange" onsubmit="parameterSave()" rerender="theaterarea, case-list" action="{!reloadCases}" status="pageStatus" />
+                        </apex:selectList>
+                    </apex:actionRegion>
+                </div>
+                <div>
+                    <H2>&nbsp;Region:&nbsp;</H2>
+                    <apex:actionRegion >
+                        <apex:selectList value="{!selectedArea}" multiselect="false" size="1" id="theaterarea" disabled="{!areaDisaplay}">
+                            <apex:selectOptions value="{!regionItems}"/>
+                            <apex:actionsupport event="onchange" oncomplete="parameterSave()" rerender="case-list" action="{!reloadCases}" status="pageStatus" />
+                        </apex:selectList>
+                    </apex:actionRegion>
+                </div>
+            
+                <div>
+                    <!-- START - Added by Prasenjit-->
+                    <!--<apex:outputtext rendered="{!CONTAINS({!$UserRole.Name},'Manual'), true, false)}">   <apex:inputCheckbox value="{!requestor_checkbox}" id="requestedby" onchange="refreshCases()" required="false"> -->
+                    <apex:outputtext rendered="{! TEXT($User.TRLcases__c) == 'Super user'
+                                                                            || (TEXT($User.TRLcases__c) == 'AssignedTo Person' || TEXT($User.TRLcases__c) == 'CS Tech Lead')}">
+                        <H2>Show only Assigned To me: </H2>
+                        <apex:inputCheckbox value="{!csacse_checkbox}" id="assignedto" required="false">
+                            <apex:actionsupport event="onchange" oncomplete="parameterSave()" rerender="case-list" action="{!reloadCases}" status="pageStatus" />
+                        </apex:inputCheckbox>
+                    </apex:outputtext>
+
+                    <apex:outputtext rendered="{! TEXT($User.TRLcases__c) == 'Super user'
+                        || (TEXT($User.TRLcases__c) == 'AssignedTo Person' || TEXT($User.TRLcases__c) == 'CS Tech Lead') || TEXT($User.TRLcases__c) == 'Requestor'}">
+
+                        <H2>Show only Requested by me: </H2>
+                        <apex:inputCheckbox value="{!requestor_checkbox}" id="requestedby" required="false">
+                            <apex:actionsupport event="onchange" oncomplete="parameterSave()" rerender="case-list" action="{!reloadCases}" status="pageStatus" />
+                        </apex:inputCheckbox>
+                    </apex:outputtext>
+                </div>
+            </div>
+                
+            <div class="search-box"> 
+                <div>   
+                    <apex:outputtext >
+                        <H2>Search Tech Request:&nbsp;</H2>
+                    </apex:outputtext>
+                    <apex:inputText value="{!searchExpression}" required="false" id="searchcasesvalue" onkeydown="preventSubmit(event)" />
+                </div>
+                <div>
+                    <span class="vfHelpText">
+                        <apex:outputLink value="javascript:return false;">    
+                            <img src="/s.gif" alt="" class="helpOrb" />
+                            <span>This is a search for assigned to, requestor, subject, account name and other text fields.</span>
+                        </apex:outputLink>    
+                    </span>
+                </div> 
+                <div>   
+                    <apex:commandButton action="{!reloadCases}" onclick="parameterSave()" value="Search" tabindex="1" reRender="trlform, case-list" status="pageStatus" />
+                    <apex:commandButton action="{!refreshCaseView}" onclick="clearParmStore()" value="Reset" reRender="trlform, case-list" status="pageStatus" /> 
+                </div>
+            </div>        
+        </apex:pageBlock>
+
+        <!-- END - Added by Prasenjit-->
+            <apex:pageBlock id="case-list">
+                <apex:pageblockButtons location="Top">
+                    <apex:outputPanel id="pagesButtons">
+                        <apex:commandButton value="Beginning" action="{!goToFirstPage}" disabled="{!currentPage == 1}" reRender="pagesButtons,casesPanel"/>
+                        <apex:commandButton value="Previous" action="{!goToPreviousPage}" disabled="{!currentPage == 1}" reRender="pagesButtons,casesPanel"/>
+                        <apex:outputText >Current Page: {!currentPage}</apex:outputText>
+                        <apex:commandButton value="Next" action="{!goToNextPage}" disabled="{!currentPage >= totalSize/listSize}" reRender="pagesButtons,casesPanel"/>
+                        <apex:commandButton value="End" action="{!goToEndPage}" disabled="{!currentPage >= totalSize/listSize}" reRender="pagesButtons,casesPanel"/>
+                    </apex:outputPanel>
+                </apex:pageblockButtons>
+                <apex:commandButton action="{!newCase}" tabindex="5" title="New case" value="New case" />
+
+                <apex:pageBlockTable value="{!cases }" var="case" id="casesPanel">
+
+                    <!--
+                    <apex:column >
+                        <apex:facet Name="header">Log Time</apex:facet>
+                        <apex:outputLink styleClass="btn" value="/aEM/e?CF00N2T000005eOBZ={!Case.CaseNumber}&CF00N2T000005eOBZ_lkid={!Case.Id}&retURL=/apex/TRLCase_detail_page?id={!Case.Case_Id_18_digit__c}&newid={!Time_tracking__c.Id}p&saveURL=/apex/TRLCase_detail_page?id={!Case.Case_Id_18_digit__c}&newid={!Time_tracking__c.Id}">
+                        Log Time
+                        </apex:outputLink>
+                    </apex:column>
+                    -->
+                    <apex:column width="101px">
+                        <apex:facet Name="header">Log Task</apex:facet>
+                        <apex:outputLink styleClass="btn" value="/apex/TRL_TimeLog_New?casenumber={!Case.CaseNumber}&caseid={!Case.Id}&account_name={!Case.Account.Name}&selectedStatus={!caseForStatus.Status}&selectedTerritory={!accountForTerritory.Territory__c}&selectedRegion={!accountForTerritory.Region__c}&retURL=/apex/TRLCases?casenumber={!Case.CaseNumber}&saveURL=/apex/TRLCases?casenumber={!Case.CaseNumber}">
+                        Log Task
+                        </apex:outputLink>
+                    </apex:column>
+                    
+                    <apex:column >
+                        <apex:facet Name="header">Case Number</apex:facet>
+                        <!--Nagini's change: passing the values of status, territory and region into next page 
+                        <apex:outputLink value="{!'/apex/TRLcase_detail_page?id=' + case.id + '&selectedStatus=' + caseForStatus.Status + '&selectedTerritory=' + accountForTerritory.Territory__c + '&selectedRegion=' + accountForTerritory.Region__c}">
+                            {!case.caseNumber}
+                        </apex:outputLink>
+                        Nagini's change: -->
+                        <!--A.I. change: passing the values of status, territory and region into next page -->
+                        <apex:outputLink value="{!'/apex/TRLcase_detail_page?id=' + case.id}">
+                            {!case.caseNumber}
+                        </apex:outputLink>
+                        <!-- A.I. change: END -->
+                    </apex:column>
+
+                    <apex:column value="{!case.AccountID}">
+                        <apex:facet Name="header">Account Name</apex:facet>
+                    </apex:column>
+                    <apex:column value="{! case.Subject }">
+                        <apex:facet Name="header">Subject</apex:facet>
+                    </apex:column>
+                    <apex:column value="{! case.Status }">
+                        <apex:facet Name="header">Status</apex:facet>
+                    </apex:column>
+                    <!-- AI COmment: Add 3 new Activity fields --> 
+                    <apex:column value="{! case.TRL_Type__c }">
+                        <apex:facet Name="header">Type</apex:facet>
+                    </apex:column>
+                    <apex:column value="{! case.CS_Reason__c }">
+                        <apex:facet Name="header">Reason</apex:facet>
+                    </apex:column>
+                    <apex:column value="{! case.CS_Activity__c }">
+                        <apex:facet Name="header">Activity</apex:facet>
+                    </apex:column>
+
+                    <!-- Start: Sandeep Changes -->
+                    <apex:column value="{! case.CreatedDate }">
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!goToSortColumn}" value="CreatedDate{!IF(sortExpression=='CreatedDate',IF(sortDirection='ASC','▼','▲'),'')}" id="cmdSortCreatedDate">
+                                <apex:param value="CreatedDate" name="column" assignTo="{!sortExpression}" ></apex:param>
+                            </apex:commandLink>
+                        </apex:facet>
+                    </apex:column>
+                    <!-- End: Sandeep Changes -->
+                    <apex:column value="{! case.Account_Region__c }">
+                        <apex:facet Name="header">Account Region</apex:facet>
+                    </apex:column>
+                    <!-- AI Comment: hiding this column for 2.2.0
+                    <apex:column value="{! case.Level_of_Priority__c }">
+                        <apex:facet Name="header">Level of Priority</apex:facet>
+                    </apex:column>
+                    -->
+                    <!-- Start: Sandeep Changes -->
+                    <apex:column value="{! case.TRL_Calc_Prio_Score__c }" title="Prioritization Score">
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!goToSortColumn}" value="Prioritization Score{!IF(sortExpression=='TRL_Calc_Prio_Score__c',IF(sortDirection='ASC','▼','▲'),'')}" id="cmdSortPrioCalc">
+                                <apex:param value="TRL_Calc_Prio_Score__c" name="column" assignTo="{!sortExpression}" ></apex:param>
+                            </apex:commandLink>
+                        </apex:facet>
+                    </apex:column> 
+                    <apex:column value="{! case.CSA_CSE__c }" title="Assigned To">
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!goToSortColumn}" value="Assigned To{!IF(sortExpression=='CSA_CSE__c',IF(sortDirection='ASC','▼','▲'),'')}" id="cmdSort">
+                                <apex:param value="CSA_CSE__c" name="column" assignTo="{!sortExpression}" ></apex:param>
+                            </apex:commandLink>
+                        </apex:facet>
+                    </apex:column>                   
+                    <apex:column value="{! case.CreatedByID }"  title="Requestor">
+                        <apex:facet name="header">
+                            <apex:commandLink action="{!goToSortColumn}" value="Requestor{!IF(sortExpression=='CreatedByID',IF(sortDirection='ASC','▼','▲'),'')}" id="cmdSortRequestor">
+                                <apex:param value="CreatedByID" name="column" assignTo="{!sortExpression}" ></apex:param>
+                            </apex:commandLink>
+                        </apex:facet>  
+                    </apex:column>
+                    <!--End: Sandeep Changes-->
+                    
+                    <!-- 
+                    <apex:column value="{! case.CreatedByID }"  title="Requestor">
+                    <apex:facet Name="header">Requestor</apex:facet>
+                    </apex:column>
+
+                    <apex:column value="{! case.CSA_CSE__c }"  title="Assigned To">
+                    <apex:facet Name="header">AssignedTo</apex:facet>
+                    </apex:column> -->            
+                </apex:pageBlockTable>        
+                <apex:actionFunction action="{!reloadCases}" name="reloadCases" reRender="casesPanel">
+                </apex:actionFunction>
+            </apex:pageBlock>
+           
+        <script type="text/javascript">
+        // --- CONST VALUES ---
+        const SELECTED_STATUS = "selectedstatus";
+        const SELECTED_THEATER = "selectedtheater";
+        const SELECTED_REGION = "selectedregion";
+        const SEARCH_TEXT = "searchtext";
+        const ASSIGNEDTO_CHECK = "assignedto";
+        const REQUESTEDBY_CHECK = "requestedby";
+
+        const INPUT_CASESTATUS = "{!$Component.trlform.pbfilter.casestatus}";
+        const INPUT_REGION = "{!$Component.trlform.pbfilter.theaterarea}";
+        const INPUT_THEATER = "{!$Component.trlform.pbfilter.selectedtheater}";
+        const INPUT_SEARCH_TEXT = "{!$Component.trlform.pbfilter.searchcasesvalue}";
+        const INPUT_ASSIGNEDTO_CHECK = "{!$Component.trlform.pbfilter.assignedto}";
+        const INPUT_REQUESTEDBY_CHECK = "{!$Component.trlform.pbfilter.requestedby}";
+
+        // --- END CONST ---
+        //-- A.I. Comment: add init method to set page values from storage 
+            window.onload = function () {
+               init();
+            }      
+
+        function refreshCases() {
+            reloadCases();
+        }
+
+        function preventSubmit(e){ // you can add here preventSubmit(e , someIdField), someIdField - where to tad focus
+            if( e.which == 13 ){
+                e.preventDefault();
+                $("input[id*='inputSubject']").focus(); // inputSubject - next input
+            }
+        } 
+
+        function init(){
+            console.log("## Call init() Form");
+            if (typeof(Storage) !== "undefined") {
+                // Case Status filter parameter store
+                if (localStorage.selectedstatus) { // casestatus
+                    document.getElementById(INPUT_CASESTATUS).value = localStorage.selectedstatus;
+                } 
+                // Case/Account Theater filter parameter store
+                if (localStorage.selectedtheater) { // casestatus
+                    document.getElementById(INPUT_THEATER).value = localStorage.selectedtheater;
+                }                 
+                // Case/Account Region filter parameter store
+                if (localStorage.selectedregion) { // theaterarea
+                    // enable Region selector
+                    document.getElementById(INPUT_REGION).disabled = false;
+                    document.getElementById(INPUT_REGION).value = localStorage.selectedregion;
+                } 
+                // search DO NOT STORE for v2.1.2
+                if (localStorage.searchtext) {
+                //    document.getElementById(INPUT_SEARCH_TEXT).value = localStorage.searchtext;
+                    // CLEAN search 2.1.2
+                    localStorage.removeItem(SEARCH_TEXT);
+                }
+
+                // Checkboxes
+                var assignedCheckBox = document.getElementById(INPUT_ASSIGNEDTO_CHECK);
+                if(assignedCheckBox){
+                    if (localStorage.assignedto && localStorage.assignedto == "true") {                   
+                        document.getElementById(INPUT_ASSIGNEDTO_CHECK).checked = true;
+                    }else{
+                        document.getElementById(INPUT_ASSIGNEDTO_CHECK).checked = false;
+                    }
+                }
+                var requestedByCheckBox = document.getElementById(INPUT_REQUESTEDBY_CHECK);
+                if(requestedByCheckBox){
+                    if (localStorage.requestedby && localStorage.requestedby == "true") {                   
+                        document.getElementById(INPUT_REQUESTEDBY_CHECK).checked = true;
+                    }else{
+                        document.getElementById(INPUT_REQUESTEDBY_CHECK).checked = false;
+                    }
+                }
+                // reload
+                //reloadCases();
+                reloadPageJS();
+            } else {
+                document.getElementById("trlform").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+        function handleRegionSelect(){
+                // Case/Account Region filter parameter store
+                if (localStorage.selectedregion) { // theaterarea
+                    // enable Region selector
+                    document.getElementById(INPUT_REGION).disabled = false;
+                    document.getElementById(INPUT_REGION).value = localStorage.selectedregion;
+                    reloadCases();
+                } 
+        }
+        function clearRegion(){
+            localStorage.removeItem(SELECTED_REGION);
+    
+                // Case/Account Theater filter parameter store
+                var etheater = document.getElementById(INPUT_THEATER);
+                localStorage.setItem(SELECTED_THEATER, etheater.options[etheater.selectedIndex].value);
+    
+
+        }
+        function clearParmStore(){
+            localStorage.removeItem(SELECTED_STATUS);
+            localStorage.removeItem(SELECTED_THEATER);
+            localStorage.removeItem(SELECTED_REGION);
+            localStorage.removeItem(SEARCH_TEXT);
+            localStorage.removeItem(ASSIGNEDTO_CHECK);
+            localStorage.removeItem(REQUESTEDBY_CHECK);
+        }
+        function parameterSave(){
+            console.log("## Call parameter save");
+            if (typeof(Storage) !== "undefined") {
+                // Case Status filter parameter store
+                var estatus = document.getElementById(INPUT_CASESTATUS);
+                localStorage.setItem(SELECTED_STATUS, estatus.options[estatus.selectedIndex].value);
+    
+                // Case/Account Theater filter parameter store
+                var etheater = document.getElementById(INPUT_THEATER);
+                localStorage.setItem(SELECTED_THEATER, etheater.options[etheater.selectedIndex].value);
+    
+                // Case/Account Region filter parameter store
+                var eregion = document.getElementById(INPUT_REGION);
+                localStorage.setItem(SELECTED_REGION, eregion.options[eregion.selectedIndex].value);
+    
+                // Search text DO NOT SAVE 2.1.2
+                //var esearch = document.getElementById(INPUT_SEARCH_TEXT);
+                //localStorage.setItem(SEARCH_TEXT, esearch.value);
+
+                // Assigned to Me checkbox
+                var assignedCheckBox = document.getElementById(INPUT_ASSIGNEDTO_CHECK);
+                if(assignedCheckBox){
+                    if(assignedCheckBox.checked == true){
+                        localStorage.setItem(ASSIGNEDTO_CHECK, "true"); 
+                    }else{
+                        localStorage.setItem(ASSIGNEDTO_CHECK, "false");
+                    }
+                }
+                // Requested By Me checkbox
+                var requestedByCheckBox = document.getElementById(INPUT_REQUESTEDBY_CHECK);
+                if(requestedByCheckBox){
+                    if(requestedByCheckBox.checked == true){
+                        localStorage.setItem(REQUESTEDBY_CHECK, "true"); 
+                    }else{
+                        localStorage.setItem(REQUESTEDBY_CHECK, "false");
+                    }
+                }
+            } else {
+                document.getElementById("trlform").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+        </script>
+
+    </apex:form>
+</apex:page>

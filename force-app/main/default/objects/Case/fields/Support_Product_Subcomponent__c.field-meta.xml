@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Support_Product_Subcomponent__c</fullName>
+    <externalId>false</externalId>
+    <label>Subcomponent</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Support_Product_Component__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Support_Product_Subcomponent</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>APIkit</controllingFieldValue>
+            <valueName>APIkit for OData</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>APIkit</controllingFieldValue>
+            <valueName>APIkit Router</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>APIkit</controllingFieldValue>
+            <valueName>SOAP Router</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>APIkit</controllingFieldValue>
+            <controllingFieldValue>API Manager</controllingFieldValue>
+            <controllingFieldValue>CloudHub</controllingFieldValue>
+            <controllingFieldValue>Access Management</controllingFieldValue>
+            <controllingFieldValue>Anypoint Monitoring</controllingFieldValue>
+            <controllingFieldValue>API Gateway</controllingFieldValue>
+            <controllingFieldValue>Deployment</controllingFieldValue>
+            <controllingFieldValue>Design Center</controllingFieldValue>
+            <controllingFieldValue>Flow Control</controllingFieldValue>
+            <controllingFieldValue>Modules</controllingFieldValue>
+            <controllingFieldValue>Ops Center</controllingFieldValue>
+            <controllingFieldValue>Partner Manager</controllingFieldValue>
+            <controllingFieldValue>Runtime Manager</controllingFieldValue>
+            <controllingFieldValue>Scopes</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API Manager</controllingFieldValue>
+            <controllingFieldValue>Anypoint Monitoring</controllingFieldValue>
+            <controllingFieldValue>Runtime Manager</controllingFieldValue>
+            <valueName>Alerts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API Manager</controllingFieldValue>
+            <valueName>Analytics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API Manager</controllingFieldValue>
+            <controllingFieldValue>CloudHub</controllingFieldValue>
+            <controllingFieldValue>Deployment</controllingFieldValue>
+            <controllingFieldValue>Runtime Manager</controllingFieldValue>
+            <valueName>Applications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API Manager</controllingFieldValue>
+            <valueName>Developer Portal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API Manager</controllingFieldValue>
+            <controllingFieldValue>Design Center</controllingFieldValue>
+            <valueName>Mocking Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>API Manager</controllingFieldValue>
+            <controllingFieldValue>API Gateway</controllingFieldValue>
+            <valueName>Policies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CloudHub</controllingFieldValue>
+            <valueName>Internal DNS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CloudHub</controllingFieldValue>
+            <controllingFieldValue>Runtime Manager</controllingFieldValue>
+            <valueName>Load Balancers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CloudHub</controllingFieldValue>
+            <valueName>Logging System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CloudHub</controllingFieldValue>
+            <controllingFieldValue>Modules</controllingFieldValue>
+            <valueName>ObjectStore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CloudHub</controllingFieldValue>
+            <controllingFieldValue>Runtime Manager</controllingFieldValue>
+            <valueName>Static IPs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CloudHub</controllingFieldValue>
+            <controllingFieldValue>Runtime Manager</controllingFieldValue>
+            <valueName>VPCs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CloudHub</controllingFieldValue>
+            <valueName>VPN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Access Management</controllingFieldValue>
+            <controllingFieldValue>Partner Manager</controllingFieldValue>
+            <valueName>Audit Logging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Access Management</controllingFieldValue>
+            <valueName>External Identity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Monitoring</controllingFieldValue>
+            <controllingFieldValue>Runtime Manager</controllingFieldValue>
+            <valueName>Agent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Monitoring</controllingFieldValue>
+            <valueName>Dashboards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Monitoring</controllingFieldValue>
+            <valueName>Functional Monitoring</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Monitoring</controllingFieldValue>
+            <valueName>Logs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Anypoint Monitoring</controllingFieldValue>
+            <valueName>Tools</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Deployment</controllingFieldValue>
+            <valueName>Domains</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Deployment</controllingFieldValue>
+            <valueName>Licensing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Deployment</controllingFieldValue>
+            <valueName>Runtime</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Design Center</controllingFieldValue>
+            <valueName>API Designer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Design Center</controllingFieldValue>
+            <valueName>Flow designer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flow Control</controllingFieldValue>
+            <valueName>Error Handling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flow Control</controllingFieldValue>
+            <valueName>First Successful</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flow Control</controllingFieldValue>
+            <valueName>Round Robin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flow Control</controllingFieldValue>
+            <valueName>Scatter Gather</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Flow Control</controllingFieldValue>
+            <valueName>Scheduler</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Modules</controllingFieldValue>
+            <valueName>Anypoint Enterprise Security</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ops Center</controllingFieldValue>
+            <controllingFieldValue>Partner Manager</controllingFieldValue>
+            <valueName>Admin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ops Center</controllingFieldValue>
+            <valueName>Configuration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ops Center</controllingFieldValue>
+            <valueName>Kubernetes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ops Center</controllingFieldValue>
+            <controllingFieldValue>Partner Manager</controllingFieldValue>
+            <valueName>Monitoring</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ops Center</controllingFieldValue>
+            <valueName>Operations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ops Center</controllingFieldValue>
+            <controllingFieldValue>Runtime Manager</controllingFieldValue>
+            <valueName>Servers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Runtime Manager</controllingFieldValue>
+            <valueName>Entitlements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Runtime Manager</controllingFieldValue>
+            <valueName>Insights</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Scopes</controllingFieldValue>
+            <valueName>Async</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Scopes</controllingFieldValue>
+            <valueName>Flow</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Scopes</controllingFieldValue>
+            <valueName>For Each</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Scopes</controllingFieldValue>
+            <valueName>Try</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Scopes</controllingFieldValue>
+            <valueName>Until Successful</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

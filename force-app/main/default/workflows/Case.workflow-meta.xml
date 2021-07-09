@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Notification_to_CSA</fullName>
+        <description>Notification to CSA/CSE</description>
+        <protected>false</protected>
+        <recipients>
+            <field>CSA_CSE__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>TRL/Notification_to_CSA_CSE</template>
+    </alerts>
+    <alerts>
+        <fullName>TRL_Case_Rejected_Notification</fullName>
+        <description>TRL Case Rejected Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>TRL/CS_Tech_TRL_Case_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>TRL_case_status_is_work_in_progress</fullName>
+        <description>TRL case status is work in progress</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>TRL/TRL_case_status_is_work_in_progress</template>
+    </alerts>
+    <alerts>
+        <fullName>TRL_new_comment_was_added</fullName>
+        <description>TRL new comment was added</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <field>CSA_CSE__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>TRL/TRL_New_comment</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Assign_Case_to_CSSA_Queue</fullName>
+        <field>OwnerId</field>
+        <lookupValue>CS_Tech_AMER_CSSA_Queue_Team</lookupValue>
+        <lookupValueType>Queue</lookupValueType>
+        <name>Assign Case to CSSA Queue</name>
+        <notifyAssignee>true</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ChangePriorityToHigh</fullName>
+        <field>Priority</field>
+        <literalValue>High</literalValue>
+        <name>Changes the case priority to high.</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Case_Status_to_New</fullName>
+        <field>Status</field>
+        <literalValue>New</literalValue>
+        <name>Set Case Status to New</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Case_Status_to_Pending_Approval</fullName>
+        <field>Status</field>
+        <literalValue>Pending Approval</literalValue>
+        <name>Set Case Status to Pending Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Set_Case_Status_to_Rejected</fullName>
+        <field>Status</field>
+        <literalValue>Rejected</literalValue>
+        <name>Set Case Status to Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <rules>
+        <fullName>TRL New comment</fullName>
+        <actions>
+            <name>TRL_new_comment_was_added</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <description>Notification to CSA CSE and requester once a new comment is added</description>
+        <formula>AND( RecordType.DeveloperName=&quot;TRL&quot;, ISCHANGED(Last_Comment__c) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

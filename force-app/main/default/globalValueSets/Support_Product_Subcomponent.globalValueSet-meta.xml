@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Admin</fullName>
+        <default>false</default>
+        <label>Admin</label>
+    </customValue>
+    <customValue>
+        <fullName>Agent</fullName>
+        <default>false</default>
+        <label>Agent</label>
+    </customValue>
+    <customValue>
+        <fullName>Alerts</fullName>
+        <default>false</default>
+        <label>Alerts</label>
+    </customValue>
+    <customValue>
+        <fullName>Analytics</fullName>
+        <default>false</default>
+        <label>Analytics</label>
+    </customValue>
+    <customValue>
+        <fullName>Anypoint Enterprise Security</fullName>
+        <default>false</default>
+        <label>Anypoint Enterprise Security</label>
+    </customValue>
+    <customValue>
+        <fullName>API Designer</fullName>
+        <default>false</default>
+        <label>API Designer</label>
+    </customValue>
+    <customValue>
+        <fullName>API Groups</fullName>
+        <default>false</default>
+        <label>API Groups</label>
+    </customValue>
+    <customValue>
+        <fullName>APIkit for OData</fullName>
+        <default>false</default>
+        <label>APIkit for OData</label>
+    </customValue>
+    <customValue>
+        <fullName>APIkit Router</fullName>
+        <default>false</default>
+        <label>APIkit Router</label>
+    </customValue>
+    <customValue>
+        <fullName>API Replication</fullName>
+        <default>false</default>
+        <label>API Replication</label>
+    </customValue>
+    <customValue>
+        <fullName>Applications</fullName>
+        <default>false</default>
+        <label>Applications</label>
+    </customValue>
+    <customValue>
+        <fullName>Async</fullName>
+        <default>false</default>
+        <label>Async</label>
+    </customValue>
+    <customValue>
+        <fullName>Audit Logging</fullName>
+        <default>false</default>
+        <label>Audit Logging</label>
+    </customValue>
+    <customValue>
+        <fullName>Choice</fullName>
+        <default>false</default>
+        <label>Choice</label>
+    </customValue>
+    <customValue>
+        <fullName>Configuration</fullName>
+        <default>false</default>
+        <label>Configuration</label>
+    </customValue>
+    <customValue>
+        <fullName>Consumer Storage</fullName>
+        <default>false</default>
+        <label>Consumer Storage</label>
+    </customValue>
+    <customValue>
+        <fullName>Dashboards</fullName>
+        <default>false</default>
+        <label>Dashboards</label>
+    </customValue>
+    <customValue>
+        <fullName>Developer Portal</fullName>
+        <default>false</default>
+        <label>Developer Portal</label>
+    </customValue>
+    <customValue>
+        <fullName>Document Processing</fullName>
+        <default>false</default>
+        <label>Document Processing</label>
+    </customValue>
+    <customValue>
+        <fullName>Domains</fullName>
+        <default>false</default>
+        <label>Domains</label>
+    </customValue>
+    <customValue>
+        <fullName>Endpoints</fullName>
+        <default>false</default>
+        <label>Endpoints</label>
+    </customValue>
+    <customValue>
+        <fullName>Entitlements</fullName>
+        <default>false</default>
+        <label>Entitlements</label>
+    </customValue>
+    <customValue>
+        <fullName>Error Handling</fullName>
+        <default>false</default>
+        <label>Error Handling</label>
+    </customValue>
+    <customValue>
+        <fullName>External Identity</fullName>
+        <default>false</default>
+        <label>External Identity</label>
+    </customValue>
+    <customValue>
+        <fullName>First Successful</fullName>
+        <default>false</default>
+        <label>First Successful</label>
+    </customValue>
+    <customValue>
+        <fullName>Flow</fullName>
+        <default>false</default>
+        <label>Flow</label>
+    </customValue>
+    <customValue>
+        <fullName>Flow designer</fullName>
+        <default>false</default>
+        <label>Flow designer</label>
+    </customValue>
+    <customValue>
+        <fullName>For Each</fullName>
+        <default>false</default>
+        <label>For Each</label>
+    </customValue>
+    <customValue>
+        <fullName>Functional Monitoring</fullName>
+        <default>false</default>
+        <label>Functional Monitoring</label>
+    </customValue>
+    <customValue>
+        <fullName>Insights</fullName>
+        <default>false</default>
+        <label>Insights</label>
+    </customValue>
+    <customValue>
+        <fullName>Internal DNS</fullName>
+        <default>false</default>
+        <label>Internal DNS</label>
+    </customValue>
+    <customValue>
+        <fullName>Kubernetes</fullName>
+        <default>false</default>
+        <label>Kubernetes</label>
+    </customValue>
+    <customValue>
+        <fullName>Licensing</fullName>
+        <default>false</default>
+        <label>Licensing</label>
+    </customValue>
+    <customValue>
+        <fullName>Load Balancers</fullName>
+        <default>false</default>
+        <label>Load Balancers</label>
+    </customValue>
+    <customValue>
+        <fullName>Logging System</fullName>
+        <default>false</default>
+        <label>Logging System</label>
+    </customValue>
+    <customValue>
+        <fullName>Logs</fullName>
+        <default>false</default>
+        <label>Logs</label>
+    </customValue>
+    <customValue>
+        <fullName>Mocking Service</fullName>
+        <default>false</default>
+        <label>Mocking Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Monitoring</fullName>
+        <default>false</default>
+        <label>Monitoring</label>
+    </customValue>
+    <customValue>
+        <fullName>ObjectStore</fullName>
+        <default>false</default>
+        <label>ObjectStore</label>
+    </customValue>
+    <customValue>
+        <fullName>Operations</fullName>
+        <default>false</default>
+        <label>Operations</label>
+    </customValue>
+    <customValue>
+        <fullName>Platform components</fullName>
+        <default>false</default>
+        <label>Platform components</label>
+    </customValue>
+    <customValue>
+        <fullName>Policies</fullName>
+        <default>false</default>
+        <label>Policies</label>
+    </customValue>
+    <customValue>
+        <fullName>Portal (User Interface)</fullName>
+        <default>false</default>
+        <label>Portal (User Interface)</label>
+    </customValue>
+    <customValue>
+        <fullName>Reports</fullName>
+        <default>false</default>
+        <label>Reports</label>
+    </customValue>
+    <customValue>
+        <fullName>Round Robin</fullName>
+        <default>false</default>
+        <label>Round Robin</label>
+    </customValue>
+    <customValue>
+        <fullName>Runtime</fullName>
+        <default>false</default>
+        <label>Runtime</label>
+    </customValue>
+    <customValue>
+        <fullName>Scatter Gather</fullName>
+        <default>false</default>
+        <label>Scatter Gather</label>
+    </customValue>
+    <customValue>
+        <fullName>Scheduler</fullName>
+        <default>false</default>
+        <label>Scheduler</label>
+    </customValue>
+    <customValue>
+        <fullName>Servers</fullName>
+        <default>false</default>
+        <label>Servers</label>
+    </customValue>
+    <customValue>
+        <fullName>SOAP Router</fullName>
+        <default>false</default>
+        <label>SOAP Router</label>
+    </customValue>
+    <customValue>
+        <fullName>Static IPs</fullName>
+        <default>false</default>
+        <label>Static IPs</label>
+    </customValue>
+    <customValue>
+        <fullName>Tools</fullName>
+        <default>false</default>
+        <label>Tools</label>
+    </customValue>
+    <customValue>
+        <fullName>Try</fullName>
+        <default>false</default>
+        <label>Try</label>
+    </customValue>
+    <customValue>
+        <fullName>Until Successful</fullName>
+        <default>false</default>
+        <label>Until Successful</label>
+    </customValue>
+    <customValue>
+        <fullName>VPCs</fullName>
+        <default>false</default>
+        <label>VPCs</label>
+    </customValue>
+    <customValue>
+        <fullName>VPN</fullName>
+        <default>false</default>
+        <label>VPN</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Security policies</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Security policies</label>
+    </customValue>
+    <customValue>
+        <fullName>Tokenization</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Tokenization</label>
+    </customValue>
+    <customValue>
+        <fullName>Connectivity</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Connectivity</label>
+    </customValue>
+    <customValue>
+        <fullName>Cluster management</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cluster management</label>
+    </customValue>
+    <customValue>
+        <fullName>Upgrades</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Upgrades</label>
+    </customValue>
+    <customValue>
+        <fullName>Infrastructure</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Infrastructure</label>
+    </customValue>
+    <customValue>
+        <fullName>Ops Center</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Ops Center</label>
+    </customValue>
+    <customValue>
+        <fullName>Installation</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Installation</label>
+    </customValue>
+    <customValue>
+        <fullName>Secrets manager</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Secrets manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Logging</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Logging</label>
+    </customValue>
+    <customValue>
+        <fullName>Load balancing</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Load balancing</label>
+    </customValue>
+    <customValue>
+        <fullName>Application deployments</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Application deployments</label>
+    </customValue>
+    <masterLabel>Support Product Subcomponent</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

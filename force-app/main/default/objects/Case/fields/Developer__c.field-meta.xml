@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Developer__c</fullName>
+    <description>Sales Ops field for sales systems</description>
+    <externalId>false</externalId>
+    <label>Developer</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Perficient</fullName>
+                <default>false</default>
+                <label>Perficient</label>
+            </value>
+            <value>
+                <fullName>Simplus</fullName>
+                <default>false</default>
+                <label>Simplus</label>
+            </value>
+            <value>
+                <fullName>SalesOps</fullName>
+                <default>false</default>
+                <label>SalesOps</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

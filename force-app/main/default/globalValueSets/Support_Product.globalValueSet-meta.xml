@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Anypoint Community Manager</fullName>
+        <default>false</default>
+        <label>Anypoint Community Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Anypoint Studio</fullName>
+        <default>false</default>
+        <label>Anypoint Studio</label>
+    </customValue>
+    <customValue>
+        <fullName>Mule Runtime 3.x</fullName>
+        <default>false</default>
+        <label>Mule Runtime 3.x</label>
+    </customValue>
+    <customValue>
+        <fullName>Mule Runtime 4.x</fullName>
+        <default>false</default>
+        <label>Mule Runtime 4.x</label>
+    </customValue>
+    <customValue>
+        <fullName>Anypoint Platform</fullName>
+        <default>false</default>
+        <label>Anypoint Platform</label>
+    </customValue>
+    <customValue>
+        <fullName>Anypoint Platform - EU</fullName>
+        <default>false</default>
+        <label>Anypoint Platform - EU</label>
+    </customValue>
+    <customValue>
+        <fullName>Anypoint Platform - GovCloud</fullName>
+        <default>false</default>
+        <label>Anypoint Platform - GovCloud</label>
+    </customValue>
+    <customValue>
+        <fullName>Anypoint Private Cloud Edition</fullName>
+        <default>false</default>
+        <label>Anypoint Private Cloud Edition</label>
+    </customValue>
+    <customValue>
+        <fullName>Anypoint Runtime Fabric</fullName>
+        <default>false</default>
+        <label>Anypoint Runtime Fabric</label>
+    </customValue>
+    <customValue>
+        <fullName>Anypoint CLI</fullName>
+        <default>false</default>
+        <label>Anypoint CLI</label>
+    </customValue>
+    <customValue>
+        <fullName>Anypoint Service Mesh</fullName>
+        <default>false</default>
+        <label>Anypoint Service Mesh</label>
+    </customValue>
+    <customValue>
+        <fullName>MUnit</fullName>
+        <default>false</default>
+        <label>MUnit</label>
+    </customValue>
+    <customValue>
+        <fullName>Mule Agent</fullName>
+        <default>false</default>
+        <label>Mule Agent</label>
+    </customValue>
+    <customValue>
+        <fullName>Mule Maven Plugin</fullName>
+        <default>false</default>
+        <label>Mule Maven Plugin</label>
+    </customValue>
+    <customValue>
+        <fullName>MuleSoft Enterprise Maven Repository</fullName>
+        <default>false</default>
+        <label>MuleSoft Enterprise Maven Repository</label>
+    </customValue>
+    <customValue>
+        <fullName>Expressway Service Gateway</fullName>
+        <default>false</default>
+        <label>Expressway Service Gateway</label>
+    </customValue>
+    <customValue>
+        <fullName>Support Center</fullName>
+        <default>false</default>
+        <label>Help Center</label>
+    </customValue>
+    <customValue>
+        <fullName>Mule SDK</fullName>
+        <default>false</default>
+        <label>Mule SDK</label>
+    </customValue>
+    <customValue>
+        <fullName>DevKit</fullName>
+        <default>false</default>
+        <label>DevKit</label>
+    </customValue>
+    <customValue>
+        <fullName>MMC</fullName>
+        <default>false</default>
+        <label>MMC</label>
+    </customValue>
+    <customValue>
+        <fullName>Tcat Server</fullName>
+        <default>false</default>
+        <label>Tcat Server</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>API Gateway</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>API Gateway</label>
+    </customValue>
+    <customValue>
+        <fullName>API Designer</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>API Designer</label>
+    </customValue>
+    <customValue>
+        <fullName>Anypoint MQ</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Anypoint MQ</label>
+    </customValue>
+    <customValue>
+        <fullName>Analytics</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Analytics</label>
+    </customValue>
+    <customValue>
+        <fullName>Access Management</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Access Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Flow Designer</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Flow Designer</label>
+    </customValue>
+    <customValue>
+        <fullName>APIKit</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>APIKit</label>
+    </customValue>
+    <customValue>
+        <fullName>API Manager</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>API Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>API Notebook</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>API Notebook</label>
+    </customValue>
+    <customValue>
+        <fullName>API Portal</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>API Portal</label>
+    </customValue>
+    <customValue>
+        <fullName>CloudHub</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>CloudHub</label>
+    </customValue>
+    <customValue>
+        <fullName>MuleSoft Tokenization Service</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>MuleSoft Tokenization Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Runtime Manager</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Runtime Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Partner Manager</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Partner Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Data Gateway</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Data Gateway</label>
+    </customValue>
+    <customValue>
+        <fullName>DataWeave</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>DataWeave</label>
+    </customValue>
+    <customValue>
+        <fullName>Exchange</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Exchange</label>
+    </customValue>
+    <masterLabel>Support Product</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

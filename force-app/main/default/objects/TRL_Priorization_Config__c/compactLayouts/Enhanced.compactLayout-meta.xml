@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Enhanced</fullName>
+    <fields>TRL_Config_Field__c</fields>
+    <fields>TRL_Config_Region__c</fields>
+    <fields>Name</fields>
+    <fields>Score_Weight__c</fields>
+    <fields>Scoring_Factor__c</fields>
+    <fields>Filter_Score__c</fields>
+    <fields>FilterLow__c</fields>
+    <fields>FilterHigh__c</fields>
+    <fields>ScoringString__c</fields>
+    <label>Enhanced</label>
+</CompactLayout>

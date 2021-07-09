@@ -1,0 +1,16 @@
+{
+  "username":"test-kxnw5nbtexhf@example.com",
+  "adminEmail":"nico.testing.007@gmail.com",
+  "orgName": "MuleSoft CS TRL",
+  "edition": "Developer",
+  "language": "en_US",
+  "features": ["MultiCurrency", "AuthorApex"],
+  "settings": {
+    "lightningExperienceSettings": {
+       "enableS1DesktopEnabled": true
+    },
+    "languageSettings": {
+       "enableTranslationWorkbench": true
+    }
+  }
+}

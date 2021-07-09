@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Intel ESG</fullName>
+        <default>false</default>
+        <label>Intel ESG</label>
+    </customValue>
+    <description>Use across Objects (e.g Accounts, Contacts) to identify records migrated as a result of M&amp;A</description>
+    <masterLabel>Migration Source</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

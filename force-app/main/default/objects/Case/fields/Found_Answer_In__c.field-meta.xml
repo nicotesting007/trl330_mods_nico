@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Found_Answer_In__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>How was the appropriate answer to this inquiry discovered?</inlineHelpText>
+    <label>Found Answer In</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Based on Previous Experience</fullName>
+                <default>false</default>
+                <label>Based on Previous Experience</label>
+            </value>
+            <value>
+                <fullName>Discussion on MuleSourceDev</fullName>
+                <default>false</default>
+                <label>Discussion on MuleSourceDev</label>
+            </value>
+            <value>
+                <fullName>Documentation</fullName>
+                <default>false</default>
+                <label>Documentation</label>
+            </value>
+            <value>
+                <fullName>Existing Salesforce Cases</fullName>
+                <default>false</default>
+                <label>Existing Salesforce Cases</label>
+            </value>
+            <value>
+                <fullName>Found by Troubleshooting</fullName>
+                <default>false</default>
+                <label>Found by Troubleshooting</label>
+            </value>
+            <value>
+                <fullName>Found Existing JIRA</fullName>
+                <default>false</default>
+                <label>Found Existing JIRA</label>
+            </value>
+            <value>
+                <fullName>Internal WiKi</fullName>
+                <default>false</default>
+                <label>Internal WiKi</label>
+            </value>
+            <value>
+                <fullName>Internet Search</fullName>
+                <default>false</default>
+                <label>Internet Search</label>
+            </value>
+            <value>
+                <fullName>Knowledge Base</fullName>
+                <default>false</default>
+                <label>Knowledge Base</label>
+            </value>
+            <value>
+                <fullName>Other Internal Discussion</fullName>
+                <default>false</default>
+                <label>Other Internal Discussion</label>
+            </value>
+            <value>
+                <fullName>Public Forums</fullName>
+                <default>false</default>
+                <label>Public Forums</label>
+            </value>
+            <value>
+                <fullName>Sales Operations Case</fullName>
+                <default>false</default>
+                <label>Sales Operations Case</label>
+            </value>
+            <value>
+                <fullName>Worked with Engineering</fullName>
+                <default>false</default>
+                <label>Worked with Engineering</label>
+            </value>
+            <value>
+                <fullName>Worked with PM</fullName>
+                <default>false</default>
+                <label>Worked with PM</label>
+            </value>
+            <value>
+                <fullName>Worked with PS</fullName>
+                <default>false</default>
+                <label>Worked with PS</label>
+            </value>
+            <value>
+                <fullName>Worked with Vendor/Partner</fullName>
+                <default>false</default>
+                <label>Worked with Vendor/Partner</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
